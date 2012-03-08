@@ -1,0 +1,9 @@
+.block_list_SelectItem_palette
+{
+background-image: url(image/ControlBlock_List_selectItem.png);
+height:80px;
+width:150px;
+cursor:move;
+}
+
+

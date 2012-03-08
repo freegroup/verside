@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flow>
+
+   <block id="e1beda77-9546-6605-cb79-50b3a309dcd9" type="flow.ControlBlock_Start" x="80" y="35" implementation="de.tif.jacob.util.flow.block.control.Start">
+      <block id="694229a4-de55-f111-31e6-e2637e1dfff1" type="flow.ControlBlock_DefineVariable" x="-1" y="30" implementation="de.tif.jacob.util.flow.block.variable.DefineVariable">
+         <static_param>
+               <block id="b2c99185-f211-786d-f7e5-41320df51900" type="flow.block_data_DBSelect" x="114" y="0" implementation="block_data_DBSelect">
+                  <static_param>
+                        <block id="b401b353-9894-e0db-2385-b6173ad68c5a" type="flow.ControlBlock_Text" x="140" y="0" implementation="de.tif.jacob.util.flow.block.text.Text">
+                           <property>sql97.your-server.de</property>
+                        </block>
+                        <block id="f429ede2-d597-5c25-d4bd-e95ed243b313" type="flow.ControlBlock_Text" x="140" y="35" implementation="de.tif.jacob.util.flow.block.text.Text">
+                           <property>phpBlocks_demo</property>
+                        </block>
+                        <block id="ac899323-4f3a-8396-b0e5-9612d0ceff92" type="flow.ControlBlock_Text" x="140" y="70" implementation="de.tif.jacob.util.flow.block.text.Text">
+                           <property>phpBlocks_demo_r</property>
+                        </block>
+                        <block id="c79be888-46a9-24ab-cae6-34da6ef865e9" type="flow.block_text_Password" x="140" y="105" implementation="block_text_Password">
+                           <property>RSAR1pWw</property>
+                        </block>
+                        <block id="16eafcb8-b281-e1c7-1479-6a2c77339762" type="flow.ControlBlock_Text" x="140" y="140" implementation="de.tif.jacob.util.flow.block.text.Text">
+                           <property>select * from suggestions</property>
+                        </block>                     
+                  </static_param>
+                  <property>DB-Select</property>
+               </block>            
+         </static_param>
+         <block id="f33d9a96-c44a-519b-71c6-9ea33cd922eb" type="flow.block_controll_ForEach" x="-1" y="180" implementation="block_controll_ForEach">
+            <static_param>
+                  <block id="e6eac0ee-d82d-0f4f-34f1-9c0e8b4e2288" type="flow.ControlBlock_UseVariable" x="150" y="0" implementation="de.tif.jacob.util.flow.block.variable.UseVariable">
+                     <property>result</property>
+                  </block>
+                  <block id="10e8580d-23f0-2ca8-d771-f41183609364" type="flow.ControlBlock_Text" x="150" y="35" implementation="de.tif.jacob.util.flow.block.text.Text">
+                     <property>row</property>
+                  </block>               
+            </static_param>
+            <innerblocks>
+                  <block id="8589df93-79e1-df9f-030c-e2c9e0e1dc1e" type="flow.block_list_SetItem" x="20" y="100" implementation="block_list_SetItem">
+                     <static_param>
+                           <block id="96024f18-1ae1-9ef0-9360-3b0688e1b6f5" type="flow.ControlBlock_UseVariable" x="129" y="0" implementation="de.tif.jacob.util.flow.block.variable.UseVariable">
+                              <property>row</property>
+                           </block>
+                           <block id="a4a349f6-cb7d-47d9-2edc-c07a1746034a" type="flow.ControlBlock_Text" x="129" y="35" implementation="de.tif.jacob.util.flow.block.text.Text">
+                              <property>2</property>
+                           </block>
+                           <block id="9f9d8c14-9fcd-a3ae-5aaf-6b864a92216b" type="flow.ControlBlock_Text" x="129" y="70" implementation="de.tif.jacob.util.flow.block.text.Text">
+                              <property>blubber</property>
+                           </block>                        
+                     </static_param>
+                     <property>Set Item</property>
+                  </block>               
+            </innerblocks>
+            <block id="621a1d6d-499f-1664-4140-deb4db4649ce" type="flow.block_file_Download" x="-1" y="235" implementation="block_file_Download">
+               <static_param>
+                     <block id="69354f9b-df96-c7dd-891c-83e1951e429f" type="flow.block_list_toCSV" x="140" y="0" implementation="block_list_toCSV">
+                        <static_param>
+                              <block id="aa39186f-373c-c75e-e544-1fcb7c7d7820" type="flow.ControlBlock_UseVariable" x="115" y="0" implementation="de.tif.jacob.util.flow.block.variable.UseVariable">
+                                 <property>result</property>
+                              </block>                           
+                        </static_param>
+                        <property>toCSV</property>
+                     </block>
+                     <block id="46ed217c-da00-e65a-a877-ac1147686069" type="flow.ControlBlock_Text" x="140" y="40" implementation="de.tif.jacob.util.flow.block.text.Text">
+                        <property>text/csv</property>
+                     </block>                  
+               </static_param>
+               <property>download</property>
+            </block>
+         </block>
+         <property>result</property>
+      </block>
+   </block>
+</flow>

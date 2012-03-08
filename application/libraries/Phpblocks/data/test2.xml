@@ -1,0 +1,41 @@
+<flow>
+
+   <block id="8749c091-d7c9-fe11-3eb2-66545bd202db" type="flow.ControlBlock_If" x="626" y="198" implementation="de.tif.jacob.util.flow.block.control.If" >
+      <static_param>
+            <block id="e5af4f00-5a51-7c70-846d-2e02c776c607" type="flow.ControlBlock_NULL" x="0" y="0" implementation="de.tif.jacob.util.flow.block.text.NULL" />         
+      </static_param>
+      <innerblocks>
+            <block id="8a332021-778f-7a62-ca06-f278f69a45bc" type="flow.ControlBlock_NULL" x="0" y="0" implementation="de.tif.jacob.util.flow.block.text.NULL" />
+            <block id="d57bea3d-aa6a-0073-95e7-4bd0ae78795b" type="flow.ControlBlock_NULL" x="0" y="0" implementation="de.tif.jacob.util.flow.block.text.NULL" />         
+      </innerblocks>
+   </block>
+   <block id="963e6b07-0974-73f0-5c90-138ff1092c1d" type="flow.ControlBlock_Alert" x="87" y="86" implementation="de.tif.jacob.util.flow.block.dialog.Alert" >
+      <static_param>
+            <block id="ee1a7482-6fa2-2b2b-239c-7356c25cb8cb" type="flow.ControlBlock_Join" x="150" y="0" implementation="de.tif.jacob.util.flow.block.text.Join" >
+               <dynamic_param>
+                     <block id="65701e93-7384-b263-1bc4-080529b71095" type="flow.ControlBlock_Join" x="80" y="0" implementation="de.tif.jacob.util.flow.block.text.Join" >
+                        <dynamic_param>
+                              <block id="4418c3eb-b1cc-1b30-8afc-d0b20768ff62" type="flow.ControlBlock_Text" x="80" y="0" implementation="de.tif.jacob.util.flow.block.text.Text" >
+                                 <property>enter your text</property>
+                              </block>
+                              <block id="afd97d0d-fd87-32e9-8095-a9d5c0e54dba" type="flow.ControlBlock_Text" x="80" y="35" implementation="de.tif.jacob.util.flow.block.text.Text" >
+                                 <property>enter your text</property>
+                              </block>
+                              <block id="80fadb16-84c7-e135-79a3-12e5d48b67ab" type="flow.ControlBlock_Text" x="80" y="55" implementation="de.tif.jacob.util.flow.block.text.Text" >
+                                 <property>enter your text</property>
+                              </block>                           
+                        </dynamic_param>
+                     </block>
+                     <block id="74700175-1479-7750-c646-8d0604e22a53" type="flow.ControlBlock_Text" x="80" y="110" implementation="de.tif.jacob.util.flow.block.text.Text" >
+                        <property>enter your text</property>
+                     </block>                  
+               </dynamic_param>
+            </block>         
+      </static_param>
+   </block>
+   <block id="901b7b3f-06c9-a038-a32e-fa3584d0765c" type="flow.ControlBlock_Alert" x="116" y="342" implementation="de.tif.jacob.util.flow.block.dialog.Alert" >
+      <static_param>
+            <block id="7702ca19-90da-688d-5d85-982b0220c0be" type="flow.ControlBlock_NULL" x="0" y="0" implementation="de.tif.jacob.util.flow.block.text.NULL" />         
+      </static_param>
+   </block>
+</flow>

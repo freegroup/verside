@@ -1,0 +1,291 @@
+
+/********************************************************************************************************
+ * Settings for the navigation
+ *******************************************************************************************************/
+#container_navigation_firstchild{
+ height: 100%;
+ padding:0px;
+ overflow:hidden;
+ border:0px;
+}
+
+
+#navigation_properties{
+ border:1px solid #32323D;
+ width:250px;
+ height:90%;
+ position:relative;
+ overflow:visible;
+ left:-250px;
+ top:0px;
+ box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+ background: url("images/ui-bg_highlight-soft.png") repeat-x scroll 50% 50% #32323D;
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666), color-stop(1, #333));
+ background: -moz-linear-gradient(top center, #666 0%, #333 100%);
+ border-radius: 0px 0px 5px 2px;
+}
+
+
+#navigation_filter{
+ border:1px solid #32323D;
+ width:450px;
+ height:90%;
+ position:relative;
+ overflow:visible;
+ left:-460px;
+ top:0px;
+ box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+ background: url("images/ui-bg_highlight-soft.png") repeat-x scroll 50% 50% #32323D;
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666), color-stop(1, #333));
+ background: -moz-linear-gradient(top center, #666 0%, #333 100%);
+ border-radius: 0px 0px 5px 2px;
+}
+
+
+.navigation_filter_constraint_group{
+ background-color: rgba(5, 5, 5, 0.1);
+ border: 1px solid rgba(25, 25, 25, 0.2);
+ display: inline-block;
+ margin-bottom: 20px;
+ width: 100%;
+}
+
+
+.navigation_filter_constraint_pane{
+ float:left;
+ margin:10px;
+ width:300px;
+}
+
+.navigation_filter_action_pane{
+ float:right;
+ margin:10px;
+}
+
+.filterentry_constraint{
+ -moz-box-sizing: border-box;
+ background: none repeat scroll 0 0 #FAFAFA;
+ border-color: #C6C6C6 #DADADA #EAEAEA;
+ border-radius: 4px 4px 4px 4px;
+ border-style: solid;
+ border-width: 1px;
+ font-family: inherit;
+ padding-left: 7px;
+ vertical-align: middle;
+ height:25px;
+ font-size:1.2em;
+}
+
+.navigation_filter_constraint_group select {
+ background: none repeat scroll 0 0 #FAFAFA;
+ border-color: #C6C6C6 #DADADA #EAEAEA;
+ border-radius: 4px 4px 4px 4px;
+ font-family: inherit;
+ -moz-box-sizing: border-box;
+ padding-left:5px;
+ border-style: solid ;
+ border-width: 1px;
+ vertical-align: middle;
+ height:25px;
+ font-size:1.2em;
+}
+
+
+
+.core-icon-tick{
+ background:url("../images/tick.png") no-repeat top left !important;
+}
+
+
+
+/********************************************************************************************************
+ * Settings for the UI ContextMenu of UI Elements
+ *******************************************************************************************************/
+li.divider {
+  border-top: 1px solid #e7e3e7;
+  border-bottom: 1px solid #ffffff;
+  height: 1;
+  padding: 0;
+  margin: 5px 0 5px 27px;
+}
+
+/********************************************************************************************************
+ * Edit Mode Toggler
+ *******************************************************************************************************/
+
+#edittoggler_container{
+ position: absolute;
+ right: 10;
+ top: 14;
+}
+	
+#edittoggler_label{
+ float:left;
+ padding-right:20px;
+ color: white !important;
+ font-family: 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+ font-size: 0.8em;
+ font-weight: normal;
+ line-height: 32px;
+ cursor:pointer;
+}
+
+
+/********************************************************************************************************
+ * Settings for the UI Editor
+ *******************************************************************************************************/
+
+.drag_div{
+border:1px dotted rgb(224,237,254);
+background-color:rgba(224,237,254,0.4);
+position:absolute;
+z-index:10000;
+cursor:move;
+}
+
+.resize_handle{
+ position:absolute;
+ width:10px;
+ height:10px;
+ -moz-border-radius: 6px; 
+ -webkit-border-radius: 6px; 
+ -khtml-border-radius: 6px;
+ border-radius: 6px; 
+}
+
+.core_formelement_designmode{
+border:1px dashed #88bfe8 !important;
+border-width:1px !important;
+cursor:move;
+}
+
+.core_navigation_designmode{
+border:1px dashed #88bfe8 !important;
+border-width:1px !important;
+cursor:move;
+}
+
+.resize_border{
+ position:absolute;
+ padding:0px;
+ margin:0px;
+ overflow:hidden;
+}
+
+
+.detail_header{
+ color: #5A8942;
+}
+
+.pane{
+ padding:0px !important;
+ margin:0px !important;
+}
+
+
+.ui-draggable-helper{
+ width:200px;
+}
+
+
+/*
+ *	PANES & CONTENT-DIVs
+ */
+.ui-layout-pane { /* all 'panes' */
+	border:0px;
+	/* DO NOT add scrolling (or padding) to 'panes' that have a content-div,
+	   otherwise you may get double-scrollbars - on the pane AND on the content-div
+	*/
+	padding:	10px; 
+	overflow:	auto;
+}
+
+
+/* (scrolling) content-div inside pane allows for fixed header(s) and/or footer(s) */
+.ui-layout-content {
+	padding:	10px;
+	position:	relative; /* contain floated or positioned elements */
+	overflow:	auto; /* add scrolling to content-div */
+}
+
+
+/* NOTE: It looks best when 'hover' and 'dragging' are set to the same color,
+	otherwise color shifts while dragging when bar can't keep up with mouse */
+
+.ui-layout-resizer-dragging {	/* resizer beging 'dragging' */
+	background: #C4E1A4;
+}
+
+.ui-layout-resizer-dragging {	/* CLONED resizer being dragged */
+	border-left:  1px solid #BBB;
+	border-right: 1px solid #BBB;
+}
+
+/* NOTE: Add a 'dragging-limit' color to provide visual feedback when resizer hits min/max size limits */
+.ui-layout-resizer-dragging-limit {	/* CLONED resizer at min or max size-limit */
+	background: #E1A4A4; /* red */
+}
+
+.ui-layout-resizer-closed-hover	{ /* hover-color to 'slide open' */
+}
+
+.ui-layout-resizer-sliding {	/* resizer when pane is 'slid open' */
+	opacity: .10; /* show only a slight shadow */
+	filter:  alpha(opacity=10);
+}
+
+.ui-layout-resizer-sliding-hover {	/* sliding resizer - hover */
+	opacity: 1.00; /* on-hover, show the resizer-bar normally */
+	filter:  alpha(opacity=100);
+}
+/* sliding resizer - add 'outside-border' to resizer on-hover 
+ * this sample illustrates how to target specific panes and states */
+.ui-layout-resizer-north-sliding-hover	{ border-bottom-width:	1px; }
+.ui-layout-resizer-south-sliding-hover	{ border-top-width:		1px; }
+.ui-layout-resizer-west-sliding-hover	{ border-right-width:	1px; }
+.ui-layout-resizer-east-sliding-hover	{ border-left-width:	1px; }
+
+/*
+ *	TOGGLER-BUTTONS
+ */
+.ui-layout-toggler {
+	border: 1px solid #BBB; /* match pane-border */
+	background-color: #BBB;
+}
+
+.ui-layout-resizer-hover .ui-layout-toggler {
+	opacity: .60;
+	filter:  alpha(opacity=60);
+}
+
+.ui-layout-toggler-hover , /* need when NOT resizable */
+.ui-layout-resizer-hover .ui-layout-toggler-hover { /* need specificity when IS resizable */
+	opacity: 1.00;
+	filter:  alpha(opacity=100);
+}
+
+.ui-layout-toggler-north , 
+.ui-layout-toggler-south {
+	border-width: 0 1px; /* left/right borders */
+}
+
+.ui-layout-toggler-west ,
+.ui-layout-toggler-east {
+	border-width: 1px 0; /* top/bottom borders */
+}
+
+/* hide the toggler-button when the pane is 'slid open' */
+.ui-layout-resizer-sliding  ui-layout-toggler {
+	display: none;
+}
+/*
+ *	style the text we put INSIDE the togglers
+ */
+.ui-layout-toggler .content {
+	color:			#666;
+	font-size:		12px;
+	font-weight:	bold;
+	width:			100%;
+	padding-bottom:	0.35ex; /* to 'vertically center' text inside text-span */
+}
+

@@ -1,0 +1,52 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <xs:element name="flow" >
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="block" />
+      </xs:sequence>
+    </xs:complexType>
+ </xs:element>
+ 
+  <xs:element name="block" >
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element minOccurs="0"  type="xs:string" name="property"/>
+      <xs:element minOccurs="0" ref="static_param"/>
+      <xs:element minOccurs="0" ref="dynamic_param"/>
+      <xs:element minOccurs="0" ref="innerblocks"/>
+      <xs:element minOccurs="0" ref="block"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="implementation" type="xs:string" />
+    <xs:attribute name="type" type="xs:string" />
+    <xs:attribute name="x" type="xs:int" />
+    <xs:attribute name="y" type="xs:int" />
+  </xs:complexType>
+ </xs:element>
+       
+  <xs:element name="static_param" >
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="block" />
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+  
+  <xs:element name="dynamic_param" >
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="block"/>
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+  
+  <xs:element name="innerblocks" >
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="block"/>
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+  
+  </xs:schema>

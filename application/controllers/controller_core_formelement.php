@@ -1,0 +1,254 @@
+<?php
+
+class Controller_core_formelement extends CI_Controller {
+ 
+    public function __construct() {
+		parent::__construct();
+		$this->em = $this->doctrine->em;
+		$this->load->model("Model_core_formelement");
+		$this->load->helper(array('form', 'url'));
+    }
+
+	public function count() {
+        $query= $this->em->createQuery("SELECT COUNT(u.id) FROM Model_core_formelement u");
+        echo $query->getSingleScalarResult();
+    }
+
+	public function delete( $id = null ) {
+		if( is_null( $id ) ) {
+			echo 'ERROR: Id not provided.';
+			return;
+		}
+        $obj= $this->em->find("Model_core_formelement",$id);
+        $this->em->remove($obj);
+        $this->em->flush();
+        
+		echo 'Records deleted successfully';
+	}	
+
+	public function update($id) {
+		if( !empty( $_POST ) ) {
+            $obj= $this->em->find("Model_core_formelement",$id);
+            foreach($_POST as $field => $val){
+                $obj->$field = $val;
+            }
+            $this->em->flush();
+        
+            // return the updated object. This is required because in the db can exists some trigger
+            // which has modified the object
+		    echo json_encode($obj);
+		}
+	}
+
+
+    function upload()
+	{
+	    $left = $_POST["left"];  
+	    $top = $_POST["top"];  
+	    $model = $_POST["model"];  
+	    $uid = uniqid();
+		
+	    //     Designers Upload Folder
+        $dir = './assets/images/'.$model.'/';
+        if (!is_dir($dir)) { 
+            $theupload_path = mkdir('./assets/images/'.$model.'/', 0777,true);
+        }
+ 
+        $config['upload_path'] = $dir;
+		$config['allowed_types'] = 'jpg|gif|png';
+		$config['max_size']	= '100';
+		$config['max_width']  = '1024';
+		$config['max_height']  = '768';
+
+		$this->load->library('upload', $config);
+
+		if ( ! $this->upload->do_upload("userfile"))
+		{
+			echo $this->upload->display_errors();
+		}
+		else
+		{
+			$data = array('upload_data' => $this->upload->data());
+            $file = $data['upload_data']['file_name']; // set the file variable
+		    $newFileName = $dir.$uid."_".$file;
+            rename($dir . $file, $newFileName);
+            
+			$size = getimagesize($newFileName);
+			$label = $this->createImage($model,$newFileName,0,$left,$top, $size[0], $size[1]);
+			echo $label->toHTML(null);
+		}
+	}
+	
+	public function createLine() {
+        if(!empty( $_POST ) ) {
+            $x =  $_POST["left"];
+            $y =  $_POST["top"];
+            $model =  $_POST["model"];
+            
+  		    $this->load->model("generated/".$model);
+
+            $obj = $this->_createHr($model, 0,$x,$y,200);
+            echo $obj->toHTML();
+        }
+    }
+	public function createTitle() {
+        if(!empty( $_POST ) ) {
+            $x =  $_POST["left"];
+            $y =  $_POST["top"];
+            $model =  $_POST["model"];
+            
+            $label = $this->_createHeader($model, "Caption", 0, $x, $y);
+            echo $label->toHTML();
+        }
+    }
+
+	public function createArea() {
+        if(!empty( $_POST ) ) {
+            $x =  $_POST["left"];
+            $y =  $_POST["top"];
+            $model =  $_POST["model"];
+            $column =  $_POST["column"];
+            $readonly =  $_POST["readonly"];
+            $recordId =  $_POST["recordId"];
+            
+  		    $this->load->model("generated/".$model);
+            $obj= null;
+            if(!is_null($recordId))
+               $obj = $this->em->find($model, $recordId);
+
+            $readonly = strcmp($readonly,"true")==0;
+            $input = $this->_createArea($model,$readonly, $column,0,$x,$y,120);
+            $label = $this->_createLabel($model, $column,0,$x,$y-20, $input->id);
+
+            // don't change the order of the rendering. The Client expect this order.
+            //
+            echo $label->toHTML($obj);
+            echo $input->toHTML($obj);
+        }
+    }
+
+	public function createInput() {
+        if(!empty( $_POST ) ) {
+            $x =  $_POST["left"];
+            $y =  $_POST["top"];
+            $model =  $_POST["model"];
+            $column =  $_POST["column"];
+            $readonly =  $_POST["readonly"];
+            $recordId =  $_POST["recordId"];
+            
+  		    $this->load->model("generated/".$model);
+            $obj= null;
+            if(!is_null($recordId))
+               $obj = $this->em->find($model, $recordId);
+
+            $readonly = strcmp($readonly,"true")==0;
+            $input = $this->_createInput($model,$readonly, $column,0,$x,$y,120);
+            $label = $this->_createLabel($model, $column,0,$x,$y-20, $input->id);
+
+            // don't change the order of the rendering. The Client expect this order.
+            //
+            echo $label->toHTML($obj);
+            echo $input->toHTML($obj);
+        }
+    }
+
+    protected function createImage($modelClass, $filename, $parentId, $x, $y, $width, $height){
+		// Generate the header
+        $obj = new Model_core_formelement();
+		$obj->css = "position:absolute;top:".$y."px;left:".$x."px;height:".$height."px;width:".$width."px";
+		$obj->tag = "img";
+		$obj->extra_attributes = "src=\"".$filename."\"";
+		$obj->column = null;
+		$obj->model_class = $modelClass;
+		$obj->innerHTML = "";
+		$obj->parent_id = $parentId;
+        $this->em->persist($obj);
+        $this->em->flush();
+        
+        return $obj;
+	}
+		
+	protected function _createHeader($modelClass, $text, $parentId, $x, $y){
+		
+		// Generate the header
+        $obj = new Model_core_formelement();
+		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:50px;font-size:40px";
+		$obj->tag = "label";
+		$obj->extra_attributes = "data-editable=\"true\"";
+		$obj->column = null;
+		$obj->model_class = $modelClass;
+		$obj->innerHTML = $text;
+		$obj->parent_id = $parentId;
+        $this->em->persist($obj);
+        $this->em->flush();
+        
+        return $obj;
+	}
+	
+    protected function _createLabel($modelClass, $title, $parentId, $x, $y, $relatedinput){
+        if($title =="")
+          $title ="caption";
+          
+		// Generate the header
+        $obj = new Model_core_formelement();
+		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:16px;font-size:14px";
+		$obj->tag = "label";
+		$obj->extra_attributes = "data-editable=\"true\" data-relatedinput=\"".$relatedinput."\"";
+		$obj->column = null;
+		$obj->model_class = $modelClass;
+		$obj->innerHTML = ucfirst(strtolower($title));
+		$obj->parent_id = $parentId;
+        $this->em->persist($obj);
+        $this->em->flush();
+        
+        return $obj;
+	}
+	
+	protected function _createInput($modelClass, $readonly, $column, $parentId,$x, $y, $width){
+       $obj = new Model_core_formelement();
+	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:25px;font-size:17px";
+	   $obj->tag = "input";
+	   if($readonly)
+  	      $obj->extra_attributes = "readonly=\"readonly\"";
+	   $obj->column = $column;
+	   $obj->model_class = $modelClass;
+	   $obj->parent_id = $parentId;
+       $this->em->persist($obj);
+       $this->em->flush();
+       
+       return $obj;
+	}
+	
+	
+	protected function _createArea($modelClass, $readonly, $column, $parentId,$x, $y, $width){
+       $obj = new Model_core_formelement();
+	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:50px;font-size:17px";
+	   $obj->tag = "textarea";
+	   if($readonly)
+  	      $obj->extra_attributes = "readonly=\"readonly\"";
+	   $obj->column = $column;
+	   $obj->model_class = $modelClass;
+	   $obj->parent_id = $parentId;
+       $this->em->persist($obj);
+       $this->em->flush();
+       
+       return $obj;
+	}
+
+
+	protected function _createHr($modelClass, $parentId,$x, $y, $width){
+       $obj = new Model_core_formelement();
+	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:20px;";
+	   $obj->tag = "div";
+	   $obj->model_class = $modelClass;
+	   $obj->parent_id = $parentId;
+	$obj->innerHTML = "<hr></hr>";
+       $this->em->persist($obj);
+       $this->em->flush();
+       
+       return $obj;
+	}
+	
+} //end class
+
+?>

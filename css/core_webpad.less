@@ -1,0 +1,579 @@
+
+/* Generic vars for theglobal document  */
+@fontBaseSize: 15px;
+@applicationLeftPadding: 10px;
+
+/* Teaser vars   */
+@teaserHeight: 42px;
+@teaserFontSize: @fontBaseSize * 2;
+
+/* global toolbars like the one in the Navigation and Formular */
+@toolbarHeight: 50px;
+@toolbarPadding: 5px;
+@toolbarButtonRadius: 2px;
+@toolbarButtonLetterSpacing: 1px;
+
+/* palette stuff */
+@paletteElementOuterHeight:40px;
+@paletteElementImageHeight:30px;
+@palettePropertyHeaderFontSize:@fontBaseSize * 1.4;
+@palettePropertyListFontSize:@fontBaseSize * 1.2;
+@paletteUIElementFontSize:@fontBaseSize * 1.4;
+@paletteButtonGroupHeight:30px;
+@paletteButtonGroupRadius: 2px;
+
+@breadcrumbHeight: @toolbarHeight;
+@breadcrumbFontSize: @fontBaseSize * 1.6;
+
+@paneTabFontSize: @fontBaseSize* 1.4;
+
+@navigationListHeaderFontSize: @fontBaseSize * 1.4;
+@navigationListEntryFontSize:@fontBaseSize;
+
+/******************************************************************
+ * Global Settings for the common page
+ ******************************************************************/
+body{
+ font-size:@fontBaseSize;
+}
+
+label{
+}
+
+input{
+}
+
+
+/********************************************************************************************************
+ * Settings for the layout
+ *******************************************************************************************************/
+/* Root container of the application  */
+#container_root{
+ height:100%;
+ width:100%;
+ -webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+
+/* Container for the navigation.      */
+#container_navigation{
+ border:1px solid #D6D9D8;
+ height: 100%;
+ width: 100%;
+ padding:0px;
+ margin:0px;
+ -webkit-tap-highlight-color: rgba(0,0,0,0); 
+ background: url("../images/background.png");
+}
+
+/* Container for the detail view of records */
+#container_detail{
+-webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+
+
+#container_ui_palette{
+ min-width: 300px;
+}
+
+.button_layout_horizontal{
+ color:green;
+ background:url("../images/layout_horizontal.png") repeat-x scroll 50% 50% transparent !important;
+}
+
+.core_icon_preferences{
+ background-image:url("../images/preferences.png")!important;
+ margin-left: -14px !important;
+ margin-top: -14px !important;
+ height:26px;
+ width:26px;
+}
+
+.button_glow{
+  text-shadow:-1px -1px white, 1px 1px #333333 !important;
+}
+
+.button_back_icon{
+ background-image:url("../images/media-backward_24.png") !important;
+ margin-left: -14px !important;
+ margin-top: -14px !important;
+ height:26px;
+ width:26px;
+}
+
+.button_fastback_icon{
+ background-image:url("../images/media-fast-backward_24.png") !important;
+ margin-left: -14px !important;
+ margin-top: -14px !important;
+ height:26px;
+ width:26px;
+}
+/******************************************************************
+ * SplitPane bar / Resizer
+ ******************************************************************/
+.ui-layout-resizer{ /* all 'resizer-bars' */
+}
+
+.ui-layout-resizer-drag {/* REAL resizer while resize in progress */
+}
+
+
+/******************************************************************
+ * Buttongroup with a group of cascading buttons
+ ******************************************************************/
+.toolbar{
+ height:@toolbarHeight;
+}
+
+.toolbar_button{
+ min-width:4.4em;
+ min-height: (@toolbarHeight - (@toolbarPadding * 2));
+ border-radius: @toolbarButtonRadius @toolbarButtonRadius @toolbarButtonRadius @toolbarButtonRadius !important;
+}
+
+/* Label eine Button*/
+.toolbar_button span{
+}
+
+.button_back_icon{
+ background-image:url("../images/media-backward_32.png") !important;
+ margin-left: -18px !important;
+ margin-top: -16px !important;
+ height:34px;
+ width:34px;
+}
+
+
+/******************************************************************
+ * Styles für Eingabemaske/Formular des Benutzer
+ ******************************************************************/
+.input_dirty{
+}
+
+form input.core_formelement,
+form textarea.core_formelement, 
+form select.core_formelement {
+
+}
+
+form input.core_formelement[readonly=readonly]{
+}
+
+.ui-sortable-helper{
+}
+
+
+/******************************************************************
+ * Buttongroup with a group of cascading buttons
+ ******************************************************************/
+.core_buttonbar {
+ border-radius: @paletteButtonGroupRadius;
+ line-height:@paletteButtonGroupHeight;
+ height:@paletteButtonGroupHeight;
+}
+
+.core_buttonbar_button {
+}
+
+.core_buttonbar_button.leftEnd {
+ -webkit-border-top-left-radius: @paletteButtonGroupRadius;
+ -webkit-border-bottom-left-radius:@paletteButtonGroupRadius;
+ -moz-border-radius-topleft: @paletteButtonGroupRadius;
+ -moz-border-radius-bottomleft:@paletteButtonGroupRadius;
+ border-top-left-radius:@paletteButtonGroupRadius;
+ border-bottom-left-radius:@paletteButtonGroupRadius;
+}
+
+.core_buttonbar_button.rightEnd {
+ -webkit-border-top-right-radius: @paletteButtonGroupRadius;
+ -webkit-border-bottom-right-radius: @paletteButtonGroupRadius;
+ -moz-border-radius-topright: @paletteButtonGroupRadius;
+ -moz-border-radius-bottomright: @paletteButtonGroupRadius;
+ border-top-right-radius: @paletteButtonGroupRadius;
+ border-bottom-right-radius: @paletteButtonGroupRadius;
+}
+
+.core_buttonbar_button.ui-state-active{
+}    
+    
+
+/******************************************************************
+ * Einstellungen der PropertyViews im Editmodus der "Form".
+ ******************************************************************/
+.property_container{
+}
+
+.property_container .ui-widget-content{
+}
+
+
+.property_title{
+ font-size: 1.5em;
+ margin-bottom:20px;
+}
+
+.property_label{
+ font-size: @palettePropertyHeaderFontSize;
+}
+
+.property_input{
+}
+
+.property_list_entry{
+ padding: 5px 20px;
+ font-size: @palettePropertyListFontSize;
+ line-height: @palettePropertyListFontSize * 1.1;
+}
+
+/******************************************************************
+ * TrashCan im Editomodus der Form
+ ******************************************************************/
+#recycle_bin{
+}
+
+#recycle_bin.fixed{
+}
+
+
+#recycle_bin.hover{
+}
+
+/******************************************************************
+ * Umschalter (TABS) der einzelenen PropertyPanes im Edimodus der Form
+ ******************************************************************/
+#palette_toolbar{
+}
+
+.toolbar_segment{
+ height:100%;
+ font-size: @paneTabFontSize;
+ line-height: @paneTabFontSize;
+ padding-top:(@toolbarHeight / 2) - (@paneTabFontSize - 2) + 3;
+ font-weight:normal;
+}
+
+.toolbar_segment.ui-state-active{
+ line-height:@paneTabFontSize;
+ border:0px;
+ font-weight:normal;
+ letter-spacing:1px;
+}
+
+.toolbar_segment:last-child{
+}
+
+
+/******************************************************************
+ * Palette im DesignMode der Form
+ ******************************************************************/
+#palette_pane_fields{
+}
+
+#palette_pane_properties{
+}
+
+#palette_pane_widget{
+}
+
+
+.palette_element_ui{
+ padding:5px;
+ margin:5px;
+ margin-left:10px;
+ margin-right:10px;
+ height:@paletteElementOuterHeight;
+ line-height:@paletteElementOuterHeight;
+ font-size:@paletteUIElementFontSize;
+ font-weight:normal;
+}
+
+.palette_element_ui .ui-icon{
+ width:50px;
+ height:@paletteElementImageHeight;
+ top:(@paletteElementOuterHeight / 2)- (@paletteElementImageHeight / 2);
+}
+
+.palette_element_ui[data-type="input"] .ui-icon{
+}
+
+
+.palette_element_ui[data-type="line"] .ui-icon{
+}
+
+
+.palette_element_ui[data-type="title"] .ui-icon{
+}
+
+.palette_element_ui[data-type="area"] .ui-icon{
+}
+
+
+#property_font_verdana{
+ font-size:1.3em;
+ height: 30px;
+ line-height: 2em;
+}
+
+#property_font_curier{
+ font-size:1.3em;
+ height: 30px;
+ line-height: 2em;
+}
+
+#property_font_georgia{
+ font-size:1.3em;
+ height: 30px;
+ line-height: 2em;
+}
+
+#property_font_andale_mono{
+ font-size:1.3em;
+ height: 30px;
+line-height: 2em;
+}
+
+#property_font_arial{
+ font-size:1.3em;
+ height: 30px;
+ line-height: 2em;
+}
+
+#property_font_trebuchet{
+ font-size:1.3em;
+ height: 30px;
+ line-height: 2em;
+}
+
+#property_font_bold{
+ font-size:2em;
+}
+
+#property_font_italic{
+ font-size:2em;
+}
+
+#property_font_underline{
+ font-size:2em;
+}
+
+/******************************************************************
+ * Columnnavigation für Landscape und Portrait
+ ******************************************************************/
+.columnnav_panel_portrait{
+ border-right: 1px solid #D6D9D8;
+ float: left;
+ height:100%;
+ overflow-x: hidden;
+ overflow-y: auto;
+ min-width: 200px;
+ z-index:20;
+ position:relative; /*requried for the stacking context of the z-ordering*/
+}
+
+.columnnav_panel_landscape{
+ border-right: 1px solid #D6D9D8;
+ float: left;
+ height:100%;
+ overflow-x: hidden !important;
+ overflow-y: hidden !important;
+ min-width: 200px;
+ z-index:20;
+ position:relative; /*requried for the stacking context of the z-ordering*/
+}
+
+.columnnav_list{
+ padding:0px;
+ margin:0px;
+ -webkit-perspective: 1000;
+ -webkit-backface-visibility: hidden;
+}
+
+.columnnav_listentry{
+ padding: 8px @applicationLeftPadding;
+ font-size:1.6em;
+ height:30px;
+ font-weight:bold;
+}
+
+.columnnav_listentry:first-child{
+}
+
+.columnnav_listentry.ui-state-active{
+}
+
+.columnnav_listentry_label{
+ font-size:@navigationListEntryFontSize;
+}
+
+.columnnav_listentry_counter{
+ height: 26px;
+ line-height: 25px;
+ top: 0;
+ width: 22px;
+}
+ 
+.columnnav_panel{
+  overflow:scroll;
+}
+
+
+/********************************************************************************************************
+ * Settings for the Teaser/Header
+ *******************************************************************************************************/
+#container_toolbar{
+ font-size: @teaserFontSize;
+ height: @teaserHeight;
+ line-height: @teaserHeight;
+ letter-spacing:2px;
+ -webkit-tap-highlight-color: rgba(0,0,0,0); 
+ padding-left: @applicationLeftPadding !important;
+}
+
+
+/********************************************************************************************************
+ * Settings for the toolbar in the Column navigation
+ *******************************************************************************************************/
+#navigation_toolbar{
+ padding-left: @applicationLeftPadding !important;
+}
+
+#navigation_toolbar_actions{
+}
+
+
+/******************************************************************
+ * Header im Landscape Mode
+ ******************************************************************/
+#navigation_header_landscape{
+ left: -@toolbarPadding;
+ top: @toolbarHeight - 1; /* 2. Zeile der Toolbar um die Hˆhe der Toolbar nach unten legen */
+ padding:10px !important;
+ font-size:@navigationListHeaderFontSize;
+}
+
+#navigation_header_landscape > div{
+ top: ((@toolbarHeight / 2) - (@navigationListHeaderFontSize / 1.5 ));
+ padding-left:@applicationLeftPadding + @toolbarPadding;
+}
+
+
+/********************************************************************************************************
+ * Settings for the breadcrumb
+ *******************************************************************************************************/
+.breadcrumb{
+ height:@breadcrumbHeight;
+ font-size:@breadcrumbFontSize;
+ line-height:@breadcrumbFontSize;
+}
+
+.breadcrumb_delimiter{
+ opacity: 0.2;
+ line-height:@breadcrumbHeight;
+ width: 32px;
+ background: url("../images/breadcrumb.png") no-repeat scroll 20px (@breadcrumbHeight /2 - (32 / 2) - 2) transparent;
+}
+
+.breadcrumb_link{
+ line-height:@breadcrumbHeight;
+}
+
+.button_fastback_icon{
+ background-image:url("../images/media-fast-backward_32.png") !important;
+ margin-left: -18px !important;
+ margin-top: -16px !important;
+ height:34px;
+ width:34px;
+}
+
+.core_navigation_designmode{
+border:2px dashed #88bfe8 !important;
+border-width:2px !important;
+}
+
+/********************************************************************************************************
+ * Settings for the Dialogs
+ *******************************************************************************************************/
+#dialogs{
+}
+
+.current-step{
+}
+
+.validateErrorContainer label{
+}
+
+#addTable_tablename{
+ height:auto;
+}
+
+#addTable_representative_field{
+ height:auto;
+}
+
+#dialogs select{
+ font-weight: bold;
+ height: 26px;
+ line-height: 25px;
+ font-size:1.4em;
+}
+
+
+.property_input{
+ width:200px;
+ height:40px;
+ font-size:20px;
+}
+
+div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
+font-size:2em;
+width:335px;
+}
+
+
+div.jGrowl div.jGrowl-notification div.jGrowl-header {
+	font-size:.85em;
+}
+
+div.jGrowl div.jGrowl-notification div.jGrowl-close {
+	font-size:1em;
+}
+
+div.jGrowl div.jGrowl-closer {
+	font-size:.9em;
+}
+
+
+/********************************************************************************************************
+ * Edit Mode stuff like ResizeHandles
+ *******************************************************************************************************/
+.resize_handle{
+ width:33px;
+ height:33px;
+ border:0px !important;
+}
+
+.resize_handle_N{
+ background:url("../images/ResizeHandle_N.png") no-repeat !important;
+}
+.resize_handle_NE{
+ background:url("../images/ResizeHandle_NE.png") no-repeat !important;
+}
+.resize_handle_E{
+ background:url("../images/ResizeHandle_E.png") no-repeat !important;
+}
+.resize_handle_SE{
+ background:url("../images/ResizeHandle_SE.png") no-repeat !important;
+}
+.resize_handle_S{
+ background:url("../images/ResizeHandle_S.png") no-repeat !important;
+}
+
+.resize_handle_SW{
+ background:url("../images/ResizeHandle_SW.png") no-repeat !important;
+}
+.resize_handle_W{
+ background:url("../images/ResizeHandle_W.png") no-repeat !important;
+}
+
+.resize_handle_NW{
+ background:url("../images/ResizeHandle_NW.png") no-repeat !important;
+}

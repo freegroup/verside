@@ -1,0 +1,48 @@
+.block_controll_ForEach
+{
+background: -moz-linear-gradient(top, #cb60b3 0%, #c146a1 28%, #a80077 69%, #db36a4 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb60b3), color-stop(28%,#c146a1), color-stop(69%,#a80077), color-stop(100%,#db36a4)); /* webkit */
+}
+
+.block_controll_ForEach_palette
+{
+background-image: url(image/ControlBlock_ForEach.png);
+height:187px;
+width:150px;
+cursor:move;
+}
+
+
+
+.block_controll_ForEach_label_forEach
+{
+color:white;
+font-size:12pt;
+left:5px;
+top:7px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+
+.block_controll_ForEach_parameter_decoration
+{
+color:white;
+font-size:9pt;
+position:absolute;
+font-weight:normal;
+white-space:nowrap;
+left:-90px !important;
+top:10px;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.block_controll_ForEach_label_do
+{
+color:white;
+font-size:10pt;
+left:20px;
+position:absolute;
+font-weight:normal;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}

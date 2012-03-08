@@ -1,0 +1,683 @@
+li.palette_part
+{
+list-style-image:none;
+list-style-type:none;
+margin-top:20px;
+margin-left:10px;
+}
+
+.dropzone_glow
+{
+background-color:yellow;
+
+background: #fefcea; /* old browsers */
+background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* ie */
+
+border:2px solid #9dd53a !important;
+}
+
+.droppable_hover
+{
+background: #9dd53a ; /* old browsers */
+background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* ie */
+}
+
+/* The object palette on the left hand side. The panel which contains the Server, Storage and
+ * Switch object to drop inside the canvas.
+ * 
+ */
+#object_panel
+{
+border:1px solid #e0e0e0;
+background:-moz-linear-gradient(20% 26% 270deg,#F2F3F4, #EDEEF1);
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F3F4), to(#EDEEF1));
+background-color:#F2F3F4;
+color:#a0a0a0;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+
+/* The main canvas/network paint area
+ * 
+ */
+#paintarea
+{
+color: #606060;
+background: #fff;
+background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+background: -moz-linear-gradient(top,  #fff,  #ededed);
+}
+
+
+.handle
+{
+cursor:move;
+}
+
+.DropZone
+{
+z-index:10000;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border:1px solid transparent;
+}
+
+.topLevel
+{
+z-index:20000 !important;
+}
+
+.noSize
+{
+width:1px !important;
+height:1px !important;
+}
+
+.antBox
+{
+border: 2px dotted gray !important;
+}
+
+
+.AbstractBlock
+{
+border:1px solid gray;
+text-align:left;
+color:#3E3E3E;
+cursor:pointer;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+
+.Parameter_slot
+{
+position:absolute;
+top:5px;
+left:-19px;
+}
+
+.Parameter_decoration
+{
+position:absolute;
+color:#606060;
+text-align:right;
+width:50px;
+left:-70px;
+top:10px;
+font-size:8px;
+}
+
+.Parameter_decoration_plugged
+{
+top:15px;
+font-weight:normal;
+}
+
+/*******************************************************************************************/
+.ControlBlock_Start
+{
+background:-moz-linear-gradient(20% 26% 270deg,#D2EB95, #AEDB56);
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#D2EB95), to(#AEDB56));
+background-color:#AEDB56;
+-moz-border-radius-topleft: 8px;
+-moz-border-radius-topright: 8px;
+-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px;
+text-align:center;
+color:#3E3E3E;
+border:1px solid black;
+border:1px solid rgba(30,30,30,0.50);
+}
+
+
+/*******************************************************************************************/
+.AbstractText
+{
+background-color: #0095cd;
+background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+}
+
+.AbstractText_label
+{
+text-align:right;
+color:white;
+font-size:10pt;
+left:3px;
+top:10px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+white-space:nowrap;
+}
+
+.AbstractText_decoration
+{
+position:absolute;
+display:block;
+top:1px;
+left:3px;
+font-size:9px;
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractText_parameter_decoration
+{
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractText_plug
+{
+position:absolute;
+top:5px;
+left:-30px;
+background-image:url(editor/ControlBlock_AbstractText_plug.gif);
+height:20px;
+width:30px;
+}
+
+.ControlBlock_Text_palette
+{
+background-image: url(editor/ControlBlock_Text.gif);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Join_palette
+{
+background-image: url(editor/ControlBlock_Join.gif);
+height:100px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Text
+{
+-moz-border-radius-topright: 8px;
+-moz-border-radius-bottomright: 8px;
+-webkit-border-top-right-radius: 8px;
+-webkit-border-bottom-right-radius: 8px;
+}
+
+/*******************************************************************************************/
+.AbstractUI
+{
+background-color: #64991e;
+background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
+}
+
+.AbstractUI_label
+{
+text-align:right;
+color:white;
+font-size:10pt;
+left:3px;
+top:10px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+white-space:nowrap;
+}
+
+.AbstractUI_decoration
+{
+position:absolute;
+top:1px;
+left:3px;
+font-size:9px;
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractUI_parameter_decoration
+{
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractUI_plug
+{
+position:absolute;
+top:5px;
+left:-30px;
+background-image:url(editor/ControlBlock_AbstractUI_plug.gif);
+height:20px;
+width:30px;
+}
+
+.ControlBlock_Prompt_palette
+{
+background-image: url(editor/ControlBlock_Prompt.png);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Alert_palette
+{
+background-image: url(editor/ControlBlock_Alert.png);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+/*******************************************************************************************/
+.ControlBlock_If
+{
+background: -moz-linear-gradient(top, #cb60b3 0%, #c146a1 28%, #a80077 69%, #db36a4 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb60b3), color-stop(28%,#c146a1), color-stop(69%,#a80077), color-stop(100%,#db36a4)); /* webkit */
+}
+
+.ControlBlock_If_label_if
+{
+color:white;
+font-size:12pt;
+left:5px;
+top:7px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.ControlBlock_If_label_test
+{
+color:white;
+font-size:10pt;
+left:55px;
+top:9px;
+position:absolute;
+font-weight:normal;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.ControlBlock_If_label_then
+{
+color:white;
+font-size:10pt;
+left:20px;
+position:absolute;
+font-weight:normal;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.ControlBlock_If_label_else
+{
+color:white;
+font-size:10pt;
+left:20px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.ControlBlock_If_palette
+{
+background-image: url(editor/ControlBlock_If.gif);
+height:190px;
+width:150px;
+cursor:move;
+}
+
+/*******************************************************************************************/
+.AbstractMath
+{
+background-color:#575757;
+background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+background: -moz-linear-gradient(top,  #575757,  #888);
+}
+
+.AbstractMath_label
+{
+color:white;
+font-size:10pt;
+left:3px;
+top:13px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractMath_decoration
+{
+position:absolute;
+top:1px;
+left:3px;
+font-size:9px;
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractMath_plug
+{
+position:absolute;
+top:5px;
+left:-30px;
+background-image:url(editor/ControlBlock_AbstractMath_plug.gif);
+height:20px;
+width:30px;
+}
+
+.AbstractMath_parameter_decoration
+{
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.ControlBlock_Add_palette
+{
+background-image: url(editor/ControlBlock_Add.png);
+height:80px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Divide_palette
+{
+background-image: url(editor/ControlBlock_Divide.png);
+height:80px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Max_palette
+{
+background-image: url(editor/ControlBlock_Max.png);
+height:80px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Min_palette
+{
+background-image: url(editor/ControlBlock_Min.png);
+height:80px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Multiply_palette
+{
+background-image: url(editor/ControlBlock_Multiply.png);
+height:80px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_RoundUp_palette
+{
+background-image: url(editor/ControlBlock_RoundUp.png);
+height:80px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_Sqrt_palette
+{
+background-image: url(editor/ControlBlock_Sqrt.png);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+/*******************************************************************************************/
+.AbstractData
+{
+background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+}
+
+.AbstractData_label
+{
+text-align:right;
+color:white;
+font-size:10pt;
+left:3px;
+top:10px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+white-space:nowrap;
+border: 2px solid transparent;
+padding-right:20px;
+}
+
+.AbstractData_selector
+{
+text-align:right;
+color:white;
+background-color:transparent;
+font-size:10pt;
+right:30px;
+top:10px;
+position:absolute;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+white-space:nowrap;
+border:1px solid #755283;
+cursor:pointer;
+}
+
+.AbstractData_selectormenu
+{
+}
+
+.AbstractData_selectormenu a
+{
+}
+
+.AbstractData_selectormenu a:hover
+{
+}
+
+.AbstractData_decoration
+{
+position:absolute;
+top:1px;
+left:3px;
+font-size:9px;
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractData_parameter_decoration
+{
+color:white;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.AbstractData_plug
+{
+position:absolute;
+top:5px;
+left:-30px;
+background-image:url(editor/ControlBlock_AbstractData_plug.gif);
+height:20px;
+width:30px;
+}
+
+.ControlBlock_SetField_palette
+{
+background-image: url(editor/ControlBlock_SetField.gif);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_UseField_palette
+{
+background-image: url(editor/ControlBlock_UseField.gif);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_UseFieldFrom_palette
+{
+background-image: url(editor/ControlBlock_UseFieldFrom.gif);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_UseVariable_palette
+{
+background-image: url(editor/ControlBlock_UseVariable.gif);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+.ControlBlock_DefineVariable_palette
+{
+background-image: url(editor/ControlBlock_DefineVariable.gif);
+height:40px;
+width:150px;
+cursor:move;
+}
+
+
+/*******************************************************************************************/
+
+
+.palette_part
+{
+cursor:move;
+}
+
+.transparent_message
+{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+height:50px;
+padding-top:20px;
+background-color:rgba(0,0,0,0.8) !important;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+/* The top Toolbar and the buttons (Save, Undo, Redo,...) inside
+ * 
+ */
+#toolbar
+{
+left:0px;
+top:0px;
+height:35px;
+background: transparent url(editor/bg_map_toolbar.gif) top left repeat-x;
+border: none;
+border-bottom: 1px solid #1259a4;
+font-size: smaller;
+width: 100%;
+padding:0px;
+margin:0px;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+.toolbar_button_group {
+float:left;
+margin:3px 0 0 15px;
+padding:0;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+li.toolbar_button {
+background:url(editor/bg_toolbar_button.gif) no-repeat scroll 0 0 transparent;
+float:left;
+list-style-image:none;
+list-style-type:none;
+margin:0;
+padding:0;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+a.toolbar_button {
+color:white;
+cursor:pointer;
+height:27px;
+line-height:27px;
+margin:0;
+padding:0 10px;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+a.toolbar_button_disabled {
+color:#4A95CC !important;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+li.first_button {
+background-position:0 0;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+li.first_button:hover {
+background-position:0 -27px;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+li.center_button {
+background-position:-20px 0;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+li.center_button:hover {
+background-position:-20px -27px;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+li.last_button {
+background-position:100% 0;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+li.last_button:hover {
+background-position:100% -27px;
+font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+
+.tab-container 
+{ 
+
+}
+
+.tab-container * { padding:0; margin:0 }
+
+.tab-container .tabs 
+{ 
+  height:25px; 
+  overflow:hidden 
+}
+
+.tab-container .tabs li 
+{ 
+display:block; 
+float:left; 
+height:25px; 
+line-height:25px; 
+padding:0 .5em; 
+background:#eee; 
+border-right:1px solid gray;
+}
+.tab-container .tabs li.current { font-weight:bold; background:#ccc }
+
+.tab-container .tabs li a 
+{ 
+  color:#999; 
+  font-size:10px; 
+  text-decoration:none 
+}
+.tab-container .tabs li a:hover { text-decoration:underline }
+.tab-container .tabs li.current a,
+.tab-container .tabs li.current a:hover { color:#666 }
+
+.tab-container .tab 
+{ 
+   border-top:1px solid gray; 
+   background:transparent;
+   width:100%;
+}
+

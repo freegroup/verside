@@ -1,0 +1,145 @@
+<html>
+    <head>
+    <link  type="text/css"  rel="stylesheet" href="./css/menu.css" />
+    <link  type="text/css" rel="stylesheet" href="./css/ui-lightness/jquery-ui-1.8.17.custom.css" />
+
+    <script type="text/javascript" src="./javascript/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="./javascript/jquery-ui-1.8.17.custom.min.js"></script>
+    
+    <SCRIPT src="./javascript/flow.js"></SCRIPT>
+    <SCRIPT src="./javascript/Configuration.js"></SCRIPT>
+    <script>
+    var currentMenuEntry=null;
+    var currentId = null;
+
+    function loadFiles()
+    {
+        $.ajax({
+            url:flow.Configuration.GET_FILES,
+            error: function(jqXHR, textStatus, errorThrown){
+                console.log(errorThrown); 
+                console.log(textStatus); 
+            },
+            success: function( response ) {
+                var files = response.files;
+                for(var i=0; i<files.length; i++)
+                {
+                  appendFile(files[i].name, files[i].id);
+                }
+                
+                $('.menu_line').hover(
+                    function() {
+                        $(this).addClass("menu_line_hover");
+                     },
+                     function() {
+                         $(this).removeClass("menu_line_hover");
+                     }
+                );
+          } //end success
+        }); //end ajax()
+    }
+
+    function appendFile(/*:String*/ name, /*:String*/ id)
+    {
+      var td1 = $('<li id="'+id+'" title="Edit Importer Definition" class="menu_line">'+
+                   name+
+                  '<div title="Delete Importer Definition" class="delete_file_icon">&nbsp;&nbsp;</div>'+
+                  '</li>');
+
+      var fileId = id;
+
+      td1.click(function(event)
+      {
+          event.stop();
+          editFile(fileId);
+      });
+
+      td1.find("div").click(function(event)
+      {
+          event.stop();
+          deleteFile(fileId);
+      });
+
+      $("#files").append(td1);
+      return td1;
+    }
+
+    
+    function editFile(/*:String*/ id)
+    {
+      window.parent.location.href= 'editor.php?xml='+id;
+    }
+
+    function createFile()
+    {
+      if(_demo_)
+      {
+        alert("This feature is disabled in demo mode");
+        return;
+      }
+      
+      var name = prompt("Name:");
+      if(!name)
+        return;
+      
+      $.ajax({
+          url:flow.Configuration.CREATE_FILE,
+          data:{
+            xml: name
+          },
+          error: function(jqXHR, textStatus, errorThrown){
+              alert("Unable to create File on the server. \nMissing write permission to 'data' directory?");
+          },
+          success: function( response ) {
+              console.log(response);
+              var file = response.file;
+              editFile(file.id);
+         } //end success
+      }); //end ajax()
+    }
+
+    function deleteFile( name)
+    {
+      if(_demo_)
+      {
+        alert("This feature is disabled in demo mode");
+        return;
+      }
+
+      if(!confirm("Delete ["+name+"] ?"))
+        return;
+
+      var id = name;
+      new Ajax.Request(flow.Configuration.DELETE_FILE,
+      {
+        method: 'get',
+        parameters:
+        {
+          xml: id
+        },
+        onSuccess: function (transport)
+        {
+          $(id).remove();
+        }
+      });
+    }
+
+    $(document).ready(function() {
+        loadFiles();
+    });
+   
+   </script>
+   </head>
+<body class="left_menu">
+<div class="menu_header">
+Editor
+</div>
+
+<ul id="files" >
+</ul>
+
+<div class="menu_buttonbar">
+<img onclick="createFile()" title="Create new Importer Definition" src="./css/menu/button_new_file.png" class="edit_buttonbar_button ie-fix-opacity"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+.button-back { 
+float: left; 
+}
+
+.button-next, .finish, .button-cancel { 
+float: right; 
+}
+
+
+
+.wizard_content{
+  padding:10px;
+}
+
+input.finish { border-style: none; cursor: pointer; padding: 3px 9px; }
+
+fieldset.step { 
+border: 0px; 
+clear: left; 
+width: 100%;
+padding:0px;
+margin:0px;
+bottom:0px;
+top:70px;
+position:absolute;
+}
+ 
+.buttonbar{
+position:absolute;
+bottom:0px;
+left:0px;
+right:0px;
+}
+
+.buttonbar button{
+ margin:0.5em 0.4em 0.5em 0;
+ font-size:1em;
+ }
+
+fieldset.step label { color: #444; display: block;  margin: 10px 0 3px 7px; }
+fieldset.step legend { color: #4080BF;  padding: 0 2px 3px 2px; }
+
+li.error-image { background: url('../images/unchecked.gif') no-repeat right top; }
+
+ul.stepy-titles { list-style: none; margin: 0; padding: 0; width: 100%; }
+ul.stepy-titles li { cursor: pointer; float: left; padding: 10px; }
+ul.stepy-titles li span { font-size:0.9em; display: block; }

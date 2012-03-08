@@ -1,0 +1,10 @@
+This folder containes the common runtime for the 
+phpBlocks Library.
+
+Open the ../editor/index.php to run your first
+phpBlocks workflow/codeblock
+
+Be in mind: phpBlocks MUST run on a WebServer with PHP
+Interpreter.
+
+
