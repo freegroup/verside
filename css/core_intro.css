@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	color:black;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+
+/* Styling the page */
+.intro_HeaderText{
+ margin: 0px auto;
+ text-align:center;
+ font-family: 'Lato', sans-serif;
+ font-weight:300;
+ font-size:40px;
+ color:rgb(61,61,61);
+ padding-top:50px;
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100px;
+}
+
+/* Styling the page */
+.intro_FadeText{
+ color:rgb(240,240,240);
+}
+
+#splashScreen{
+ position:absolute;
+ top:0;
+ left:0;
+ height:100%;
+ width:100%;
+ background:rgb(61,61,61) url('../images/splash.png') center 100px no-repeat;
+}
+
+#page{
+ position:absolute;
+ top:0;
+ left:0;
+ height:100%;
+ width:100%;
+}
+
+
+#promoIMG{
+ background:url('../images/main.png') center 100px no-repeat;
+ height:440px;
+ text-align:center;
+ font-family: 'Lato', sans-serif;
+ font-weight:300;
+ font-size:40px;
+}
+
+#contentArea{
+text-align:center;
+}
+.intro_Divider{
+ border-top: 1px solid rgb(200,200,200);
+ margin: 0 auto;
+ width: 100px;
+}
+
+.intro_Slogan{
+font-family: 'Lato', sans-serif;
+font-weight:300;
+font-size:20px;
+color:rgb(200,200,200);
+
+}
