@@ -74,7 +74,7 @@ class Controller_core_formelement extends CI_Controller {
             rename($dir . $file, $newFileName);
             
 			$size = getimagesize($newFileName);
-			$label = $this->createImage($model,$newFileName,0,$left,$top, $size[0], $size[1]);
+			$label = $this->_createImage($model,$newFileName,0,$left,$top, $size[0], $size[1]);
 			echo $label->toHTML(null);
 		}
 	}
@@ -84,21 +84,35 @@ class Controller_core_formelement extends CI_Controller {
             $x =  $_POST["left"];
             $y =  $_POST["top"];
             $model =  $_POST["model"];
+            $table =  $_POST["table"];
+            $controller =  $_POST["controller"];
+            $recordId =  $_POST["recordId"];
             
   		    $this->load->model("generated/".$model);
 
             $obj = $this->_createHr($model, 0,$x,$y,200);
-            echo $obj->toHTML();
+            $obj->type = "line";
+            $this->em->flush();
+  
+            echo $this->_toJSON($controller, $table, $model, array($obj), $recordId );
         }
     }
+    
 	public function createTitle() {
         if(!empty( $_POST ) ) {
             $x =  $_POST["left"];
             $y =  $_POST["top"];
             $model =  $_POST["model"];
+            $table =  $_POST["table"];
+            $controller =  $_POST["controller"];
+            $recordId =  $_POST["recordId"];
             
+  		    $this->load->model("generated/".$model);
+
             $label = $this->_createHeader($model, "Caption", 0, $x, $y);
-            echo $label->toHTML();
+            $label->type = "title";
+            $this->em->flush();
+            echo $this->_toJSON($controller, $table, $model, array($label), $recordId );
         }
     }
 
@@ -107,9 +121,11 @@ class Controller_core_formelement extends CI_Controller {
             $x =  $_POST["left"];
             $y =  $_POST["top"];
             $model =  $_POST["model"];
+            $table =  $_POST["table"];
+            $controller =  $_POST["controller"];
+            $recordId =  $_POST["recordId"];
             $column =  $_POST["column"];
             $readonly =  $_POST["readonly"];
-            $recordId =  $_POST["recordId"];
             
   		    $this->load->model("generated/".$model);
             $obj= null;
@@ -118,12 +134,15 @@ class Controller_core_formelement extends CI_Controller {
 
             $readonly = strcmp($readonly,"true")==0;
             $input = $this->_createArea($model,$readonly, $column,0,$x,$y,120);
+            $input->type = "textarea";
+
             $label = $this->_createLabel($model, $column,0,$x,$y-20, $input->id);
+            $label->type = "label";
+            $this->em->flush();
 
             // don't change the order of the rendering. The Client expect this order.
             //
-            echo $label->toHTML($obj);
-            echo $input->toHTML($obj);
+            echo $this->_toJSON($controller, $table, $model, array($label, $input), $recordId );
         }
     }
 
@@ -132,9 +151,11 @@ class Controller_core_formelement extends CI_Controller {
             $x =  $_POST["left"];
             $y =  $_POST["top"];
             $model =  $_POST["model"];
+            $table =  $_POST["table"];
+            $controller =  $_POST["controller"];
+            $recordId =  $_POST["recordId"];
             $column =  $_POST["column"];
             $readonly =  $_POST["readonly"];
-            $recordId =  $_POST["recordId"];
             
   		    $this->load->model("generated/".$model);
             $obj= null;
@@ -143,19 +164,23 @@ class Controller_core_formelement extends CI_Controller {
 
             $readonly = strcmp($readonly,"true")==0;
             $input = $this->_createInput($model,$readonly, $column,0,$x,$y,120);
+            $input->type = "input";
+
             $label = $this->_createLabel($model, $column,0,$x,$y-20, $input->id);
+            $label->type = "label";
+            $this->em->flush();
 
             // don't change the order of the rendering. The Client expect this order.
             //
-            echo $label->toHTML($obj);
-            echo $input->toHTML($obj);
+            echo $this->_toJSON($controller, $table, $model, array($label, $input), $recordId );
         }
     }
 
-    protected function createImage($modelClass, $filename, $parentId, $x, $y, $width, $height){
+    protected function _createImage($modelClass, $filename, $parentId, $x, $y, $width, $height){
 		// Generate the header
         $obj = new Model_core_formelement();
 		$obj->css = "position:absolute;top:".$y."px;left:".$x."px;height:".$height."px;width:".$width."px";
+        $obj->type = "image";
 		$obj->tag = "img";
 		$obj->extra_attributes = "src=\"".$filename."\"";
 		$obj->column = null;
@@ -242,11 +267,38 @@ class Controller_core_formelement extends CI_Controller {
 	   $obj->tag = "div";
 	   $obj->model_class = $modelClass;
 	   $obj->parent_id = $parentId;
-	$obj->innerHTML = "<hr></hr>";
+	   $obj->innerHTML = "<hr></hr>";
        $this->em->persist($obj);
        $this->em->flush();
-       
+       	
        return $obj;
+	}
+	
+	
+	protected function _toJSON( $controller, $table, $model, $formelements, $recordId=null ){
+        // add form related basic informations
+        //
+		$data['controller'] = $controller;
+		$data['table'] = $table;
+		$data['model'] = $model;
+		
+		// add the backfilled record
+		//
+		if(is_null($recordId) || $recordId==""){
+		   $data['recordPkey'] =  "";
+		   $data['record'] =  "";
+		}
+		else{
+  		   $this->load->model($model);
+		   $object = $this->em->find($model,$recordId);
+		   $data['record'] =  $object;
+		   $field = $object->getIdFieldName();
+		   $data['recordPkey'] =  $object->$field;
+	    }
+		   
+ 	    $data['form'] =  $formelements;
+
+		echo json_encode($data);
 	}
 	
 } //end class

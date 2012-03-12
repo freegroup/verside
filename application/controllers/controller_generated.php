@@ -15,6 +15,11 @@ abstract class Controller_generated extends CI_Controller {
 		$this->load->model("Model_core_formelement");
 		$this->load->model("Model_core_filterentry");
 		$this->load->model("generated/".$this->getModelName());
+
+        $this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', time()).' GMT');
+        $this->output->set_header('Expires: '.gmdate('D, d M Y H:i:s', time()).' GMT');
+        $this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0");
+        $this->output->set_header('Content-type: application/json');
 	}
 	 
 	public function update($id =null) {
@@ -63,19 +68,19 @@ abstract class Controller_generated extends CI_Controller {
         $this->em->remove($obj);
         $this->em->flush();
         
-		echo 'Records deleted successfully';
+		echo json_encode('Records deleted successfully');
 	}	
 	 
 	public function load() {
 		// render the view with an empty object
 		//
-		$this->renderFilledForm();
+		$this->getFormData();
     }
 	 
 	public function create() {
 		// render the view with an empty object
 		//
-		$this->renderFilledForm();
+		$this->getFormData();
     }
 
 	public function count() {
@@ -130,59 +135,87 @@ abstract class Controller_generated extends CI_Controller {
 		echo json_encode($data);
 	}
 
-	public function renderFilledForm( $id= null ) {
+
+	public function getFormData( $id= null ) {
+       // add form related basic informations
+        //
 		$data['controller'] = "generated/".strtolower(get_class($this));
 		$data['table'] = $this->getTableName();
 		$data['model'] = $this->getModelName();
-		if(is_null($id))
-		   $data['object'] =  null;
-		else
-		   $data['object'] =  $this->em->find($this->getModelName(),$id);
-		$data['html'] =  $this->render($data['object']);
-		$this->load->view("view_generated_detail", $data);
-	}
-
-	public function renderFilledElement($elementId, $id= null ) {
-		if(is_null($id))
-		   $record =  null;
-		else
-		   $record =  $this->em->find($this->getModelName(),$id);
 		
-		echo  $this->render($record, null, $elementId);
-	}
-
-	public function render( $dataRecord, $parentFormelement=null, $uiElementId=null ) {
-	    $result ="";
-	    $parentId =0;
-	    if(!is_null($parentFormelement))
-	      $parentId= $parentFormelement->id;
-
+		// add the backfilled reocrd
+		//
+		if(is_null($id)){
+		   $data['recordPkey'] =  "";
+		   $data['record'] =  "";
+		}
+		else{
+		   $object = $this->em->find($this->getModelName(),$id);
+		   $data['record'] =  $object;
+		   $field = $object->getIdFieldName();
+		   $data['recordPkey'] =  $object->$field;
+	    }
+		   
+		// add each form element as JSON structure
+		//
 	    $qb = $this->em->createQueryBuilder();
         $qb->select('f')
             ->from("Model_core_formelement", 'f')
             ->where('f.model_class = :name')
 			->setParameter("name",$this->getModelName())
-            ->andWhere('f.parent_id = :parent')
-			->setParameter("parent",$parentId);
-			
-		// constraint on a single UI-Element if required
-		//
-		if(!is_null($uiElementId)){
-			$qb->andWhere('f.id = :id')
-			   ->setParameter("id",$uiElementId);
-		}
-
-        $qb ->orderBy('f.id');
+			->orderBy('f.id');
  
-	    $innerHTML = null;
+        $uiElements = array();
         $formelements = $qb->getQuery()->getResult();
         foreach($formelements as $f){
-          $childrenHTML = $this->render($dataRecord, $f );
-          $result = $result.$f->toHTML($dataRecord, $childrenHTML);
+          $uiElements[] = $f;
         }
-        return $result;
+ 	    $data['form'] =  $uiElements;
+
+		echo json_encode($data);
 	}
-    
+
+	public function getElementData($elementId, $id= null ) {
+        $this->output->set_header('Content-type: application/json');
+
+        // add form related basic informations
+        //
+		$data['controller'] = "generated/".strtolower(get_class($this));
+		$data['table'] = $this->getTableName();
+		$data['model'] = $this->getModelName();
+		
+		// add the backfilled reocrd
+		//
+		if(is_null($id)){
+		   $data['recordPkey'] =  "";
+		   $data['record'] =  "";
+		}
+		else{
+		   $object = $this->em->find($this->getModelName(),$id);
+		   $data['record'] =  $object;
+		   $field = $object->getIdFieldName();
+		   $data['recordPkey'] =  $object->$field;
+	    }
+		   
+		// add each form element as JSON structure
+		//
+	    $qb = $this->em->createQueryBuilder();
+        $qb->select('f')
+            ->from("Model_core_formelement", 'f')
+            ->where('f.id = :id')
+			->setParameter("id",$elementId)
+			->orderBy('f.id');
+ 
+        $uiElements = array();
+        $formelements = $qb->getQuery()->getResult();
+        foreach($formelements as $f){
+          $uiElements[] = $f;
+        }
+ 	    $data['form'] =  $uiElements;
+
+		echo json_encode($data);
+	}
+   
     /**
      * Add user defined filter criteria
      *     

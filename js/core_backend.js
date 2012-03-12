@@ -116,35 +116,43 @@ CoreBackend.UI.setLabel = function(/*String*/ id,/*String*/ label){
      });
 };
 
-/************************************************************************************************/
-CoreBackend.UI.getEmptyFormular = function(/*String*/ controller, onDoneCallback){
-/************************************************************************************************/
- $.ajax({
-        url: "index.php/"+controller+"/load/",
-        success: onDoneCallback
-    });
-};
 
 /************************************************************************************************/
-CoreBackend.UI.getFilledFormular = function(/*String*/ model,/*String*/ table, /*String*/ controller, id, onDoneCallback){
+/************************************************************************************************/
+CoreBackend.UI.getElementData = function(/*:String*/ model,
+                                         /*:String*/ table, 
+                                         /*:String*/ controller, 
+                                         /*:String*/ uiElementId,
+                                         /*:String*/ recordId, 
+                                         onDoneCallback){
 /************************************************************************************************/
     $.ajax({
-        url: "index.php/"+controller+"/renderFilledForm/"+id,
+        url: "index.php/"+controller+"/getElementData/"+uiElementId+"/"+recordId,
         success: onDoneCallback
     });
 };
 
 /************************************************************************************************/
-CoreBackend.UI.getFilledElement = function(/*String*/ model,/*String*/ table, /*String*/ controller, uiElementId, recordId, onDoneCallback){
+/************************************************************************************************/
+CoreBackend.UI.getFormData = function(/*:String*/ model,
+                                      /*:String*/ table, 
+                                      /*:String*/ controller, 
+                                      /*:String*/ recordId, 
+                                      onDoneCallback){
 /************************************************************************************************/
     $.ajax({
-        url: "index.php/"+controller+"/renderFilledElement/"+uiElementId+"/"+recordId,
+        url: "index.php/"+controller+"/getFormData/"+recordId,
+        dataType: "json",
         success: onDoneCallback
     });
 };
 
+
+/************************************************************************************************/
 /************************************************************************************************/
 CoreBackend.UI.createGeneric= function(/*:String*/ model,
+                                       /*:String*/ table, 
+                                       /*:String*/ controller, 
                                        /*:String*/ column, 
                                        /*:String*/ readonly, 
                                        /*:int*/    left, 
@@ -159,12 +167,15 @@ CoreBackend.UI.createGeneric= function(/*:String*/ model,
     $.ajax({
        url: "index.php/controller_core_formelement/create"+type+"/",
        type: 'POST',
+       dataType: "json",
        data: {left:left,
 	          top:top,
 			  readonly:readonly,
 			  recordId:recordId,
 			  column:column,
 			  model:model,
+			  table:table,
+			  controller:controller,
 			  innerHTML:innerHTML
 			 },
        success: onDoneCallback

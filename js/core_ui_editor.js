@@ -5,6 +5,9 @@ var CoreUiEditor = Class.extend({
   /************************************************************************************************/
     this.BASE_URL = "index.php/";
     this.CONTROLLER = "controller_core_formelement";
+
+	this.uiRenderer = new CoreRenderer();
+	
     this.designMode = false;
     this.editModeForm = false;
     this.editModeNavigation = false;
@@ -189,8 +192,6 @@ var CoreUiEditor = Class.extend({
         return false;
     },this)); // end mousedown
     
-    this._createContextMenuNavigation();
-    this._createContextMenuUIElements();
     
    
     $('#container_detail').filedrop({
@@ -248,53 +249,6 @@ var CoreUiEditor = Class.extend({
          return event.originalEvent.changedTouches[0];
     }
 	return event;
-  },
-
-  /************************************************************************************************/
-  _createContextMenuUIElements: function(){
-  /************************************************************************************************/
-   var itemsPanel= [
-        {
-         label:'Delete', 
-         action:$.proxy(function(e) { 
-           var element  =$(e.currentTarget);
-           this._deleteElement($(e.currentTarget));
-         },this)}, // end action "Delete"
-         
-         false, // separator
-         
-        {
-            label:'Copy Style', 
-            action:$.proxy(function(e) { 
-                var element  =$(e.currentTarget);
-                element.copyStyle();
-            },this)
-        }, // end action "Copy Style"
-        {
-            label:'Paste Style', 
-            action:$.proxy(function(e) { 
-                var element  =$(e.currentTarget);
-                element.pasteStyle().updateOnServer();
-            },this)
-        } // end action "Paste Style"
-    ];
- 
-    this._createContextMenu(".[data-draggable=true]", itemsPanel);
-  },
-
-  /************************************************************************************************/
-  _createContextMenuNavigation: function(){
-  /************************************************************************************************/
-
-   var itemsEntry= [
-        {
-         label:'Delete Item', 
-         action:$.proxy(function(e) {
-            this._deleteNavigationEntry(e.currentTarget); 
-        },this)}
-    ];
- 
-    this._createContextMenu(".columnnav_listentry", itemsEntry);
   },
 
   /************************************************************************************************/
@@ -778,25 +732,31 @@ var CoreUiEditor = Class.extend({
     var type      = ui.draggable.data("type");
     var column    = "";
     var model     = this.currentModelName;
+    var table     = this.currentTableName;
+    var controller = this.currentControllerName;
     var innerHTML = ui.draggable.data("innerHTML");
     
     var pos = this._toContainerPaneCoordinate(ui.offset);
 	
     var recordId = $("#content_formular").data("recordpkey");;
 
-    CoreBackend.UI.createGeneric(model, column, readonly, pos.left, pos.top, type, innerHTML, recordId, $.proxy(function( response ) {
-         var newElements = $(response);
-         newElements.appendTo("#content_formular");
-         $("#content_formular .[data-draggable=true]").each(function(i, item){
-              $(item).addClass("core_formelement_designmode");
+    CoreBackend.UI.createGeneric(model, table, controller, column, readonly, pos.left, pos.top, type, innerHTML, recordId, $.proxy(function( json ) {
+         var newElements = this.uiRenderer.renderElements(json);
+         $.each(newElements, function(index, element){
+            $("#content_formular").append(element);
+            if(element.is("button")){
+               element.button().click(function(){
+                  return false;
+               });
+            }
          });
-         if(newElements.is("button")){
-            newElements.button().click(function(){
-               return false;
-            });
-         }
          this._adjustFormHeight();
-         var elementToSelect = (newElements.length>1)?newElements.last: newElements;
+         var elementToSelect = newElements.length>0?newElements[newElements.length-1]:null;
+
+         $("#content_formular .[data-draggable=true]").each(function(i, item){
+             $(item).addClass("core_formelement_designmode");
+         });
+         
          this._updateResizeHandle(elementToSelect,true);
     },this));
   },
@@ -937,18 +897,6 @@ var CoreUiEditor = Class.extend({
   },
 
   /************************************************************************************************/
-  _textWidth: function(text, css){
-  /************************************************************************************************/
-    var calc = $('<span style="display:none"></span>');
-    calc.text(text);
-    calc.css(css);
-    $('body').append(calc);
-    var width = $('body').find('span:last').width();
-    $('body').find('span:last').remove();
-    return parseInt(width);
-  },
-  
-  /************************************************************************************************/
   _toContainerPaneCoordinate: function(offset) {
   /************************************************************************************************/
       var pos = this._getFormPos();
@@ -968,67 +916,6 @@ var CoreUiEditor = Class.extend({
   _getScrollPos: function() {
   /************************************************************************************************/
       return {"top":$("#container_detail").scrollTop(),"left":$("#container_detail").scrollLeft()};
-  },
-  
-  
-  /************************************************************************************************/
-  _createContextMenu: function(selector, items) {
-  /************************************************************************************************/
-    // Define default settings
-    var settings = {
-        contextMenuClass: 'contextMenuPlugin',
-        gutterLineClass: 'gutterLine',
-        headerClass: 'header',
-        seperatorClass: 'divider',
-        title: '',
-        items: items
-    };
-   
-    $(selector).live("contextmenu",  $.proxy(function(e) {
-       var currentTarget = $(e.currentTarget);
-       // Cover rest of page with invisible div that when clicked will cancel the popup.
-       var bg = $('<div></div>')
-         .css({left:0, top:0, width:'100%', height:'100%', position:'absolute', zIndex:10000})
-         .appendTo(document.body)
-         .bind('contextmenu click', function(event) {
-             // If click or right click anywhere else on page: remove clean up.
-             bg.remove();
-             menu.remove();
-             return false;
-         });
-
-       var menu = $('<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"><div class="' + settings.gutterLineClass + '"></div></ul>');
-       menu.appendTo(bg);
-       if (settings.title) {
-         $('<li class="' + settings.headerClass + '"></li>').text(settings.title).appendTo(menu);
-       }
-    
-       settings.items.forEach(function(item) {
-         if (item) {
-           var row = $('<li class="ui-menu-item"><a href="javascript:void(0)" class="ui-corner-all"></a></li>').appendTo(menu);
-           row.find('a')
-              .text(item.label)
-              .click(function(){ item.action(e); })
-              .hover( function () {$(this).addClass("ui-state-hover");},function () { $(this).removeClass("ui-state-hover");});
-           
-         } else {
-           $('<li class="ui-menu-item ' + settings.seperatorClass + '">&nbsp;</li>').appendTo(menu);
-         }
-       });
-
-   
-       menu.show()
-         .css({zIndex:1000001, left:e.pageX + 5 /* nudge to the right, so the pointer is covering the title */, top:e.pageY})
-         .bind('contextmenu', function() { return false; });
-
-        // When clicking on a link in menu: clean up (in addition to handlers on link already)
-        menu.find('a').click(function() {
-           bg.remove();
-           menu.remove();
-        });
-        e.preventDefault();
-        return false;
-    }, this));
   }
 });
 

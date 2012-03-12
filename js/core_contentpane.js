@@ -5,6 +5,7 @@ var CoreContentpane = Class.extend({
   init: function(){
   /************************************************************************************************/
     this._container_detail = $("#container_detail");
+	this.uiRenderer = new CoreRenderer();
 	
 	$(document).bind(COMMAND_DETAIL_MODEL_LOAD, $.proxy(function(event,controller){
 	   this._loadEmptyModel(controller);
@@ -39,20 +40,22 @@ var CoreContentpane = Class.extend({
 	},this));
 
     $("#content_formular input, textarea").live("change keyup",$.proxy(function(event) {
+
         var $target = $(event.target);
         if(event.keyCode == 13 && !$target.is("textarea")) {
            this._saveRecord();
            return;
         }
-
+        
   		var parent = $target.parent(".[data-recordcontainer=true]");
-  		var inputs = parent.children(".[data-recordcontainer=true] > input[name="+$target.attr("name")+"]").not(event.target);
-  		inputs.val($target.val());
+  		var $inputs = parent.children(".[data-recordcontainer=true] > input[name="+$target.attr("name")+"]");//.not(event.target);
+  		$inputs.val($target.val());
 
-	    if($input.data("value")!=$input.val())
-	  	  $input.addClass("input_dirty");
+	    if($inputs.data("value")!=$inputs.val())
+	  	  $inputs.addClass("input_dirty");
 	    else
-     	  $input.removeClass("input_dirty");
+     	  $inputs.removeClass("input_dirty");
+     	  
     },this));
   },
   
@@ -91,8 +94,12 @@ var CoreContentpane = Class.extend({
   /************************************************************************************************/
   _loadEmptyModel: function( controller){
   /************************************************************************************************/
-    CoreBackend.UI.getEmptyFormular( controller, $.proxy(function( response ) {
-           $("#container_detail").html($(response));
+    var form  = $( '#content_formular' );
+    var model = form.data("model");
+    var table = form.data("table");
+    CoreBackend.UI.getFormData(model, table, controller,"", $.proxy(function( json ) {
+           var newContent = this.uiRenderer.renderForm(json);
+           $("#container_detail").html(newContent);
 		   var form = $("#content_formular");
 		   var model = form.data("model");
 		   var table = form.data("table");
@@ -161,10 +168,13 @@ var CoreContentpane = Class.extend({
   /************************************************************************************************/
   _loadRecord: function(id, model, table, controller, animation){
   /************************************************************************************************/
-    CoreBackend.UI.getFilledFormular(model, table, controller,id, $.proxy(function( response ) {
+
+    CoreBackend.UI.getFormData(model, table, controller,id, $.proxy(function( json ) {
+//    CoreBackend.UI.getFilledFormular(model, table, controller,id, $.proxy(function( response ) {
            var oldContent = $("#content_formular");
            oldContent.attr("id","6789");
-           var newContent = $(response);
+           var newContent = this.uiRenderer.renderForm(json);
+//           var newContent = $(response);
            switch(animation){
              case "slideLeft":
                  $("#container_detail").css("overflow","hidden");

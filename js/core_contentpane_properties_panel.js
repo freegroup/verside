@@ -42,7 +42,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
 						'         data-innerHTML=""'+
 						'         class="palette_element palette_element_ui ui-corner-all ui-widget-header" >'+
 						'       <span style="float:left" class="ui-icon ui-icon-arrow-4"></span>                           '+
-						'       Title                                                                                       '+
+						'       Title                                                                                      '+
 						'    </div>                                                                                        '+
 
 						'    <div data-type="input" '+
@@ -153,25 +153,28 @@ var CoreContentPanePropertiesPanel = Class.extend({
   /************************************************************************************************/
      this.currentUIElement = uiElement;
      if(uiElement===null || uiElement.size()===0){
-           this.showEMPTY();
+           this.showDefault();
            return;
         }
        
-     switch(uiElement[0].tagName.toUpperCase()){
-            case "INPUT":
-                   this.showINPUT();
+     switch(uiElement.data("type")){
+            case "input":
+                   this.showInput();
                    break;
-            case "TEXTAREA":
-                   this.showTEXTAREA();
+            case "textarea":
+                   this.showTextarea();
                    break;
-            case "LABEL":
-                   this.showLABEL();
+            case "label":
+                   this.showLabel();
                    break;
-            case "BUTTON":
-                   this.showBUTTON();
+            case "title":
+                   this.showTitle();
+                   break;
+            case button:
+                   this.showButton();
                    break;
                 default:
-           this.showEMPTY();
+           this.showDefault();
         }
   },
  
@@ -184,7 +187,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   },
  
   /************************************************************************************************/
-  showEMPTY: function(){
+  showDefault: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").html('<div class="property_container">'+
                                        '   <div class="property_label">Select element to show properties...</div>'+
@@ -193,7 +196,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   },
  
   /************************************************************************************************/
-  showBUTTON: function(){
+  showButton: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").html('');
 	
@@ -205,7 +208,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   },
  
   /************************************************************************************************/
-  showINPUT: function(){
+  showInput: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").html('');
 	
@@ -216,7 +219,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
  
  
   /************************************************************************************************/
-  showTEXTAREA: function(){
+  showTextarea: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").html('');
 	
@@ -227,7 +230,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   },
 
   /************************************************************************************************/
-  showLABEL: function(){
+  showLabel: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").html('');
        
@@ -238,6 +241,16 @@ var CoreContentPanePropertiesPanel = Class.extend({
   },
  
    /************************************************************************************************/
+  showTitle: function(){
+  /************************************************************************************************/
+    $("#palette_pane_properties").html('');
+       
+	this._addPropertyText();
+	this._addPropertyFontFamily();
+	this._addPropertyFontStyle();
+  },
+ 
+ /************************************************************************************************/
   _addPropertyFontSize: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").append('<div class="property_container">'+

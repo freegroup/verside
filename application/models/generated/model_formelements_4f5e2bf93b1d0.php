@@ -3,7 +3,7 @@
 * @Entity @HasLifecycleCallbacks
 * @Table(name="core_formelement")
 */
-class Model_compamy_4f54fa9492a29  {
+class Model_formelements_4f5e2bf93b1d0  {
  
    /**
     * @Id
@@ -46,6 +46,11 @@ class Model_compamy_4f54fa9492a29  {
     * @Column(name="`extra_attributes`", type="string", length=400, nullable=true)
     */
     public $extra_attributes;
+
+   /**
+    * @Column(name="`type`", type="string", length=50, nullable=true)
+    */
+    public $type;
 
     public function getIdFieldName(){ return 'id';}
 

@@ -103,7 +103,7 @@ class Controller_core_application extends CI_Controller {
 
 		// Generate the header
 		//
-        $header = $this->createHeader($modelClass, 0,$x,$y,$alias);
+        $header = $this->createTitle($modelClass, 0,$x,$y,$alias);
 		$y+=70;
 
 		$readonly = strcmp($representative_field,$primaryId)==0;
@@ -128,6 +128,7 @@ class Controller_core_application extends CI_Controller {
 	protected function createInput($modelClass, $readonly, $column, $parentId,$x, $y, $width, $height){
 		$obj = new Model_core_formelement();
 		$obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:".$height."px;";
+		$obj->type = "input";
 		$obj->tag = "input";
 		if($readonly)
 			$obj->extra_attributes = "readonly=\"readonly\"";
@@ -145,6 +146,7 @@ class Controller_core_application extends CI_Controller {
 		// Generate the header
         $obj = new Model_core_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:16px;font-size:14px";
+		$obj->type = "label";
 		$obj->tag = "label";
 		$obj->extra_attributes = "data-editable=\"true\" data-relatedinput=\"".$for."\"";
 		$obj->column = null;
@@ -161,6 +163,7 @@ class Controller_core_application extends CI_Controller {
 	protected function createMajorInput($modelClass, $readonly,  $column, $parentId,$x, $y){
        $obj = new Model_core_formelement();
 	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:300px;height:33px;font-size:20px";
+	   $obj->type = "input";
 	   $obj->tag = "input";
 	   $obj->column = $column;
 	   
@@ -180,6 +183,7 @@ class Controller_core_application extends CI_Controller {
 		// Generate the header
         $obj = new Model_core_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:16px;font-size:14px";
+		$obj->type = "label";
 		$obj->tag = "label";
 		$obj->extra_attributes = "data-editable=\"true\"  data-relatedinput=\"".$for."\"";
 		$obj->column = null;
@@ -192,11 +196,12 @@ class Controller_core_application extends CI_Controller {
         return $obj;
 	}
 	
-	protected function createHeader($modelClass, $parentId, $x, $y, $text){
+	protected function createTitle($modelClass, $parentId, $x, $y, $text){
 		
 		// Generate the header
         $obj = new Model_core_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:50px;font-size:40px";
+		$obj->type = "title";
 		$obj->tag = "label";
 		$obj->extra_attributes = "data-editable=\"true\"";
 		$obj->column = null;

@@ -1,5 +1,5 @@
 <?php
-class Controller_compamy_4f54fa9492a29 extends Controller_generated {
+class Controller_formelements_4f5e2bf93b1d0 extends Controller_generated {
  
     public function __construct() {
 		parent::__construct();
@@ -10,7 +10,7 @@ class Controller_compamy_4f54fa9492a29 extends Controller_generated {
     }
     
     public function getModelName(){
-	    return "Model_compamy_4f54fa9492a29";
+	    return "Model_formelements_4f5e2bf93b1d0";
 	}
 	
     public function getTableName(){

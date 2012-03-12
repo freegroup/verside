@@ -23,6 +23,11 @@ class Model_core_formelement  {
     public $tag;
 	
    /**
+    * @Column(name="`type`", type="string", length=50, nullable=true)
+    */
+    public $type;
+
+   /**
     * @Column(name="`parent_id`", type="integer", nullable=true)
     */
     public $parent_id;

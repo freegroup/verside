@@ -48,6 +48,7 @@
 <script type="text/javascript" src="js/lib/Class.js"></script>
 
 <script type="text/javascript" src="js/core_backend.js"></script>
+<script type="text/javascript" src="js/core_renderer.js"></script>
 <script type="text/javascript" src="js/core_event.js"></script>
 <script type="text/javascript" src="js/core_growl.js"></script>
 <script type="text/javascript" src="js/core_layout_landscape.js"></script>
