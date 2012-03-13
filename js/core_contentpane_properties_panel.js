@@ -155,7 +155,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
      if(uiElement===null || uiElement.size()===0){
            this.showDefault();
            return;
-        }
+     }
        
      switch(uiElement.data("type")){
             case "input":
@@ -170,11 +170,11 @@ var CoreContentPanePropertiesPanel = Class.extend({
             case "title":
                    this.showTitle();
                    break;
-            case button:
+            case "button":
                    this.showButton();
                    break;
-                default:
-           this.showDefault();
+            default:
+                   this.showDefault();
         }
   },
  
