@@ -24,14 +24,16 @@ var CoreContentPanePropertiesPanel = Class.extend({
 						' </div>                                                                                           '+
 						
 						' <div id="palette_pane_widget" style="position:absolute;top:0px;left:0px;height:100%;width:100%"> '+
+						
 						/*
 						'    <div data-type="button" '+
 						'         data-innerHTML="Button"'+
-						'class="palette_element palette_element_ui ui-corner-all ui-widget-header" >'+
+						'         class="palette_element palette_element_ui ui-corner-all ui-widget-header" >'+
 						'       <span style="float:left" class="ui-icon ui-icon-arrow-4"></span>                           '+
 						'       Button                                                                                     '+
 						'    </div>                                                                                        '+
 						*/
+						
 						'    <div data-type="line" '+
 						'         data-innerHTML=""'+
 						'         class="palette_element palette_element_ui ui-corner-all ui-widget-header" >'+
@@ -65,7 +67,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
 						' <div id="palette_pane_properties" style="position:absolute;top:0px;left:0px;height:100%;width:100%">'+
 						' </div>                                                                                              '+
 						'</div>';
-                                               
+                    
         // inject the column-palette into the content area
         //
         this.palette = $('<div id="container_ui_palette" class="pane ui-layout-east ui-widget-content">'+
@@ -478,6 +480,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
 					   label="Caption";
 					var element =  $(".[data-relatedinput='"+this.currentUIElement.data("pkey")+"']")
 					element.text(label);
+					coreTrigger(COMMAND_DESIGNMODE_SELECTELEMENT, [this.currentUIElement]);
                     CoreBackend.UI.setLabel(element.data("pkey"), label);
 				},this));
 				

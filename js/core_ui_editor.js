@@ -77,8 +77,11 @@ var CoreUiEditor = Class.extend({
         this._deleteNavigationEntry(entry); 
     },this));
  
- 
-     $("#container_detail").bind('click', $.proxy(function(event) { 
+    $(document).bind(COMMAND_DESIGNMODE_SELECTELEMENT, $.proxy(function(event, element){
+        this._updateResizeHandle(element,true);
+    },this));
+
+    $("#container_detail").bind('click', $.proxy(function(event) { 
         var $target = $(event.target);
         if(!$target.is("form"))
            return;
@@ -117,6 +120,7 @@ var CoreUiEditor = Class.extend({
        var callbackMouseMove= $.proxy(function(event) {
 			event = this._getEvent(event);
             var moveOverRecycleBin = $("#recycle_bin").mouseIn(event);
+
             if(moveOverRecycleBin===true)
                $("#recycle_bin").addClass("hover");
             else
@@ -126,7 +130,7 @@ var CoreUiEditor = Class.extend({
             var diffTop = oldTop-event.clientY;
             oldLeft = event.clientX;
             oldTop =  event.clientY;
-            
+
             var realTop  = element.data("top");
             var realLeft = element.data("left");
  
