@@ -6,6 +6,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
     this.tableName = tableName;
     this.modelName = modelName;
     this.currentUIElement = null;
+	this.uiRenderer = new CoreRenderer();
  
     this.fieldTemplate='<div class="ui-layout-center pane" style="overflow:hidden">                                        '+
 	
@@ -421,8 +422,8 @@ var CoreContentPanePropertiesPanel = Class.extend({
 							'   </div>                                                                 '+
 							'</div>                                                                    '
 							
-		        // retrieve the column definition of the loaded model and init all drag&drop elements
-
+        // retrieve the column definition of the loaded model and init all drag&drop elements
+        //
         CoreBackend.Model.getTableFields(this.tableName, this.modelName, $.proxy(function( data ) {
 			var list= $.tmpl(listTemplate,data);
 			$("#palette_pane_properties").append(list);
@@ -455,8 +456,11 @@ var CoreContentPanePropertiesPanel = Class.extend({
 				var controller = form.data("controller");
 				var recordId = form.data("recordpkey");
 				var elementId = this.currentUIElement.data("pkey");
-				CoreBackend.UI.getFilledElement(model, table, controller,elementId, recordId, $.proxy(function( response ) {
-					var newElement = $(response);
+
+				CoreBackend.UI.getElementData(model, table, controller,elementId, recordId, $.proxy(function( json ) {
+		            var newElements = this.uiRenderer.renderElements(json);
+		            var newElement = newElements[0];
+		            
 					var manualReadOnly = this.currentUIElement.attr("data-manual_readonly")
 					this.currentUIElement.replaceWith(newElement);
 					this.currentUIElement = newElement;
