@@ -3,15 +3,57 @@ var CoreDialogAddTable = Class.extend({
      /************************************************************************************************/
      init: function( parentId ){
      /************************************************************************************************/
-         this.BASE_URL = "index.php/";
-         this.parentId = parentId;
+        this.parentId = parentId;
+         
+         this.template = '<form id="dialog_form" target="#" onsubmit="return false;">'+
+         
+                         '   <fieldset title="1. Screen Name">'+
+                         '      <legend>Provide Screen information</legend> '+           
+                         '      <div class="wizard_content">'+
+                         '         <label>Screen Name:</label>'+
+                         '         <input type="text" id="addTable_alias" name="alias" value="">'+
+                         '         <br>'+
+				         '         <div id="addTable_alias_error" class="validateErrorContainer"></div>'+
+			             '     </div>'+
+                         '   </fieldset>'+
+                         
+                         '   <fieldset title="2. Screen Data">'+
+                         '     <legend>Select the data to use</legend>   '+       
+                         '     <div class="wizard_content">'+
+                         '         <label>Screen Data</label>'+
+                         '         <select size="7" name="tablename" id="addTable_tablename" >'+
+  						 '            {{each tables}}                    '+
+                         '            <option value="${name}">${name}</option>'+
+  						 '            {{/each}}                                          '+
+                         '         </select>'+
+                         '         <div id="addTable_tablename_error" class="validateErrorContainer"></div>'+
+                         '     </div>'+
+                         '    </fieldset>'+
+                         
+                         '    <fieldset title="3. Display Column">'+
+                         '       <legend>Select the major field to show</legend>      '+
+                         '       <div class="wizard_content">'+
+                         '           <label>Display Column</label>'+
+                         '           <select size="7" name="representative_field" id="addTable_representative_field" style="width:100%">'+
+                         '             <option selected="true" value="any">any</option>'+
+                         '           </select>'+
+                         '           <div id="addTable_representative_field_error" class="validateErrorContainer"></div>'+
+		                 '      </div>'+
+                         '    </fieldset>'+
+                         
+                         '   <input type="hidden" id="parentId" name="parent_id" />'+
+                         '   <button id="dialog_finish" class="finish">Create</button>'+
+                         '</form>';
     },
 
     /************************************************************************************************/
     show: function(){
     /************************************************************************************************/
         $("#dialogs" ).attr("style","");
-        $("#dialogs").load(this.BASE_URL+"controller_core_dialog/addTable", $.proxy(function(){
+        
+        CoreBackend.Model.getTables($.proxy(function(json){
+        	var $html= $.tmpl(this.template,{"tables":json});
+        	$("#dialogs" ).html($html);
             $.blockUI({ 
 			   message: $('#dialogs'), 
 			   css: { border: "1px solid black", 
@@ -34,7 +76,7 @@ var CoreDialogAddTable = Class.extend({
   	           var tableName = $('#dialog_form .[name="tablename"]').val();
 	           this._loadFieldListbox(tableName);
 			},this);
-			tableSelectionCallback();
+
 			$("#addTable_tablename").change(tableSelectionCallback);
 			
             // <!-- Optionaly -->
@@ -54,7 +96,7 @@ var CoreDialogAddTable = Class.extend({
                    'representative_field': {required: 'Select the main representative field to show.'}
                 }
             }); 
-        },this)); // end load
+        },this)); // getTables
     },
 	
     /************************************************************************************************/

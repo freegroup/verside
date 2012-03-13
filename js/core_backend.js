@@ -35,6 +35,16 @@ CoreBackend.Model = new Object();
 
 CoreBackend.Model._fieldCacheKey = null;
 CoreBackend.Model._fieldCacheData = null;
+
+/************************************************************************************************/
+CoreBackend.Model.getTables = function( /*:function*/ onDoneCallback){
+/************************************************************************************************/
+
+   $.getJSON("index.php/controller_core_model/getTables/",function(response){
+     onDoneCallback(response);
+   });
+};
+
 /************************************************************************************************/
 CoreBackend.Model.getTableFields = function(/*:String*/ tableName,/*:String*/ modelName, /*:function*/ onDoneCallback){
 /************************************************************************************************/
