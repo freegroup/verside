@@ -9,7 +9,6 @@ var CoreNavigationPropertiesPanel = Class.extend({
     this.show();
   },
 
-  
   /************************************************************************************************/
   show: function(){
   /************************************************************************************************/
@@ -19,9 +18,9 @@ var CoreNavigationPropertiesPanel = Class.extend({
      //
      this.container = $("<div id='navigation_properties' class='ui-widget-content search_panel'>"+
                         "<div class='ui-layout-center'>"+
-                        "   <div   class='property_title'>Menu Settings</div>"+
-                        "   <div   class='property_label'>Label</div>"+
-                        "   <input class='property_input' type='text' id='property_navigation_name' >"+
+                        "   <div class='dialog_header'>Menu Settings</div>"+
+                        "   <div class='dialog_label'>Label</div>"+
+                        "   <input class='dialog_input' type='text' id='property_navigation_name' >"+
 						"   <br>"+
 						"   <br>"+
                         "</div>"+

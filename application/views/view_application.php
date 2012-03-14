@@ -14,6 +14,7 @@
 <link type="text/css" rel="stylesheet" href="css/core_styles.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery-iphone-checkboxes.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery.selectbox.css" />
+<link type="text/css" rel="stylesheet" href="css/jquery-reveal.css" />
 
 <link type="text/css" rel="stylesheet/less" href="css/core_styles.less" />
 <link type="text/css" rel="stylesheet/less" href="css/core_webpad.less" media="only screen and (max-device-width: 1024px)" />
@@ -44,6 +45,7 @@
 <script type="text/javascript" src="js/lib/jquery-easing.1.3.js"></script>
 <script type="text/javascript" src="js/lib/jquery-iphone-checkboxes.js"></script>
 <script type="text/javascript" src="js/lib/jquery-longclick.js"></script>
+<script type="text/javascript" src="js/lib/jquery-reveal.js"></script>
 <script type="text/javascript" src="js/lib/less-1.2.2.js"></script>
 <script type="text/javascript" src="js/lib/Class.js"></script>
 
@@ -117,7 +119,7 @@ $(document).ready(function() {
     </div>
     </div>
 
-    <div id="dialogs" class="ui-widget-content"></div>
+    <div id="dialogs" class="reveal-modal"></div>
 
 </body>
 </html>

@@ -12,11 +12,11 @@ var CoreNavigationFilterPanel = Class.extend({
     this.filterContainerTemplate=
                 "<div id='navigation_filter' class='ui-widget-content search_panel'>"+
                 "<div id='navigation_filter_entries' class='ui-layout-center'>"+
-                "   <div   class='property_title'>Filter Criteria</div>"+
+                "   <div class='dialog_header'>Filter Criteria</div>"+
                 "</div>"+
                 "<div class='ui-layout-south toolbar'>"+
-                "<button  class='button_add toolbar_button '  id='button_design_navigation_add'>Add Criteria</button>"+
-                "<button  class='button_ok toolbar_button button_right_align'  id='button_design_navigation_done'>Done</button>"+
+                "<button class='button_add toolbar_button' id='button_design_navigation_add'>Add Criteria</button>"+
+                "<button class='button_ok toolbar_button button_right_align' id='button_design_navigation_done'>Done</button>"+
                 "</div>"+
                 "</div>";
 			
@@ -24,12 +24,12 @@ var CoreNavigationFilterPanel = Class.extend({
                 '<div id="filterentry_${id}" data-id="${id}" class="navigation_filter_constraint_group">'+
                 '   <div class="">'+
                 '      <div class="navigation_filter_constraint_pane">'+
-                '         <select class="filterentry_column" style="width:180px;margin:0.2em">'+
+                '         <select class="filterentry_column" style="margin:0.2em">'+
                 '{{each fields}}'+
                 '            <option value="${name}">${name}</option>'+
                 '{{/each}}'+
                 '         </select>'+
-                '        <select class="filterentry_operation" style="width:100px;margin:0.2em">'+
+                '        <select class="filterentry_operation" style="margin:0.2em">'+
                 '            <option value="equals" >equals</option>'+
                 '            <option value="notEquals" >notEquals</option>'+
                 '            <option value="contains" >contains</option>'+
@@ -38,10 +38,10 @@ var CoreNavigationFilterPanel = Class.extend({
                 '            <option value="greater" >greater</option>'+
                 '            <option value="less" >less</option>'+
                 '         </select>'+
-                '         <input class="filterentry_constraint" type="${type}" style="height:25px; margin:2px;width:290px" value="${constraint}">'+
+                '         <input class="filterentry_constraint dialog_input" type="${type}" style="height:25px; margin:2px;" value="${constraint}">'+
                 '      </div>'+
                 '      <div class="navigation_filter_action_pane">'+
-                '        <button class="button_delete_contraint">X</button>'+
+                '        <button class="button_delete_contraint filterentry_remove">X</button>'+
                 '      </div>'+
                 '    </div>'+
                 '</div>';
