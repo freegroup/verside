@@ -1,3 +1,6 @@
+@import "elements.less";
+
+
 /* Generic vars for theglobal document  */
 @fontFamily: Helvetica, Arial, Verdana, sans-serif;
 @fontBaseColor: #6b6b6b;
@@ -6,10 +9,25 @@
 @backgroundBaseColor:#F1F1F1; 
 @applicationLeftPadding: 15px;
 
+
+@dialogBackgroundColorStart: #666;
+@dialogBackgroundColorEnd: #333;
+@dialogBorderColor: #b0b0b0;
+@dialogColor: #ffffff;
+@dialogFontSize: 14px;
+@dialogContentPadding: 20px;
+@dialogRadius: 3px;
+
+@dialogLeftDockWidth:350px;
+@dialogTopDockHeight:350px;
+
+
+
 /* Teaser vars   */
 @teaserHeight: 42px;
 @teaserFontColor: #ebebeb;
 @teaserFontSize: 2em;
+
 
 /* global toolbars like the one in the Navigation and Formular */
 @toolbarHeight: 40px;
@@ -32,14 +50,15 @@
 @palettePropertyListFontSize:@fontBaseSize * 1.2;
 @paletteUIElementFontSize:@fontBaseSize * 1.2;
 @paletteButtonGroupHeight:30px;
-@paletteButtonGroupRadius: 2px;
+@paletteButtonGroupRadius: 3px;
+
 
 @breadcrumbHeight: @toolbarHeight;
 @breadcrumbFontSize: @fontBaseSize * 1.2;
 
+
 @formularBackgroundColor: #FAFAFA;
 @formularInputBackgroundColor: darken(@formularBackgroundColor,2%);
-
 
 
 @paneTabBackgroundColor:#ebebeb;
@@ -51,6 +70,7 @@
 @navigationListHeaderFontSize: @fontBaseSize * 1.2;
 @navigationListHeaderFontColor : lighten(@fontNavigationColor,20%);
 @navigationListEntryFontSize:@fontBaseSize;
+
 
 /******************************************************************
  * Global Settings for the common page
@@ -74,20 +94,6 @@ label{
 input{
  font-family: @fontFamily;
 }
-
-
-
-#promoIMG{
-	background:url('../images/intro/macbookAir.jpg') no-repeat;
-	height:632px;
-	margin-bottom:15px;
-	text-align:center;
-}
-
-#promoIMG img{
-	margin-top:80px;
-}
-
 
 
 /********************************************************************************************************
@@ -176,26 +182,14 @@ input{
  padding: @toolbarPadding !important;
  overflow:hidden !important;
  height:@toolbarHeight;
- background: @toolbarBackgroundColorStart; /* Old browsers */
- background: -moz-linear-gradient(top, @toolbarBackgroundColorStart 0%, @toolbarBackgroundColorEnd @toolbarHeight); /* FF3.6+ */
- background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@toolbarBackgroundColorStart), color-stop(@toolbarHeight,@toolbarBackgroundColorEnd)); /* Chrome,Safari4+ */
- background: -webkit-linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd @toolbarHeight); /* Chrome10+,Safari5.1+ */
- background: -o-linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd @toolbarHeight); /* Opera11.10+ */
- background: -ms-linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd @toolbarHeight); /* IE10+ */
- background: linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd @toolbarHeight); /* W3C */
+ .gradient(@toolbarBackgroundColorStart, @toolbarBackgroundColorStart, @toolbarBackgroundColorEnd,  @toolbarHeight);
 }
 
-/* Buttonschaltfläche */
+/* ButtonschaltflÃ¤che */
 .toolbar_button{
  min-width:4.4em;
  min-height: (@toolbarHeight - (@toolbarPadding * 2));
- background: @toolbarBackgroundColorStart !important; /* Old browsers */
- background: -moz-linear-gradient(top, @toolbarBackgroundColorStart 0%, @toolbarBackgroundColorEnd 100%) !important; /* FF3.6+ */
- background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@toolbarBackgroundColorStart), color-stop(100%,@toolbarBackgroundColorEnd)) !important; /* Chrome,Safari4+ */
- background: -webkit-linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd 100%) !important; /* Chrome10+,Safari5.1+ */
- background: -o-linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd 100%) !important; /* Opera11.10+ */
- background: -ms-linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd 100%) !important; /* IE10+ */
- background: linear-gradient(top, @toolbarBackgroundColorStart 0%,@toolbarBackgroundColorEnd 100%) !important; /* W3C */
+ .gradient(@toolbarBackgroundColorStart, @toolbarBackgroundColorStart, @toolbarBackgroundColorEnd,  @toolbarHeight);
  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset !important;
  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset !important;
  box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset !important;
@@ -203,7 +197,7 @@ input{
  border-radius: @toolbarButtonRadius @toolbarButtonRadius @toolbarButtonRadius @toolbarButtonRadius !important;
 }
 
-/* Label eine Button*/
+/* Label eines Button*/
 .toolbar_button span{
  color:@toolbarButtonFontColor !important;
  letter-spacing:@toolbarButtonLetterSpacing !important;
@@ -245,32 +239,167 @@ input{
 }
 
 .button_add .ui-button-text{
-font-family:@fontFamily !important;
-text-shadow:none !important;
-font-weight: normal !important;
-color:white !important;
+ font-family:@fontFamily !important;
+ text-shadow:none !important;
+ font-weight: normal !important;
+ color:white !important;
 }
 
 .button_ok .ui-button-text{
-font-family: @fontFamily !important;
-text-shadow:none !important;
-font-weight: normal !important;
-color:white !important;
+ font-family: @fontFamily !important;
+ text-shadow:none !important;
+ font-weight: normal !important;
+ color:white !important;
 }
 
 .button_delete .ui-button-text{
-font-family: @fontFamily !important;
-text-shadow:none !important;
-font-weight: normal !important;
-color:white !important;
+ font-family: @fontFamily !important;
+ text-shadow:none !important;
+ font-weight: normal !important;
+ color:white !important;
 }
 
 .button_right_align{
  float:right;
 }
 
+
+
 /******************************************************************
- * Styles für Eingabemaske/Formular des Benutzer
+ * Styles fÃ¼r die Navigation
+ ******************************************************************/
+#navigation_properties{
+ border:0px;
+ border-right:1px solid @dialogBorderColor;
+ border-bottom:1px solid @dialogBorderColor;
+ width:@dialogLeftDockWidth;
+ left:-@dialogLeftDockWidth;
+ height:90%;
+ position:relative;
+ overflow:visible;
+ top:0px;
+ box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+ .gradient(@dialogBackgroundColorStart, @dialogBackgroundColorStart, @dialogBackgroundColorEnd);
+ .border-radius(@dialogRadius, @dialogRadius, 0, 0);
+}
+
+
+#navigation_filter{
+ border:0px;
+ border-right:1px solid @dialogBorderColor;
+ border-bottom:1px solid @dialogBorderColor;
+ width:@dialogLeftDockWidth;
+ left:-@dialogLeftDockWidth;
+ height:90%;
+ position:relative;
+ overflow:visible;
+ top:0px;
+ box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+ .gradient(@dialogBackgroundColorStart, @dialogBackgroundColorStart, @dialogBackgroundColorEnd);
+ .border-radius(@dialogRadius, @dialogRadius, 0, 0);
+}
+
+.navigation_filter_constraint_group{
+ background-color: rgba(5, 5, 5, 0.1);
+ border: 1px solid rgba(25, 25, 25, 0.2);
+ display: inline-block;
+ margin-bottom: 20px;
+ width: 100%;
+}
+
+.navigation_filter_constraint_pane{
+ float:left;
+ margin:10px;
+ width:@dialogLeftDockWidth - 110;
+}
+
+.navigation_filter_action_pane{
+ float:right;
+ margin:10px;
+}
+
+.filterentry_remove{
+ width:40px;
+}
+
+.filterentry_column{
+ width:(( @dialogLeftDockWidth - 110) / 3 * 2 )- 10;
+}
+
+.filterentry_operation{
+ width:(( @dialogLeftDockWidth - 110) / 3 ) - 5;
+}
+
+.filterentry_constraint{
+ -moz-box-sizing: border-box;
+ background: none repeat scroll 0 0 #FAFAFA;
+ border-color: #C6C6C6 #DADADA #EAEAEA;
+ border-radius: 4px 4px 4px 4px;
+ border-style: solid;
+ border-width: 1px;
+ font-family: inherit;
+ padding-left: 7px;
+ vertical-align: middle;
+ height:25px;
+ font-size:1.2em;
+ width:100%;
+}
+
+.navigation_filter_constraint_group select {
+ background: none repeat scroll 0 0 #FAFAFA;
+ border-color: #C6C6C6 #DADADA #EAEAEA;
+ border-radius: 4px 4px 4px 4px;
+ font-family: inherit;
+ -moz-box-sizing: border-box;
+ padding-left:5px;
+ border-style: solid ;
+ border-width: 1px;
+ vertical-align: middle;
+ height:25px;
+ font-size:1.2em;
+}
+
+
+/******************************************************************
+ * Styles fÃ¼r die Dialoge
+ ******************************************************************/
+ .dialog_header{
+ margin-bottom:20px;
+ font-family: @fontFamily;
+ font-size: 20px;
+ font-weight: normal;
+ text-shadow: 0 1px 0 #000000;
+ color: #f0f0f0 !important;
+}
+ 
+.dialog_pane{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+ .gradient(@dialogBackgroundColorStart, @dialogBackgroundColorStart, @dialogBackgroundColorEnd);
+ .border-radius(0,@dialogRadius, @dialogRadius,0);
+}
+
+.dialog_label{
+ font-family: @fontFamily;
+ font-size: 14px;
+ color: #f0f0f0 !important;
+ margin-bottom:2px;
+}
+
+.dialog_content{
+ padding:@dialogContentPadding;
+}
+
+.dialog_content_header{
+ padding-left:@dialogContentPadding;
+ padding-top:@dialogContentPadding;
+}
+
+/******************************************************************
+ * Styles fï¿½r Eingabemaske/Formular des Benutzer
  ******************************************************************/
 
 .input_dirty{
@@ -335,21 +464,11 @@ form input.core_formelement[readonly=readonly]{
 }
 
 .core_buttonbar_button.leftEnd {
- -webkit-border-top-left-radius: @paletteButtonGroupRadius;
- -webkit-border-bottom-left-radius:@paletteButtonGroupRadius;
- -moz-border-radius-topleft: @paletteButtonGroupRadius;
- -moz-border-radius-bottomleft:@paletteButtonGroupRadius;
- border-top-left-radius:@paletteButtonGroupRadius;
- border-bottom-left-radius:@paletteButtonGroupRadius;
+ .border-radius(0,0,@paletteButtonGroupRadius, @paletteButtonGroupRadius);
 }
 
 .core_buttonbar_button.rightEnd {
- -webkit-border-top-right-radius: @paletteButtonGroupRadius;
- -webkit-border-bottom-right-radius: @paletteButtonGroupRadius;
- -moz-border-radius-topright: @paletteButtonGroupRadius;
- -moz-border-radius-bottomright: @paletteButtonGroupRadius;
- border-top-right-radius: @paletteButtonGroupRadius;
- border-bottom-right-radius: @paletteButtonGroupRadius;
+ .border-radius(@paletteButtonGroupRadius, @paletteButtonGroupRadius,0,0);
 }
 
 .core_buttonbar_button.ui-state-active{
@@ -367,15 +486,6 @@ form input.core_formelement[readonly=readonly]{
  border : 0px !important;
 }
 
-
-.property_title{
- color: #f0f0f0 !important;
- font-family: @fontFamily;
- font-size: 1.5em;
- font-weight: normal;
- text-shadow: 0 1px 0 #000000;
- margin-bottom:20px;
-}
 
 .property_label{
  color: @fontNavigationColor !important;
@@ -488,7 +598,6 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
  background:url("../images/background.png") repeat scroll 0 0 transparent;
 }
 
-
 .palette_element_ui{
  cursor:move;
  padding:5px;
@@ -581,7 +690,7 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
 }
 
 /******************************************************************
- * Columnnavigation fŸr Landscape und Portrait
+ * Columnnavigation fï¿½r Landscape und Portrait
  ******************************************************************/
 .columnnav_panel_portrait{
  border-right: 1px solid #D6D9D8;
@@ -712,7 +821,7 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
 #navigation_header_landscape{
  left: -@toolbarPadding;
  position: absolute;
- top: @toolbarHeight - 1; /* 2. Zeile der Toolbar um die Höhe der Toolbar nach unten legen */
+ top: @toolbarHeight - 1; /* 2. Zeile der Toolbar um die Hï¿½he der Toolbar nach unten legen */
  width: 100%;
  padding:10px !important;
  background: url("../images/background_dark.png") repeat scroll 0 0 transparent;
@@ -762,31 +871,3 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
  cursor:pointer;
 }
 
-
-/********************************************************************************************************
- * Settings for the Dialogs
- *******************************************************************************************************/
-#dialogs{
- height:100%;
- overflow:hidden;
-}
-
-.current-step{
-border:0px !important;
-}
-
-.validateErrorContainer label{
-float:left;
-color:red !important;
-padding: 0px !important;
-}
-
-#addTable_tablename{
- width:100%;
- height:100px;
-}
-
-#addTable_representative_field{
- width:100%;
- height:100px;
-}

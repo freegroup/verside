@@ -7,119 +7,140 @@ var CoreDialogAddTable = Class.extend({
          
          this.template = '<form id="dialog_form" target="#" onsubmit="return false;">'+
          
-                         '   <fieldset title="1. Screen Name">'+
-                         '      <legend>Provide Screen information</legend> '+           
-                         '      <div class="wizard_content">'+
-                         '         <label>Screen Name:</label>'+
-                         '         <input type="text" id="addTable_alias" name="alias" value="">'+
+                         '   <div class="dialog_pane" id="wizard_pane_01">'+
+                         '      <div class="ui-layout-south toolbar">'+
+                         '         <button  class="button_delete toolbar_button CoreDialogAddTable_cancel" >Cancel</button>'+
+                         '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_next1">Next &gt;&gt;</button>'+
+                         '      </div>'+
+                         '      <div class="dialog_content_header dialog_header">Provide Screen information</div> '+           
+                         '      <div class="dialog_content">'+
+                         '         <label class="dialog_label">Screen Name:</label><br>'+
+                         '         <input class="dialog_input" type="text" id="addTable_alias" name="alias" value="">'+
                          '         <br>'+
 				         '         <div id="addTable_alias_error" class="validateErrorContainer"></div>'+
 			             '     </div>'+
-                         '   </fieldset>'+
-                         
-                         '   <fieldset title="2. Screen Data">'+
-                         '     <legend>Select the data to use</legend>   '+       
-                         '     <div class="wizard_content">'+
-                         '         <label>Screen Data</label>'+
-                         '         <select size="7" name="tablename" id="addTable_tablename" >'+
+                         '   </div>'+
+
+                         '   <div class="dialog_pane" id="wizard_pane_02">'+
+                         '      <div class="ui-layout-south toolbar">'+
+                         '         <button  class="button_delete toolbar_button CoreDialogAddTable_cancel" >Cancel</button>'+
+                         '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_next2" >Next &gt;&gt;</button>'+
+                         '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_back2">&lt;&lt; Back</button>'+
+                         '      </div>'+
+                         '     <div class="dialog_content_header dialog_header">Select the data to use</div>   '+       
+                         '     <div class="dialog_content">'+
+                         '         <label class="dialog_label">Screen Data</label><br>'+
+                         '         <select class="dialog_input" size="7" name="tablename" id="addTable_tablename" >'+
   						 '            {{each tables}}                    '+
                          '            <option value="${name}">${name}</option>'+
   						 '            {{/each}}                                          '+
                          '         </select>'+
                          '         <div id="addTable_tablename_error" class="validateErrorContainer"></div>'+
                          '     </div>'+
-                         '    </fieldset>'+
-                         
-                         '    <fieldset title="3. Display Column">'+
-                         '       <legend>Select the major field to show</legend>      '+
-                         '       <div class="wizard_content">'+
-                         '           <label>Display Column</label>'+
-                         '           <select size="7" name="representative_field" id="addTable_representative_field" style="width:100%">'+
+                         '    </div>'+
+
+                         '    <div class="dialog_pane"  id="wizard_pane_03">'+
+                         '      <div class="ui-layout-south toolbar">'+
+                         '         <button  class="button_delete toolbar_button CoreDialogAddTable_cancel" >Cancel</button>'+
+                         '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_create">Create</button>'+
+                         '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_back3">&lt;&lt; Back</button>'+
+                         '      </div>'+
+                         '       <div class="dialog_content_header dialog_header">Select the major field to show</div>      '+
+                         '       <div class="dialog_content">'+
+                         '           <label class="dialog_label">Display Column</label><br>'+
+                         '           <select  class="dialog_input" size="7" name="representative_field" id="addTable_representative_field" style="width:100%">'+
                          '             <option selected="true" value="any">any</option>'+
                          '           </select>'+
                          '           <div id="addTable_representative_field_error" class="validateErrorContainer"></div>'+
 		                 '      </div>'+
-                         '    </fieldset>'+
+                         '    </div>'+
                          
-                         '   <input type="hidden" id="parentId" name="parent_id" />'+
-                         '   <button id="dialog_finish" class="finish">Create</button>'+
+                         '    <input type="hidden" id="parentId" name="parent_id" />'+
                          '</form>';
     },
 
     /************************************************************************************************/
     show: function(){
     /************************************************************************************************/
-        $("#dialogs" ).attr("style","");
-        
         CoreBackend.Model.getTables($.proxy(function(json){
-        	var $html= $.tmpl(this.template,{"tables":json});
-        	$("#dialogs" ).html($html);
-            $.blockUI({ 
-			   message: $('#dialogs'), 
-			   css: { border: "1px solid black", 
-			          textAlign:"", 
-			          top:"15%",
-			          height: "270px", 
-			          width: '575px' } 
-			
-			});
-            this.stepDialog = $("#dialog_form" ).stepy({
-			     legend: false,
-			     validate:true,
-			     block: true,
-			     next: $.proxy(this._onNext,this),
-			     submit: $.proxy(this._onSubmit,this),
-			     cancel: $.proxy(this._onCancel,this)
-			});
-			
+        	var $form= $.tmpl(this.template,{"tables":json});
+        	var $dialog = $("#dialogs" );
+        	
+        	$dialog.html($form)
+        	       .css({"height":300});
+        	
+        	$dialog.find(".dialog_pane")
+        	        .hide()
+        	        .first().show();
+        	
+        	$dialog.reveal({
+        	     animation: 'fadeAndPop',                   //fade, fadeAndPop, none
+        	     animationspeed: 200,                       //how fast animations are
+        	     closeonbackgroundclick: true              //if you click background will modal close?
+       	    });
+        	
 			var tableSelectionCallback = $.proxy(function(){
   	           var tableName = $('#dialog_form .[name="tablename"]').val();
 	           this._loadFieldListbox(tableName);
 			},this);
-
 			$("#addTable_tablename").change(tableSelectionCallback);
 			
-            // <!-- Optionaly -->
-            $('#dialog_form').validate({
-                errorClass: "error",
-                errorPlacement: function(error, element) {
-                   $('#'+element.attr("id")+"_error").html(error);
-                },
-                rules: {
-                   'alias': 'required',
-                   'tablename': 'required',
-                   'representative_field': 'required'
-            	},
-                messages: {
-                   'alias': {required: 'The name of the form is required.'},
-                   'tablename': {required: 'Select the table to display.'},
-                   'representative_field': {required: 'Select the main representative field to show.'}
-                }
-            }); 
+			$(".CoreDialogAddTable_cancel").button().click($.proxy(function(){
+				 $dialog.trigger('reveal:close');
+			},this));
+			
+			$("#CoreDialogAddTable_next1").button().click($.proxy(function(){
+				 $("#wizard_pane_01").fadeOut(300);
+				 $("#wizard_pane_02").fadeIn(300);
+			},this));
+
+			
+			$("#CoreDialogAddTable_next2").button().click($.proxy(function(){
+				 $("#wizard_pane_02").fadeOut(300);
+				 $("#wizard_pane_03").fadeIn(300);
+			},this));
+			
+			$("#CoreDialogAddTable_back2").button().click($.proxy(function(){
+				console.log("back");
+				 $("#wizard_pane_02").fadeOut(300);
+				 $("#wizard_pane_01").fadeIn(300);
+			},this));
+
+			
+			$("#CoreDialogAddTable_create").button().click($.proxy(function(){
+				this._onSubmit();
+			},this));
+			
+			$("#CoreDialogAddTable_back3").button().click($.proxy(function(){
+				console.log("back");
+				 $("#wizard_pane_03").fadeOut(300);
+				 $("#wizard_pane_02").fadeIn(300);
+			},this));
         },this)); // getTables
     },
 	
     /************************************************************************************************/
 	_onCancel: function(index){
     /************************************************************************************************/
-	   $("#dialogs").html("");
-       $.unblockUI();
+		$("#dialogs").trigger('reveal:close');
 	},
 
+	
     /************************************************************************************************/
-	_onSubmit: function(index){
+	_onSubmit: function(){
     /************************************************************************************************/
-       $.unblockUI();
        $("#parentId").val(this.parentId);
        this._addTable();
-	   $("#dialogs").html("");
+ 	   $("#dialogs").trigger('reveal:close');
 	},
 
+	
     /************************************************************************************************/
 	_onNext: function(index){
     /************************************************************************************************/
 	},
 
+	
     /************************************************************************************************/
     _addTable: function(){
     /************************************************************************************************/
