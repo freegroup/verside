@@ -10,8 +10,8 @@ var CoreNavigationFilterPanel = Class.extend({
     this.fields = null;
     
     this.filterContainerTemplate=
-                "<div id='navigation_filter' class='ui-widget-content search_panel'>"+
-                "<div id='navigation_filter_entries' class='ui-layout-center'>"+
+                "<div id='dialog_navigation_filter' class='ui-widget-content search_panel'>"+
+                "<div id='dialog_navigation_filter_entries' class='ui-layout-center'>"+
                 "   <div class='dialog_header'>Filter Criteria</div>"+
                 "</div>"+
                 "<div class='ui-layout-south toolbar'>"+
@@ -21,9 +21,9 @@ var CoreNavigationFilterPanel = Class.extend({
                 "</div>";
 			
      this.filterEntryTemplate=
-                '<div id="filterentry_${id}" data-id="${id}" class="navigation_filter_constraint_group">'+
+                '<div id="filterentry_${id}" data-id="${id}" class="dialog_navigation_filter_constraint_group">'+
                 '   <div class="">'+
-                '      <div class="navigation_filter_constraint_pane">'+
+                '      <div class="dialog_navigation_filter_constraint_pane">'+
                 '         <select class="filterentry_column" style="margin:0.2em">'+
                 '{{each fields}}'+
                 '            <option value="${name}">${name}</option>'+
@@ -40,7 +40,7 @@ var CoreNavigationFilterPanel = Class.extend({
                 '         </select>'+
                 '         <input class="filterentry_constraint dialog_input" type="${type}" style="height:25px; margin:2px;" value="${constraint}">'+
                 '      </div>'+
-                '      <div class="navigation_filter_action_pane">'+
+                '      <div class="dialog_navigation_filter_action_pane">'+
                 '        <button class="button_delete_contraint filterentry_remove">X</button>'+
                 '      </div>'+
                 '    </div>'+
@@ -80,7 +80,7 @@ var CoreNavigationFilterPanel = Class.extend({
 	 // layout the pane
 	 //
     this.toolbarHeight=$("#container_detail_toolbar").outerHeight();
- 	this.layoutObj2 = $('#navigation_filter').layout({
+ 	this.layoutObj2 = $('#dialog_navigation_filter').layout({
       center: {
           resizeWhileDragging:true,
           resizeContentWhileDragging:true
@@ -107,7 +107,7 @@ var CoreNavigationFilterPanel = Class.extend({
 			this._createFilterEntry(this.modelName);
 	   },this));
 	   
-	$("#navigation_filter_entries").niceScroll();
+	$("#dialog_navigation_filter_entries").niceScroll();
 
   },
   
@@ -131,7 +131,7 @@ var CoreNavigationFilterPanel = Class.extend({
   /************************************************************************************************/
   _saveFilterEntries: function(){
   /************************************************************************************************/
-    var entries = $(".navigation_filter_constraint_group");
+    var entries = $(".dialog_navigation_filter_constraint_group");
     var counter = entries.length;
     $.each(entries, function(i,item){
         var $item = $(item);
@@ -158,10 +158,10 @@ var CoreNavigationFilterPanel = Class.extend({
                                                 }); 
    entry
     .css('opacity',0)
-    .appendTo('#navigation_filter_entries')
+    .appendTo('#dialog_navigation_filter_entries')
     .animate({'opacity': 1}, 500);
 
-   entry.scrollintoview({containerSelector:"#navigation_filter_entries"});
+   entry.scrollintoview({containerSelector:"#dialog_navigation_filter_entries"});
 
    entry.find(".filterentry_column option[value='"+column+"']").attr('selected',true);
    entry.find(".filterentry_operation option[value='"+operation+"']").attr('selected',true);

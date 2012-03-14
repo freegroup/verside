@@ -16,7 +16,7 @@ var CoreNavigationPropertiesPanel = Class.extend({
      // Attach to the last navigation entry a "Filter" pane.
      // The user can reduce the returned content with this static content filter.
      //
-     this.container = $("<div id='navigation_properties' class='ui-widget-content search_panel'>"+
+     this.container = $("<div id='dialog_navigation_properties' class='ui-widget-content search_panel'>"+
                         "<div class='ui-layout-center'>"+
                         "   <div class='dialog_header'>Menu Settings</div>"+
                         "   <div class='dialog_label'>Label</div>"+
@@ -58,7 +58,7 @@ var CoreNavigationPropertiesPanel = Class.extend({
 	 // layout the pane
 	 //
     this.toolbarHeight=$("#container_detail_toolbar").outerHeight();
- 	this.layoutObj2 = $('#navigation_properties').layout({
+ 	this.layoutObj2 = $('#dialog_navigation_properties').layout({
       center: {
           resizeWhileDragging:true,
           resizeContentWhileDragging:true

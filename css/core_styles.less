@@ -2,11 +2,12 @@
 
 
 /* Generic vars for theglobal document  */
-@fontFamily: Helvetica, Arial, Verdana, sans-serif;
-@fontBaseColor: #6b6b6b;
-@fontBaseSize: 12px;
-@fontNavigationColor: #AEAEAE;
-@backgroundBaseColor:#F1F1F1; 
+@baseFontFamily: Helvetica, Arial, Verdana, sans-serif;
+@baseFontColor: #6b6b6b;
+@baseFontSize: 12px;
+@baseBackgroundColor:#F1F1F1; 
+
+
 @applicationLeftPadding: 15px;
 
 
@@ -32,9 +33,9 @@
 /* global toolbars like the one in the Navigation and Formular */
 @toolbarHeight: 40px;
 @toolbarPadding: 5px;
-@toolbarBackgroundColorStart: @backgroundBaseColor;
-@toolbarBackgroundColorEnd: darken(@backgroundBaseColor,10%);
-@toolbarButtonFontColor: darken(@backgroundBaseColor,80%); 
+@toolbarBackgroundColorStart: @baseBackgroundColor;
+@toolbarBackgroundColorEnd: darken(@baseBackgroundColor,10%);
+@toolbarButtonFontColor: darken(@baseBackgroundColor,80%); 
 @toolbarButtonColorDelete: #DD4B39;
 @toolbarButtonColorAdd: #3D9400;
 @toolbarButtonColorOk: #4D90FE;
@@ -45,31 +46,30 @@
 /* palette stuff */
 @paletteElementOuterHeight:30px;
 @paletteElementImageHeight:30px;
-@paletteElementColor: @fontNavigationColor;
-@palettePropertyHeaderFontSize:@fontBaseSize * 1.2;
-@palettePropertyListFontSize:@fontBaseSize * 1.2;
-@paletteUIElementFontSize:@fontBaseSize * 1.2;
+@paletteElementColor: #AEAEAE;
+@palettePropertyHeaderFontSize:@baseFontSize * 1.2;
+@palettePropertyListFontSize:@baseFontSize * 1.2;
+@paletteUIElementFontSize:@baseFontSize * 1.2;
 @paletteButtonGroupHeight:30px;
 @paletteButtonGroupRadius: 3px;
 
 
 @breadcrumbHeight: @toolbarHeight;
-@breadcrumbFontSize: @fontBaseSize * 1.2;
+@breadcrumbFontSize: @baseFontSize * 1.2;
 
-
-@formularBackgroundColor: #FAFAFA;
-@formularInputBackgroundColor: darken(@formularBackgroundColor,2%);
-
+@formularBackgroundColor: @baseBackgroundColor;
+@formularInputBackgroundColor: darken(@baseBackgroundColor,2%);
 
 @paneTabBackgroundColor:#ebebeb;
 @paneTabFontColor:#333333;
 @paneActiveTabBackgroundColor: darken(@paneTabBackgroundColor,10%);
 @paneActiveTabFontColor:#333333;
-@paneTabFontSize: @fontBaseSize* 1.1;
+@paneTabFontSize: @baseFontSize* 1.1;
 
-@navigationListHeaderFontSize: @fontBaseSize * 1.2;
+@navigationListHeaderFontSize: @baseFontSize * 1.2;
 @navigationListHeaderFontColor : lighten(@fontNavigationColor,20%);
-@navigationListEntryFontSize:@fontBaseSize;
+@navigationListEntryFontSize:@baseFontSize;
+@fontNavigationColor: #AEAEAE;
 
 
 /******************************************************************
@@ -78,21 +78,21 @@
 body{
  padding:0px;
  margin:0px;
- font-family:@fontFamily;
- font-size:@fontBaseSize;
- position:absolute;
  top:0px;
  left:0px;
  height:100%;
+ font-family:@baseFontFamily;
+ font-size:@baseFontSize;
+ position:absolute;
 }
 
 label{
- font-family:@fontFamily;
+ font-family:@baseFontFamily;
  white-space:nowrap;
 }
 
 input{
- font-family: @fontFamily;
+ font-family: @baseFontFamily;
 }
 
 
@@ -167,7 +167,7 @@ input{
  * SplitPane bar / Resizer
  ******************************************************************/
 .ui-layout-resizer{ /* all 'resizer-bars' */
- background:darken(@backgroundBaseColor,12%);
+ background:darken(@baseBackgroundColor,12%);
  border-width:0;
 }
 
@@ -215,6 +215,12 @@ input{
  border: 1px solid darken(@toolbarButtonColorAdd,2%) !important;
  box-shadow:none !important;
 }
+.button_add .ui-button-text{
+ font-family:@baseFontFamily !important;
+ text-shadow:none !important;
+ font-weight: normal !important;
+ color:white !important;
+}
 
 .button_ok{
  background-color: @toolbarButtonColorOk;
@@ -225,6 +231,12 @@ input{
  background-image: -ms-linear-gradient(bottom,@toolbarButtonColorOk 50%, darken(@toolbarButtonColorOk,2%) 74%) !important;
  border: 1px solid darken(@toolbarButtonColorOk,5%) !important;
  box-shadow:none !important;
+}
+.button_ok .ui-button-text{
+ font-family: @baseFontFamily !important;
+ text-shadow:none !important;
+ font-weight: normal !important;
+ color:white !important;
 }
 
 .button_delete{
@@ -238,26 +250,13 @@ input{
  box-shadow:none !important;
 }
 
-.button_add .ui-button-text{
- font-family:@fontFamily !important;
- text-shadow:none !important;
- font-weight: normal !important;
- color:white !important;
-}
-
-.button_ok .ui-button-text{
- font-family: @fontFamily !important;
- text-shadow:none !important;
- font-weight: normal !important;
- color:white !important;
-}
-
 .button_delete .ui-button-text{
- font-family: @fontFamily !important;
+ font-family: @baseFontFamily !important;
  text-shadow:none !important;
  font-weight: normal !important;
  color:white !important;
 }
+
 
 .button_right_align{
  float:right;
@@ -266,9 +265,9 @@ input{
 
 
 /******************************************************************
- * Styles für die Navigation
+ * Styles for the property panel of the navigation (landscape)
  ******************************************************************/
-#navigation_properties{
+#dialog_navigation_properties{
  border:0px;
  border-right:1px solid @dialogBorderColor;
  border-bottom:1px solid @dialogBorderColor;
@@ -284,7 +283,7 @@ input{
 }
 
 
-#navigation_filter{
+#dialog_navigation_filter{
  border:0px;
  border-right:1px solid @dialogBorderColor;
  border-bottom:1px solid @dialogBorderColor;
@@ -299,7 +298,7 @@ input{
  .border-radius(@dialogRadius, @dialogRadius, 0, 0);
 }
 
-.navigation_filter_constraint_group{
+.dialog_navigation_filter_constraint_group{
  background-color: rgba(5, 5, 5, 0.1);
  border: 1px solid rgba(25, 25, 25, 0.2);
  display: inline-block;
@@ -307,13 +306,13 @@ input{
  width: 100%;
 }
 
-.navigation_filter_constraint_pane{
+.dialog_navigation_filter_constraint_pane{
  float:left;
  margin:10px;
  width:@dialogLeftDockWidth - 110;
 }
 
-.navigation_filter_action_pane{
+.dialog_navigation_filter_action_pane{
  float:right;
  margin:10px;
 }
@@ -345,7 +344,7 @@ input{
  width:100%;
 }
 
-.navigation_filter_constraint_group select {
+.dialog_navigation_filter_constraint_group select {
  background: none repeat scroll 0 0 #FAFAFA;
  border-color: #C6C6C6 #DADADA #EAEAEA;
  border-radius: 4px 4px 4px 4px;
@@ -365,7 +364,7 @@ input{
  ******************************************************************/
  .dialog_header{
  margin-bottom:20px;
- font-family: @fontFamily;
+ font-family: @baseFontFamily;
  font-size: 20px;
  font-weight: normal;
  text-shadow: 0 1px 0 #000000;
@@ -383,7 +382,7 @@ input{
 }
 
 .dialog_label{
- font-family: @fontFamily;
+ font-family: @baseFontFamily;
  font-size: 14px;
  color: #f0f0f0 !important;
  margin-bottom:2px;
@@ -412,7 +411,7 @@ form select.core_formelement {
  background: none repeat scroll 0 0 @formularInputBackgroundColor;
  border-color: #C6C6C6 #DADADA #EAEAEA;
  border-radius: 4px 4px 4px 4px;
- font-family:@fontFamily;
+ font-family:@baseFontFamily;
  -moz-box-sizing: border-box;
  padding-left:7px;
  border-style: solid ;
@@ -454,12 +453,12 @@ form input.core_formelement[readonly=readonly]{
  -webkit-box-flex: 1;
  -moz-box-flex: 1;
  text-align: center;
- color: @fontBaseColor;
+ color: @baseFontColor;
  cursor:pointer;
  border-left: none !important;
  border-top: none !important;
  border-bottom: none !important;
- border-right: solid 1px lighten(@fontBaseColor,5%) !important;
+ border-right: solid 1px lighten(@baseFontColor,5%) !important;
  font-size:12px;
 }
 
@@ -489,7 +488,7 @@ form input.core_formelement[readonly=readonly]{
 
 .property_label{
  color: @fontNavigationColor !important;
- font-family: @fontFamily;
+ font-family: @baseFontFamily;
  font-size: @palettePropertyHeaderFontSize;
  font-weight: normal;
  text-shadow: 0 1px 0 #000000;
