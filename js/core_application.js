@@ -61,9 +61,9 @@ var CoreApplication = Class.extend({
   /************************************************************************************************/
 	this.layout = new CoreLayout();
 	this.navigation = new CoreNavigation();
-	this.toolbar = new CoreToolbar();
 	this.contentpane = new CoreContentpane();
 	this.editor = new CoreUiEditor();
+	this.toolbar = new CoreToolbar();
 	
 	this.navigation.load();
 	

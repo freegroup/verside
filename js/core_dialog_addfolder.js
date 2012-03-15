@@ -1,9 +1,9 @@
+
 var CoreDialogAddFolder = Class.extend({
 
      /************************************************************************************************/
      init: function( parentId ){
      /************************************************************************************************/
-         this.BASE_URL = "index.php/";
          this.parentId = parentId;
          this.template = '<form id="dialog_form" action="" method="">'+
                          '   <div class="dialog_pane" id="wizard_pane_01">'+

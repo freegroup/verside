@@ -16,6 +16,7 @@
 
 <link type="text/css" rel="stylesheet" href="css/core_styles.css" />
 <link type="text/css" rel="stylesheet/less" href="css/core_styles.less.php" />
+<script type="text/javascript" src="js/lib/less-1.2.2.js"></script>
 
 <script type="text/javascript" src="js/lib/jquery-1.6.4.js"></script>
 <script type="text/javascript" src="js/lib/jquery-ui-1.8.16.custom.min.js"></script>
@@ -42,7 +43,6 @@
 <script type="text/javascript" src="js/lib/jquery-iphone-checkboxes.js"></script>
 <script type="text/javascript" src="js/lib/jquery-longclick.js"></script>
 <script type="text/javascript" src="js/lib/jquery-reveal.js"></script>
-<script type="text/javascript" src="js/lib/less-1.2.2.js"></script>
 <script type="text/javascript" src="js/lib/Class.js"></script>
 
 <script type="text/javascript" src="js/core_backend.js"></script>

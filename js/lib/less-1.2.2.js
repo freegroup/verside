@@ -2969,7 +2969,7 @@ less.env = less.env || (location.hostname == '127.0.0.1' ||
                         location.port.length > 0         ||
                         isFileProtocol                   ? 'development'
                                                          : 'production');
-
+less.env ="production";
 // Load styles asynchronously (default: false)
 //
 // This is set to `false` by default, so that the body

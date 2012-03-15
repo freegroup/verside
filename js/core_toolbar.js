@@ -8,14 +8,14 @@ var CoreToolbar = Class.extend({
 	this.currentTableName = null;
 	this.currentControllerName=null;
 	this.currentRecordId = null;
-console.log("init toolbar...");
+    $("#container_detail_toolbar button").hide();
 	$( "#button_save_record" ).button({
       icons: {
          primary: "ui-icon-circle-check"
       }
     }).click(function(){
        coreTrigger(COMMAND_DETAIL_RECORD_SAVE);
-    });
+    }).button( "option", "disabled", false );
 
 	$( "#button_new_record" ).button({
       icons: {
@@ -23,7 +23,7 @@ console.log("init toolbar...");
       }
     }).click($.proxy(function(){
        coreTrigger(COMMAND_DETAIL_RECORD_CREATE,[this.currentModelName,this.currentTableName,this.currentControllerName]);
-    },this));
+    },this)).button( "option", "disabled", false );
         
 	$( "#button_delete_record" ).button({
       icons: {
@@ -31,14 +31,15 @@ console.log("init toolbar...");
       }
     }).click(function(){
        coreTrigger(COMMAND_DETAIL_RECORD_DELETE);
-    });
+    }).button( "option", "disabled", false );
 
+  
 	$(document).bind(EVENT_DETAIL_MODEL_LOADED, $.proxy(function(event, modelName, tableName, controllerName){
-	  $("#container_detail_toolbar button").show();
+	  $("#container_detail_toolbar button").fadeIn();
 	},this));
 	  
 	$(document).bind(EVENT_DETAIL_MODEL_CLEARED, $.proxy(function(){
- 	  $("#container_detail_toolbar button").hide();
+ 	  $("#container_detail_toolbar button").fadeOut();
 	},this));
 
 	$(document).bind(EVENT_DETAIL_RECORD_LOADED, $.proxy(function(event,recordId, modelName, tableName, controllerName){

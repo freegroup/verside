@@ -170,11 +170,9 @@ var CoreContentpane = Class.extend({
   /************************************************************************************************/
 
     CoreBackend.UI.getFormData(model, table, controller,id, $.proxy(function( json ) {
-//    CoreBackend.UI.getFilledFormular(model, table, controller,id, $.proxy(function( response ) {
            var oldContent = $("#content_formular");
            oldContent.attr("id","6789");
            var newContent = this.uiRenderer.renderForm(json);
-//           var newContent = $(response);
            switch(animation){
              case "slideLeft":
                  $("#container_detail").css("overflow","hidden");
