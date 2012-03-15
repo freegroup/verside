@@ -8,7 +8,7 @@ var CoreToolbar = Class.extend({
 	this.currentTableName = null;
 	this.currentControllerName=null;
 	this.currentRecordId = null;
-
+console.log("init toolbar...");
 	$( "#button_save_record" ).button({
       icons: {
          primary: "ui-icon-circle-check"

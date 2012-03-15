@@ -12,6 +12,25 @@ CoreBackend.Navigation.load = function(/*:String*/ controller,/*:String*/ id, /*
     $.getJSON("index.php/"+controller+"/navigate/"+id,onDoneCallback);
 };
 
+/************************************************************************************************/
+CoreBackend.Navigation.create = function(/*:String*/ parentNavigationId,/*:String*/ name, /*:function*/ onDoneCallback){
+/************************************************************************************************/
+
+    $.ajax({
+	  url: "index.php/controller_core_navigation/create",
+	  type: 'POST',
+	  data:{
+               "model": "Model_core_navigation",
+               "order": 0,
+               "parent_id": parentNavigationId,
+               "name": name,
+               "type": "folder",
+               "controller":"controller_core_navigation"
+              },
+	  success: onDoneCallback
+    });
+};
+
 
 /************************************************************************************************/
 /************************************************************************************************/

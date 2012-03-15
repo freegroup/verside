@@ -12,12 +12,12 @@ var CoreDialogAddTable = Class.extend({
                          '         <button  class="button_delete toolbar_button CoreDialogAddTable_cancel" >Cancel</button>'+
                          '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_next1">Next &gt;&gt;</button>'+
                          '      </div>'+
-                         '      <div class="dialog_content_header dialog_header">Name your new Formular</div> '+           
+                         '      <div class="dialog_content_header dialog_header">Name your new Form</div> '+           
                          '      <div class="dialog_content">'+
                          '         <label class="dialog_label">Screen Name:</label><br>'+
                          '         <input class="dialog_input" type="text" id="addTable_alias" autofocus="autofocus" name="alias" value="">'+
                          '         <br>'+
-				         '         <div id="addTable_alias_error" class="validateErrorContainer"></div>'+
+				         '         <div id="addTable_alias_error" class="dialog_validateError"></div>'+
 			             '     </div>'+
                          '   </div>'+
 
@@ -35,7 +35,7 @@ var CoreDialogAddTable = Class.extend({
                          '            <option value="${name}">${name}</option>'+
   						 '            {{/each}}                                          '+
                          '         </select>'+
-                         '         <div id="addTable_tablename_error" class="validateErrorContainer"></div>'+
+                         '         <div id="addTable_tablename_error" class="dialog_validateError"></div>'+
                          '     </div>'+
                          '    </div>'+
 
@@ -51,7 +51,7 @@ var CoreDialogAddTable = Class.extend({
                          '           <select  class="dialog_input" size="7" name="representative_field" id="addTable_representative_field" style="width:100%">'+
                          '             <option selected="true" value="any">any</option>'+
                          '           </select>'+
-                         '           <div id="addTable_representative_field_error" class="validateErrorContainer"></div>'+
+                         '           <div id="addTable_representative_field_error" class="dialog_validateError"></div>'+
 		                 '      </div>'+
                          '    </div>'+
                          

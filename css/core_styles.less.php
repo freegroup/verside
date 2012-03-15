@@ -193,7 +193,6 @@ body{
  color:white !important;
 }
 
-
 .button_right_align{
  float:right;
 }
@@ -412,9 +411,14 @@ cursor:move;
  vertical-align: middle;
 }
 
+.dialog_validateError{
+ color:@dialogErrorColor;
+ font-size:@dialogErrorFontSize;
+ padding-top:5px;
+}
 
 /******************************************************************
- * Styles f�r Eingabemaske/Formular des Benutzer
+ * Styles für Eingabemaske/Formular des Benutzer
  ******************************************************************/
 
 .input_dirty{

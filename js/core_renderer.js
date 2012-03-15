@@ -73,9 +73,9 @@ var CoreRenderer = Class.extend({
                               '     id="${ui.id}" '+
                               '     style="position: absolute; ${ui.css}" '+
                               '     autocomplete="off" '+
+                              '     type="text" '+
                               '     class="core_formelement" '+
-                              '>'+
-                              '</input>';
+                              '>';
                              
     this.templates["textarea"] = '<textarea data-draggable="true" '+
                               '     data-type="${ui.type}" '+

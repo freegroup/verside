@@ -4,7 +4,6 @@ var CoreUiEditor = Class.extend({
   init: function(){
   /************************************************************************************************/
     this.BASE_URL = "index.php/";
-    this.CONTROLLER = "controller_core_formelement";
 
 	this.uiRenderer = new CoreRenderer();
 	
@@ -357,11 +356,11 @@ var CoreUiEditor = Class.extend({
              this._paletteWidgetDropped(event,ui);
        },this)
     });
-
+/*
     $(".[data-draggable=true]").longclick( $.proxy(function(event){
         alert("ddd");
     },this));
-
+*/
     this._adjustFormHeight();
   },
 
@@ -458,7 +457,7 @@ var CoreUiEditor = Class.extend({
            this.navProperties = new CoreNavigationFilterPanel(this.currentTableName, this.currentModelName);
 	    }
 
-
+console.log("DISABLE BUTTONS....");
 	    // disable the navigation buttons at the top 
 	    $("#navigation_toolbar button").each(function(i,item){
 	       $item = $(item);
@@ -473,6 +472,7 @@ var CoreUiEditor = Class.extend({
    	      this.navProperties = null;
    	   }
 	   
+console.log("DISABLE BUTTONS2....");
 	   $("#navigation_toolbar button").each(function(i,item){
 	     $item = $(item);
 		                     
@@ -671,7 +671,7 @@ var CoreUiEditor = Class.extend({
 	   //
   	   coreTrigger(COMMAND_LAYOUT, [this.designMode]);
      }
-     
+
      if(this.detailModelLoaded===true){
         $("#navigation_toolbar_actions .toolbar_button").button("disable");
      }

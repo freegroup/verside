@@ -10,11 +10,11 @@
 
 <link type="text/css" rel="stylesheet" href="css/aristo/jquery-ui-1.8.16.custom.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery.jgrowl.css"  />
-<link type="text/css" rel="stylesheet" href="css/core_styles.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery-iphone-checkboxes.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery.selectbox.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery-reveal.css" />
 
+<link type="text/css" rel="stylesheet" href="css/core_styles.css" />
 <link type="text/css" rel="stylesheet/less" href="css/core_styles.less.php" />
 
 <script type="text/javascript" src="js/lib/jquery-1.6.4.js"></script>
@@ -106,8 +106,8 @@ $(document).ready(function() {
           <div id="container_detail_toolbar" class="toolbar ui-widget-header ui-layout-north">
              <button class="toolbar_button" id="button_save_record">Save</button>
              <button class="toolbar_button" id="button_new_record">New</button>
-             <button class="toolbar_button" id="button_delete_record">Delete </button>
-       </div>
+             <button class="toolbar_button" id="button_delete_record">Delete</button>
+          </div>
 
        <div id="container_detail" class="pane ui-widget-content ui-layout-center">
        </div>

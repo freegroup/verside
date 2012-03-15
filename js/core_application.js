@@ -59,8 +59,8 @@ var CoreApplication = Class.extend({
   /************************************************************************************************/
   init: function(containerId){
   /************************************************************************************************/
-	this.navigation = new CoreNavigation();
 	this.layout = new CoreLayout();
+	this.navigation = new CoreNavigation();
 	this.toolbar = new CoreToolbar();
 	this.contentpane = new CoreContentpane();
 	this.editor = new CoreUiEditor();
@@ -69,7 +69,7 @@ var CoreApplication = Class.extend({
 	
 //	less.watch();
 
- //   coreTrigger(COMMAND_LAYOUT_PORTRAIT);
+//   coreTrigger(COMMAND_LAYOUT_PORTRAIT);
   }
 
 });
