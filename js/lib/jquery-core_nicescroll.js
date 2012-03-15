@@ -123,9 +123,7 @@
               this.rail.drag.ly = this.rail.drag.ny;
               this.rail.drag.ny = e.pageY;
               this.rail.drag.lt = (new Date()).getTime();
-              
-              this.showThumb();
-              
+
               this.doScrollTo(this.rail.drag.st-my);
               this.cancelEvent(e);
             }
@@ -195,10 +193,13 @@
   };
    
   /************************************************************************************************/
-  this.doScroll = function(y) {
+  this.doScroll = function(y, /*:boolean*/ animate) {
   /************************************************************************************************/
       this.showThumb();
-      this.doc.stop().animate({scrollTop:y},{
+      this.doc.stop();
+      
+      if(animate===true){
+        this.doc.animate({scrollTop:y},{
           duration:1500,
           specialEasing: {
             scrollTop: 'easeOutQuart'
@@ -210,7 +211,13 @@
           complete: $.proxy(function() {
             this.hideThumb();
           },this)
-      });
+        });
+      }
+      else{
+         this.doc.scrollTop(y);
+         var thumbY = Math.round(this.doc.scrollTop() * (1/this.scrollratio.y));
+         this.thumb.css({height:this.thumbheight,top:thumbY});
+      }
     };
     
   /************************************************************************************************/
@@ -221,7 +228,7 @@
       var my = this.scrollvaluemax;
       if (ny>my) 
          pos=Math.round(my*this.scrollratio.y);
-      this.doScroll(pos);
+      this.doScroll(pos, false);
   };
     
   
@@ -231,7 +238,7 @@
       var dy = mom.ly-mom.ny;
       var tt = ((new Date()).getTime()-mom.lt);
       if (tt<30) {   
-        this.doScroll(parseInt((dy*(500/tt))+ this.doc.scrollTop()));
+        this.doScroll(parseInt((dy*(500/tt))+ this.doc.scrollTop()),true);
       }
     };
     
