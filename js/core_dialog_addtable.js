@@ -12,10 +12,10 @@ var CoreDialogAddTable = Class.extend({
                          '         <button  class="button_delete toolbar_button CoreDialogAddTable_cancel" >Cancel</button>'+
                          '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_next1">Next &gt;&gt;</button>'+
                          '      </div>'+
-                         '      <div class="dialog_content_header dialog_header">Provide Screen information</div> '+           
+                         '      <div class="dialog_content_header dialog_header">Name your new Formular</div> '+           
                          '      <div class="dialog_content">'+
                          '         <label class="dialog_label">Screen Name:</label><br>'+
-                         '         <input class="dialog_input" type="text" id="addTable_alias" name="alias" value="">'+
+                         '         <input class="dialog_input" type="text" id="addTable_alias" autofocus="autofocus" name="alias" value="">'+
                          '         <br>'+
 				         '         <div id="addTable_alias_error" class="validateErrorContainer"></div>'+
 			             '     </div>'+
@@ -27,7 +27,7 @@ var CoreDialogAddTable = Class.extend({
                          '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_next2" >Next &gt;&gt;</button>'+
                          '         <button  class="button_ok toolbar_button button_right_align" id="CoreDialogAddTable_back2">&lt;&lt; Back</button>'+
                          '      </div>'+
-                         '     <div class="dialog_content_header dialog_header">Select the data to use</div>   '+       
+                         '     <div class="dialog_content_header dialog_header">Select database table to use</div>   '+       
                          '     <div class="dialog_content">'+
                          '         <label class="dialog_label">Screen Data</label><br>'+
                          '         <select class="dialog_input" size="7" name="tablename" id="addTable_tablename" >'+
@@ -71,7 +71,8 @@ var CoreDialogAddTable = Class.extend({
         	
         	$dialog.find(".dialog_pane")
         	        .hide()
-        	        .first().show();
+        	        .first()
+        	        .show();
         	
         	$dialog.reveal({
         	     animation: 'fadeAndPop',                   //fade, fadeAndPop, none
@@ -90,8 +91,13 @@ var CoreDialogAddTable = Class.extend({
 			},this));
 			
 			$("#CoreDialogAddTable_next1").button().click($.proxy(function(){
-				 $("#wizard_pane_01").fadeOut(300);
-				 $("#wizard_pane_02").fadeIn(300);
+			     if($("#addTable_alias").val()===""){
+			        $("#addTable_alias_error").text("Name is a required field");
+			     }
+                 else{
+				    $("#wizard_pane_01").fadeOut(300);
+				    $("#wizard_pane_02").fadeIn(300);
+				 }
 			},this));
 
 			

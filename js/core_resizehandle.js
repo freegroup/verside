@@ -15,7 +15,7 @@ var CoreResizeHandle = Class.extend({
 	
 	 this.element = element;
 	 
-     this.resizeHandle = $("<div class='resize_handle ui-state-active'></div>");
+     this.resizeHandle = $("<div class='resize_handle'></div>");
      this.resizeHandle.appendTo($(element).parent());
      this.resizeHandle.draggable({
 

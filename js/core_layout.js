@@ -56,7 +56,7 @@ var CoreLayout = Class.extend({
 	     north: {
            resizable:false,
            closable:false,
-           paneSelector: "#container_toolbar",
+           paneSelector: "#teaser",
            spacing_open:0,
            spacing_closed:0
          },

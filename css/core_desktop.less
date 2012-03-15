@@ -2,7 +2,7 @@
 /* Generic vars for the global document  */
 @baseFontFamily: Helvetica, Arial, Verdana, sans-serif;
 @baseFontColor: #6b6b6b;
-@baseFontSize: 14px;
+@baseFontSize: 12px;
 @baseBackgroundColor:#F1F1F1; 
 
 
@@ -12,11 +12,11 @@
 @dialogBackgroundColorEnd: #333;
 @dialogBorderColor: #b0b0b0;
 @dialogColor: #ffffff;
-@dialogFontSize: 16px;
-@dialogHeaderFontSize: @baseFontSize * 1.8;
+@dialogHeaderFontSize: @baseFontSize * 1.6;
+@dialogFontSize: 14px;
 @dialogContentPadding: 20px;
 @dialogRadius: 3px;
-@dialogInputHeight:35px;
+@dialogInputHeight:25px;
 
 @dialogLeftDockWidth:350px;
 @dialogTopDockHeight:350px;
@@ -25,12 +25,12 @@
 /* Teaser vars   */
 @teaserHeight: 42px;
 @teaserFontColor: #ebebeb;
-@teaserFontSize: 2.5em;
+@teaserFontSize: 2em;
 
 
 /* global toolbars like the one in the Navigation and Formular */
-@toolbarHeight: 53px;
-@toolbarPadding: 8px;
+@toolbarHeight: 40px;
+@toolbarPadding: 5px;
 @toolbarBackgroundColorStart: @baseBackgroundColor;
 @toolbarBackgroundColorEnd: darken(@baseBackgroundColor,10%);
 @toolbarButtonFontColor: darken(@baseBackgroundColor,80%); 
@@ -40,7 +40,6 @@
 @toolbarButtonRadius: 2px;
 @toolbarButtonLetterSpacing: 1px;
 
-@navigationEntryHeight:30px;
 
 /* palette stuff */
 @paletteElementOuterHeight:30px;
@@ -67,38 +66,33 @@
 
 @navigationListFontColor: #AEAEAE;
 @navigationListActiveFontColor:lighten(@navigationListFontColor,20%);
-@navigationListEntryHeight:30px;
-@navigationListHeaderFontSize: @baseFontSize * 1.6;
+@navigationListEntryHeight:20px;
+@navigationListHeaderFontSize: (@baseFontSize * 1.2);
 @navigationListHeaderFontColor : lighten(@navigationListFontColor,20%);
-@navigationListEntryFontSize:@baseFontSize * 1.4;
+@navigationListEntryFontSize:(@baseFontSize * 1.2);
 
-
+@_resizeSize:12px;
 .resizeHandle(){
- width:33px;
- height:33px;
- border: 0px !important; 
+ width:@_resizeSize;
+ height:@_resizeSize;
+ border:2px solid white;
+ .rounded((@_resizeSize / 3) * 2);
+ .drop-shadow();
+ .gradient(@toolbarButtonColorOk, @toolbarButtonColorOk, darken(@toolbarButtonColorOk,20%));
 }
 .resizeHandleN(){
-background: url("../images/ResizeHandle_N.png") no-repeat;
 }
 .resizeHandleNE(){
-background: url("../images/ResizeHandle_NE.png") no-repeat;
 }
 .resizeHandleE(){
-background: url("../images/ResizeHandle_E.png") no-repeat;
 }
 .resizeHandleSE(){
-background: url("../images/ResizeHandle_SE.png") no-repeat;
 }
 .resizeHandleS(){
-background: url("../images/ResizeHandle_S.png") no-repeat;
 }
 .resizeHandleSW(){
-background: url("../images/ResizeHandle_SW.png") no-repeat;
 }
 .resizeHandleW(){
-background: url("../images/ResizeHandle_W.png") no-repeat;
 }
 .resizeHandleNW(){
-background: url("../images/ResizeHandle_NW.png") no-repeat;
 }

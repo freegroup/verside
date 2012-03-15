@@ -9,25 +9,21 @@
 <base href="<?php echo base_url() ?>" />
 
 <link type="text/css" rel="stylesheet" href="css/aristo/jquery-ui-1.8.16.custom.css" />
-<link type="text/css" rel="stylesheet" href="css/jquery.stepy.css"  />
 <link type="text/css" rel="stylesheet" href="css/jquery.jgrowl.css"  />
 <link type="text/css" rel="stylesheet" href="css/core_styles.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery-iphone-checkboxes.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery.selectbox.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery-reveal.css" />
 
-<link type="text/css" rel="stylesheet/less" href="css/core_styles.less" />
-<link type="text/css" rel="stylesheet/less" href="css/core_webpad.less" media="only screen and (max-device-width: 1024px)" />
+<link type="text/css" rel="stylesheet/less" href="css/core_styles.less.php" />
 
 <script type="text/javascript" src="js/lib/jquery-1.6.4.js"></script>
 <script type="text/javascript" src="js/lib/jquery-ui-1.8.16.custom.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery-tmpl.js"></script>
 <script type="text/javascript" src="js/lib/jquery-core_caret.js"></script>
-<script type="text/javascript" src="js/lib/jquery-autogrow.js"></script>
 <script type="text/javascript" src="js/lib/jquery-blockUI.js"></script>
 <script type="text/javascript" src="js/lib/jquery-filedrop.js"></script>
 <script type="text/javascript" src="js/lib/jquery.validate.min.js"></script>
-<script type="text/javascript" src="js/lib/jquery.stepy.js"></script>
 <script type="text/javascript" src="js/lib/jquery.layout.js"></script>
 <script type="text/javascript" src="js/lib/jquery-core_fontfit.js"></script>
 <script type="text/javascript" src="js/lib/jquery-core_bounds.js"></script>
@@ -94,7 +90,7 @@ $(document).ready(function() {
 </head>
 <body >
 
-    <div id="container_toolbar" class="ui-widget-header ui-layout-north">
+    <div id="teaser" class="ui-widget-header ui-layout-north">
        My Application
     </div>
 

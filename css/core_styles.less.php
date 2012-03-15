@@ -1,7 +1,13 @@
 @import "elements.less";
 
-@import "core_desktop.less";
+<?php
+$isiPad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
 
+if($isiPad)
+   echo '@import "core_webpad.less";';
+else
+   echo '@import "core_desktop.less";';
+?>
 
 /******************************************************************
  * Global Settings for the common page
@@ -17,59 +23,10 @@ body{
  position:absolute;
 }
 
-label{
- font-family:@baseFontFamily;
- white-space:nowrap;
-}
-
-input{
- font-family: @baseFontFamily;
-}
-
-
-/********************************************************************************************************
- * Settings for the UI Editor
- *******************************************************************************************************/
-.resize_handle{
- position:absolute;
- width:10px;
- height:10px;
- -moz-border-radius: 6px; 
- -webkit-border-radius: 6px; 
- -khtml-border-radius: 6px;
- border-radius: 6px; 
-}
-
-
-.resize_border{
- position:absolute;
- padding:0px;
- margin:0px;
- overflow:hidden;
-}
-
-.core_formelement_designmode{
-border:1px dashed #88bfe8 !important;
-border-width:1px !important;
-cursor:move;
-}
-
-.core_navigation_designmode{
-border:1px dashed #88bfe8 !important;
-border-width:1px !important;
-cursor:move;
-}
-
 .pane{
  padding:0px !important;
  margin:0px !important;
 }
-
-
-.ui-draggable-helper{
- width:200px;
-}
-
 
 /********************************************************************************************************
  * Settings for the layout
@@ -243,8 +200,68 @@ cursor:move;
 
 
 
+/********************************************************************************************************
+ * Settings for the UI Editor of the form
+ *******************************************************************************************************/
+.resize_handle{
+  position:absolute;
+ .resizeHandle();
+}
+
+.resize_handle_N{
+ .resizeHandleN();
+}
+.resize_handle_NE{
+ .resizeHandleNE();
+}
+.resize_handle_E{
+ .resizeHandleE();
+}
+.resize_handle_SE{
+ .resizeHandleSE();
+}
+.resize_handle_S{
+ .resizeHandleS();
+}
+
+.resize_handle_SW{
+ .resizeHandleSW();
+}
+.resize_handle_W{
+ .resizeHandleW();
+}
+
+.resize_handle_NW{
+ .resizeHandleNW();
+}
+
+.resize_border{
+ position:absolute;
+ padding:0px;
+ margin:0px;
+ overflow:hidden;
+}
+
+.core_formelement_designmode{
+border:1px dashed #88bfe8 !important;
+border-width:1px !important;
+cursor:move;
+}
+
+.core_navigation_designmode{
+border:1px dashed #88bfe8 !important;
+border-width:1px !important;
+cursor:move;
+}
+
+
+.ui-draggable-helper{
+ width:200px;
+}
+
+
 /******************************************************************
- * Styles for the property panel of the navigation (landscape)
+ * Styles for the property panel of the navigation properties
  ******************************************************************/
 #dialog_navigation_properties{
  border:0px;
@@ -262,6 +279,9 @@ cursor:move;
 }
 
 
+/******************************************************************
+ * Styles for the property panel of the navigation filter
+ ******************************************************************/
 #dialog_navigation_filter{
  border:0px;
  border-right:1px solid @dialogBorderColor;
@@ -341,10 +361,10 @@ cursor:move;
 /******************************************************************
  * Styles für die Dialoge
  ******************************************************************/
- .dialog_header{
+.dialog_header{
  margin-bottom:20px;
  font-family: @baseFontFamily;
- font-size: 20px;
+ font-size: @dialogHeaderFontSize;
  font-weight: normal;
  text-shadow: 0 1px 0 #000000;
  color: #f0f0f0 !important;
@@ -381,6 +401,15 @@ cursor:move;
  font-size: @dialogFontSize;
  color: @baseFontColor !important;
  margin-bottom:2px;
+ height: @dialogInputHeight;
+ border-color: #C6C6C6 #DADADA #EAEAEA;
+ border-radius: 4px 4px 4px 4px;
+ font-family:@baseFontFamily;
+ -moz-box-sizing: border-box;
+ padding-left:7px;
+ border-style: solid ;
+ border-width: 1px;
+ vertical-align: middle;
 }
 
 
@@ -700,13 +729,13 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
  list-style: none outside none;
  white-space:nowrap;
  padding: 5px @applicationLeftPadding;
- height:20px;
+ height:@navigationListEntryHeight;
  cursor:default;
  border-top: 1px solid rgb(75,75,75) !important;
  border-bottom: 1px solid  rgba(37,37,40, 0.5) !important;
  border-width: 1px 1px 1px 0;
  border-right:0px;
- color: @fontNavigationColor;
+ color: @navigationListFontColor;
 }
 
 .columnnav_listentry:first-child{
@@ -715,14 +744,14 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
 
 .columnnav_listentry.ui-state-active{
  background: url("../images/background_bright.png") repeat scroll 0 0 transparent;
- color: rgb(210,210,210);
+ color: @navigationListActiveFontColor;
 }
 
 .columnnav_listentry_label{
  float:left;
  overflow:hidden;
  text-overflow: ellipsis;
- font-size:@navigationListEntryFontSize;
+ font-size:@navigationListEntryFontSize !important;
  text-shadow: 1px 1px 1px #101010;
  letter-spacing:1px;
 }

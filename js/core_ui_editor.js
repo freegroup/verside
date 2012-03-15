@@ -32,7 +32,7 @@ var CoreUiEditor = Class.extend({
     this.currentControllerName = null;
 	/*
 	this.toggler = $('<div id="edittoggler_container" ><span id="edittoggler_label">Design Mode</span> <INPUT type="checkbox" id="edittoggler_toggler" /> </div>');
-	$("#container_toolbar").append(this.toggler);
+	$("#teaser").append(this.toggler);
     $('#edittoggler_toggler')
 	  .iphoneStyle()
 	  .bind("change", $.proxy(function(event) {	  

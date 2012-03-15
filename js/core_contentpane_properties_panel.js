@@ -193,7 +193,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   showDefault: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").html('<div class="property_container">'+
-                                       '   <div class="property_label">Select element to show properties...</div>'+
+                                       '   <div class="dialog_label">Select element to show properties...</div>'+
 									   ' </div>'
 									   );
   },
@@ -257,7 +257,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   _addPropertyFontSize: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").append('<div class="property_container">'+
-                                       '    <div class="property_label">Font-Size</div>'+
+                                       '    <div class="dialog_label">Font-Size</div>'+
                                        '    <div class="core_buttonbar ui-widget-header">'+
                                        '           <div id="property_font_sizeSmaller" class="core_buttonbar_button leftEnd tab" ><span>A-</span></div>'+
                                        '           <div id="property_font_sizeNormal" class="core_buttonbar_button tab" ><span>1:1</span></div>'+
@@ -320,7 +320,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   _addPropertyFontStyle: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").append('<div class="property_container">'+
-                                       '    <div class="property_label">Font-Style</div>'+
+                                       '    <div class="dialog_label">Font-Style</div>'+
                                        '    <div class="core_buttonbar ui-widget-header">'+
                                        '           <div id="property_font_italic" class="property_css_entry core_buttonbar_button leftEnd tab"  data-cssname="font-style"  data-cssvalue="italic"><span>i</span></div>'+
                                        '           <div id="property_font_bold" class="property_css_entry core_buttonbar_button tab"  data-cssname="font-weight"  data-cssvalue="bold"><span>B</span></div>'+
@@ -372,7 +372,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   _addPropertyFontFamily: function(){
   /************************************************************************************************/
 		var list = $('<div class="property_container">'+
-					   '   <div class="property_label">Font-Family</div>'+
+					   '   <div class="dialog_label">Font-Family</div>'+
 					   '   <div class="ui-widget-content">'+
 					   '      <div id="property_font_arial" class="property_list_entry" data-fontname="Arial">Arial</div>'+
 					   '      <div id="property_font_verdana" class="property_list_entry" data-fontname="verdana">Verdana</div>'+
@@ -415,7 +415,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   _addPropertyDBTextField: function(){
   /************************************************************************************************/
         var listTemplate = '<div class="property_container" >                                         '+
-							'   <div class="property_label">DB Column</div>                            '+
+							'   <div class="dialog_label">DB Column</div>                            '+
 							'   <div class="ui-widget-content">                                        '+
 							'      <div class="property_list_entry" data-column="">-none-</div>        '+
 							' {{each fields}}                                                          '+
@@ -492,19 +492,19 @@ var CoreContentPanePropertiesPanel = Class.extend({
   _addPropertyText: function(){
   /************************************************************************************************/
     $("#palette_pane_properties").append('<div class="property_container">'+
-                                       '   <div class="property_label">Label</div>'+
-                                       '   <input class="property_input" id="property_label_text">'+
+                                       '   <div class="dialog_label">Label</div>'+
+                                       '   <input class="dialog_input" id="dialog_label_text" style="width:100%">'+
                                        '</div>'
                                     );
  
      var ajaxTimeOut=-1;
      var label = (this.currentUIElement.is("button"))?this.currentUIElement.button( "option", "label" ):this.currentUIElement.text();
-     $("#property_label_text").val(label);
-     $("#property_label_text").bind("keyup",$.proxy(function(e){
+     $("#dialog_label_text").val(label);
+     $("#dialog_label_text").bind("keyup",$.proxy(function(e){
            if (e.which == 13) {
-                $("#property_label_text").blur();
+                $("#dialog_label_text").blur();
            }
-                   var label = $("#property_label_text").val();
+                   var label = $("#dialog_label_text").val();
                    if(ajaxTimeOut!=-1) {
                           clearTimeout(ajaxTimeOut);
                           ajaxTimeOut=-1;
@@ -529,7 +529,7 @@ var CoreContentPanePropertiesPanel = Class.extend({
   /************************************************************************************************/
     $("#palette_pane_properties").append(
                                            '  <div class="property_container">'+
-                                       '    <div class="property_label">Events</div>'+
+                                       '    <div class="dialog_label">Events</div>'+
                                        '    <div class="core_buttonbar ui-widget-header">'+
                                        '           <div id="property_event_click" data-eventname="onClick" class="property_event_entry core_buttonbar_button leftEnd rightEnd tab"><span>onClick</span></div>'+
                                        '   </div>'+

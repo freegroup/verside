@@ -1,33 +1,5 @@
 
 /********************************************************************************************************
- * Settings for the navigation
- *******************************************************************************************************/
-#container_navigation_firstchild{
- height: 100%;
- padding:0px;
- overflow:hidden;
- border:0px;
-}
-
-
-.core-icon-tick{
- background:url("../images/tick.png") no-repeat top left !important;
-}
-
-
-
-/********************************************************************************************************
- * Settings for the UI ContextMenu of UI Elements
- *******************************************************************************************************/
-li.divider {
-  border-top: 1px solid #e7e3e7;
-  border-bottom: 1px solid #ffffff;
-  height: 1;
-  padding: 0;
-  margin: 5px 0 5px 27px;
-}
-
-/********************************************************************************************************
  * Edit Mode Toggler
  *******************************************************************************************************/
 
@@ -46,63 +18,6 @@ li.divider {
  font-weight: normal;
  line-height: 32px;
  cursor:pointer;
-}
-
-
-/********************************************************************************************************
- * Settings for the UI Editor
- *******************************************************************************************************/
-
-.drag_div{
-border:1px dotted rgb(224,237,254);
-background-color:rgba(224,237,254,0.4);
-position:absolute;
-z-index:10000;
-cursor:move;
-}
-
-.resize_handle{
- position:absolute;
- width:10px;
- height:10px;
- -moz-border-radius: 6px; 
- -webkit-border-radius: 6px; 
- -khtml-border-radius: 6px;
- border-radius: 6px; 
-}
-
-.core_formelement_designmode{
-border:1px dashed #88bfe8 !important;
-border-width:1px !important;
-cursor:move;
-}
-
-.core_navigation_designmode{
-border:1px dashed #88bfe8 !important;
-border-width:1px !important;
-cursor:move;
-}
-
-.resize_border{
- position:absolute;
- padding:0px;
- margin:0px;
- overflow:hidden;
-}
-
-
-.detail_header{
- color: #5A8942;
-}
-
-.pane{
- padding:0px !important;
- margin:0px !important;
-}
-
-
-.ui-draggable-helper{
- width:200px;
 }
 
 
