@@ -40,7 +40,7 @@ var CoreDialogAddFolder = Class.extend({
 	      this._addFolder();
        },this));
                          
-       $("#CoreDialogAddFolder_cancel").button().click( $.proxy(function() {
+       $("#CoreDialogAddFolder_cancel").button().click( $.proxy(function(e) {
 	      e.preventDefault();
 		  $dialog.trigger('reveal:close');
        },this));
