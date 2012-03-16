@@ -15,7 +15,7 @@ var CoreDialogAddTable = Class.extend({
                          '      <div class="dialog_content_header dialog_header">Name your new Form</div> '+           
                          '      <div class="dialog_content">'+
                          '         <label class="dialog_label">Screen Name:</label><br>'+
-                         '         <input class="dialog_input" type="text" id="addTable_alias" autofocus="autofocus" name="alias" value="">'+
+                         '         <input class="dialog_input" type="text" id="addTable_alias" autofocus name="alias" value="">'+
                          '         <br>'+
 				         '         <div id="addTable_alias_error" class="dialog_validateError"></div>'+
 			             '     </div>'+
@@ -77,7 +77,7 @@ var CoreDialogAddTable = Class.extend({
         	$dialog.reveal({
         	     animation: 'fadeAndPop',                   //fade, fadeAndPop, none
         	     animationspeed: 200,                       //how fast animations are
-        	     closeonbackgroundclick: true              //if you click background will modal close?
+        	     closeonbackgroundclick: false              //if you click background will modal close?
        	    });
         	
 			var tableSelectionCallback = $.proxy(function(){
@@ -99,7 +99,15 @@ var CoreDialogAddTable = Class.extend({
 				    $("#wizard_pane_02").fadeIn(300);
 				 }
 			},this));
-
+	        $('#addTable_alias')
+		      .keydown(function(e) {
+                if(e.keyCode == 13) {
+                    $('#addTable_alias').blur();
+				    $("#wizard_pane_01").fadeOut(300);
+				    $("#wizard_pane_02").fadeIn(300);
+                    e.preventDefault();
+                }
+            });
 			
 			$("#CoreDialogAddTable_next2").button().click($.proxy(function(){
 				 $("#wizard_pane_02").fadeOut(300);
@@ -122,6 +130,10 @@ var CoreDialogAddTable = Class.extend({
 				 $("#wizard_pane_03").fadeOut(300);
 				 $("#wizard_pane_02").fadeIn(300);
 			},this));
+			
+			var input =$('#addTable_alias');
+	        input.focus()
+
         },this)); // getTables
     },
 	
