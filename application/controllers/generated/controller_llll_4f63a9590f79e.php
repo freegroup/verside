@@ -1,5 +1,5 @@
 <?php
-class Controller_wert_4f61900a91d3c extends Controller_generated {
+class Controller_llll_4f63a9590f79e extends Controller_generated {
  
     public function __construct() {
 		parent::__construct();
@@ -10,7 +10,7 @@ class Controller_wert_4f61900a91d3c extends Controller_generated {
     }
     
     public function getModelName(){
-	    return "Model_wert_4f61900a91d3c";
+	    return "Model_llll_4f63a9590f79e";
 	}
 	
     public function getTableName(){

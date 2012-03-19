@@ -1,5 +1,5 @@
 <?php
-class Controller_formelements_4f5e2bf93b1d0 extends Controller_generated {
+class Controller_vvvvvvvv_4f62245981751 extends Controller_generated {
  
     public function __construct() {
 		parent::__construct();
@@ -10,15 +10,15 @@ class Controller_formelements_4f5e2bf93b1d0 extends Controller_generated {
     }
     
     public function getModelName(){
-	    return "Model_formelements_4f5e2bf93b1d0";
+	    return "Model_vvvvvvvv_4f62245981751";
 	}
 	
     public function getTableName(){
-	    return "core_formelement";
+	    return "company";
 	}
 	
 	public function getRepresentativeFieldName(){ 
-        return "id";
+        return "email";
     }
 	
     public function getPrimaryFieldName(){ 

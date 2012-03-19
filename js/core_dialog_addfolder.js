@@ -32,25 +32,24 @@ var CoreDialogAddFolder = Class.extend({
       $dialog.reveal({
        	     animation: 'fadeAndPop',                   //fade, fadeAndPop, none
        	     animationspeed: 200,                       //how fast animations are
-       	     closeonbackgroundclick: true              //if you click background will modal close?
-         });
+       	     closeonbackgroundclick: false              //if you click background will modal close?
+      });
 
-       $("#CoreDialogAddFolder_ok").button().click( $.proxy(function(e) {
+      $("#CoreDialogAddFolder_ok").button().click( $.proxy(function(e) {
 	      e.preventDefault();
 	      this._addFolder();
-       },this));
+      },this));
                          
-       $("#CoreDialogAddFolder_cancel").button().click( $.proxy(function(e) {
-	      e.preventDefault();
-		  $dialog.trigger('reveal:close');
-       },this));
+      $("#CoreDialogAddFolder_cancel").button().click( $.proxy(function(e) {
+	     e.preventDefault();
+	  $dialog.trigger('reveal:close');
+      },this));
        
        
 	  var input =$('#dialogs').find("#name");
 	  input.focus()
 		   .keydown($.proxy(function(e) {
                 if(e.keyCode == 13) {
-                    input.blur();
                     this._addFolder();
                     e.preventDefault();
                 }
@@ -61,13 +60,15 @@ var CoreDialogAddFolder = Class.extend({
    /************************************************************************************************/
    _addFolder: function(){
    /************************************************************************************************/
-     var name = $('#dialogs').find("#name").val();
+     var $input = $('#dialogs').find("#name");
+     var name = $input.val();
      if(name===""){
        $("#addFolder_name_error").text("Name is a required Field");
        return;
      }
      
      CoreBackend.Navigation.create(this.parentId,name,$.proxy(function( response ) {
+        $input.blur();
         $( '#dialogs' ).trigger('reveal:close');
         if(this.parentId=="0"){
             coreTrigger(COMMAND_NAVIGATION_LOAD);
