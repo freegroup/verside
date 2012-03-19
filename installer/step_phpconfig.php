@@ -3,6 +3,9 @@ $nextPage    = "step_database.php";
 $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
 
 $error = false;
+$phpVersion = "6.3.0";
+$sqliteVersion ="2.8.0";
+
 ?>
 
 <html>
@@ -39,15 +42,31 @@ $error = false;
    echo "<tr>";
    echo "<td>PHP Version</td>";
    
-   if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
-     echo "<td>5.3.0</td><td>".PHP_VERSION."</td><td>&#10004;</td>";
+   if (version_compare(PHP_VERSION, $phpVersion) >= 0) {
+     echo "<td>".$phpVersion."</td><td>".PHP_VERSION."</td><td>&#10004;</td>";
    }
    else{	 
-     echo "<td>5.3.0</td><td>".PHP_VERSION."</td><td class='error_flag'>X</td>";
+     echo "<td>".$phpVersion."</td><td>".PHP_VERSION."</td><td class='error_flag'>X</td>";
      $error = true;
      $nextPage = $currentPage;
    }
    echo "</tr>";
+
+
+
+   echo "<tr>";
+   echo "<td>SQLite Version</td>";
+   
+   if (version_compare(sqlite_libversion(), $sqliteVersion) >= 0) {
+     echo "<td>".$sqliteVersion."</td><td>".sqlite_libversion()."</td><td>&#10004;</td>";
+   }
+   else{	 
+     echo "<td>".$sqliteVersion."</td><td>".sqlite_libversion()."</td><td class='error_flag'>X</td>";
+     $error = true;
+     $nextPage = $currentPage;
+   }
+   echo "</tr>";
+
 
 ?>
 </table>
