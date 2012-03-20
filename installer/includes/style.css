@@ -1,3 +1,10 @@
+html, body {
+ height: 100%;
+ width:100%;
+ overflow:hidden;
+ font-family:Helvetica, Arial, Verdana, sans-serif;
+}
+
 #container_license{
 width:100%;;
 height:300px;
@@ -7,6 +14,7 @@ margin: 0 auto;
 
     
 #container_content {
+ background: url("../images/background.png") repeat scroll 0 0 transparent;
  min-height: 100%;
  height: auto !important;
  height: 100%;
@@ -15,13 +23,28 @@ margin: 0 auto;
  padding-right:80px;
 }
     
+#header{
+ background: url("../images/header.jpg") repeat-x scroll 50% 50% #32323D;
+ border: 0px;
+ font-size: 2em;
+ height:60px;
+ line-height: 60px;
+ color:#EBEBEB;
+ font-weight:normal;
+ letter-spacing:2px;
+ -webkit-tap-highlight-color: rgba(0,0,0,0); 
+ padding-left:80px;
+}
+
 .title{
  margin: 0 auto;
  text-align:center;
- font-size: 1.7em !important;
+ font-size: 1.5em !important;
  font-weight: normal !important;
  text-align: left;
  text-transform: none !important;
+ padding-top:40px;
+ color:#EBEBEB;
 }
 
 .subtitle{
@@ -32,6 +55,8 @@ margin: 0 auto;
  text-align: left;
  text-transform: none !important;
  margin-bottom:40px;
+ color:#a0a0a0;
+ padding-top:10px;
 }
 
 .root_path{
@@ -49,6 +74,14 @@ margin: 0 auto;
 
 .error_flag{
 color:red;
+padding:5px;
+padding-left:20px;
+}
+
+.success_flag{
+color:green;
+padding:5px;
+padding-left:20px;
 }
 
 .input-box{
@@ -70,13 +103,9 @@ margin-bottom:20px;
 }
     * {
     margin: 0;
-    }
+ color:#EBEBEB;
+}
     
-    html, body {
-    height: 100%;
-    width:100%;
-    overflow:hidden;
-    }
 
     #footer, .push {
     height: 4em;
@@ -86,4 +115,8 @@ margin-bottom:20px;
 
 #container_license h3{
 background-color:gray;
+}
+
+.ui-button-text{
+	color:#202020 !important;
 }

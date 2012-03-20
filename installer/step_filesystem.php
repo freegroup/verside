@@ -2,11 +2,11 @@
 $nextPage    = "step_database.php";
 $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
 
-$filesToCheck[] = "application/config/db/verside.sqlite";
-$filesToCheck[] = "application/controllers/generated";
-$filesToCheck[] = "application/models/generated";
-$filesToCheck[] = "application/logs";
-$filesToCheck[] = "assets/images";
+$filesToCheck[] = "application".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR."verside.sqlite";
+$filesToCheck[] = "application".DIRECTORY_SEPARATOR."controllers".DIRECTORY_SEPARATOR."generated";
+$filesToCheck[] = "application".DIRECTORY_SEPARATOR."models".DIRECTORY_SEPARATOR."generated";
+$filesToCheck[] = "application".DIRECTORY_SEPARATOR."logs";
+$filesToCheck[] = "assets".DIRECTORY_SEPARATOR."images";
 
 
 ini_set('max_execution_time', 0);
@@ -36,10 +36,11 @@ $error = false;
 <?php include("includes/header.html");?>
 <div id="container_content">
 <div class="title">
-   Welcome to Verside's Installation Wizard!
+  Checking Filesystem permissions
 </div>
 <div class="subtitle">
-   Checking Filesystem permissions
+  You can modifie existing screens and as a matter of course, you can create new screens. For this feature verside need some write
+  permissions in dedicated folders.  
 </div>
 
 <div class="wizard_step">
@@ -57,7 +58,7 @@ foreach ( $filesToCheck as $fileName){
      $nextPage = $currentPage;
    }
    else{	 
-     echo "<td>&#10004;</td>";
+     echo "<td class='success_flag'>&#10004;</td>";
    }
    
    if(!is_readable($file)){
@@ -66,7 +67,7 @@ foreach ( $filesToCheck as $fileName){
      $nextPage = $currentPage;
    }
    else{	 
-     echo "<td>&#10004;</td>";
+     echo "<td class='success_flag'>&#10004;</td>";
    }
    echo "</tr>";
 }

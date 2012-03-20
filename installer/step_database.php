@@ -28,7 +28,7 @@ $error = false;
 <?php include("includes/header.html");?>
 <div id="container_content">
 <div class="title">
-   Welcome to Verside's Installation Wizard!
+   Database Connection
 </div>
 <div class="subtitle">
    Database Connection

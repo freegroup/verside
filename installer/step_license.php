@@ -31,9 +31,6 @@ $(document).ready(function() {
 <?php include("includes/header.html");?>
 <div id="container_content">
 <div class="title">
-Welcome to Verside's Installation Wizard!
-</div>
-<div class="subtitle">
 Verside License agreement
 </div>
 
@@ -669,7 +666,7 @@ copy of the Program in return for a fee.</p>
 
 </div>
 </div>
-<input type="checkbox" name="accept" id="acceptLicense">I agree to the above terms and conditions.
+<input type="checkbox" name="accept" id="acceptLicense"><label for="accept">&nbsp;&nbsp;I agree to the above terms and conditions.</label>
 <div class="divider"></div>
 <button id="buttonContinue">Continue</button>
 <div class="push"></div>
