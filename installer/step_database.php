@@ -1,11 +1,79 @@
 <?php
-$nextPage    = "step_database.php";
+$nextPage    = "step_success.php";
 $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
-
-
-
-ini_set('max_execution_time', 0);
 $error = false;
+
+
+$action = trim($_POST['command']);
+$errorMessage = null;
+$hostname = "127.0.0.1";
+$username = "";
+$password = "";
+$database = "dbname";
+$driver   = "mysql";
+
+if ($action == "test") {
+	$hostname = trim($_POST['hostname']);
+	$username = trim($_POST['username']);
+	$password = trim($_POST['password']);
+	$database = trim($_POST['database']);
+	$driver   = trim($_POST['driver']);
+
+    if($driver =="mysql"){
+  	   $link = mysql_connect($hostname, $username, $password);
+	   if (!$link) {
+		  $errorMessage ="Could not connect to the server '" . $hostname . "'";
+       	  $error = true;
+	   }
+	
+	   if ($link && !$database) {
+		   $errorMessage = "no database name was given";
+		  /*
+		  $db_list = mysql_list_dbs($link);
+		  echo "<pre>\n";
+		  while ($row = mysql_fetch_array($db_list)) {
+     	  	echo $row['Database'] . "\n";
+		  }
+		  echo "</pre>\n";
+		  */
+	   }
+	   if ($database) {
+          $dbcheck = mysql_select_db("$database");
+		  if (!$dbcheck) {
+		    $errorMessage = "Unable to connect database '".$database."'";
+        	$error = true;
+		  }
+	   }
+	}
+	if($error==false){
+	    $config = file_get_contents("./templates/database.txt");
+	    if($driver=="mysql"){
+	       $config = str_replace("%HOSTNAME%", $hostname, $config);
+	       $config = str_replace("%DATABASE%", "'".$database."'", $config);
+	       $config = str_replace("%USERNAME%", $username, $config);
+	       $config = str_replace("%PASSWORD%", $password, $config);
+	       $config = str_replace("%DRIVER%",   "mysql", $config);
+	    }
+	    else if($driver=="sqlite"){
+	       $database = '$path.\'/db/verside.sqlite\'';
+	       $config = str_replace("%HOSTNAME%", "", $config);
+	       $config = str_replace("%DATABASE%", '$path.\'/db/verside.sqlite\'', $config);
+	       $config = str_replace("%USERNAME%", "", $config);
+	       $config = str_replace("%PASSWORD%", "", $config);
+	       $config = str_replace("%DRIVER%",   "sqlite", $config);
+	    }
+	    file_put_contents("../application/config/database.php", $config);
+	    ?>
+		<html>
+		<head>
+		<meta http-equiv="REFRESH" content="0;url=<?php echo $nextPage; ?>">
+		</head>
+		</html>
+		<?php
+	}
+	
+}
+else{
 ?>
 
 <html>
@@ -31,50 +99,65 @@ $error = false;
    Database Connection
 </div>
 <div class="subtitle">
-   Database Connection
+  Enter your connection data or select an embedded database for test purpose.
 </div>
 
 <div class="wizard_step">
-            <div class="input-box">
-                <label for="prefix">Database Type</label><br>
-                <select>
-                     <option selected="selected" value="mysql4">MySQL</option>
-                </select>
-            </div>
-<br>
-    <div class="input-box">
+<form action="<?php echo $currentPage; ?>" method="post" id="connection_data">
+<table>
+<tr><td>
+     <div class="input-box">
+        <label for="prefix">Database Type</label><br>
+        <select id="database_selection">
+           <option selected="selected" value="mysql">MySQL</option>
+           <option value="sqlite">Verside Inmemory Demo DB</option>
+        </select>
+    </div>
+</td>
+<td></td>
+</tr>
+
+<tr><td>
+    <div class="input-box mysql_params" style="position:absolute">
         <label for="host">Host <span class="required">*</span></label><br>
-        <input type="text" class="required-entry input-text" title="Database host" value="localhost" id="host" name="connection[mysql4][db_host]">
+        <input type="text" class="required-entry input-text" title="Database host" value="<?php echo $hostname?>" id="hostname" name="hostname">
         <p style="margin-top:4px; line-height:1.3em; color:#666;">
-            <small>You can specify server port, ex.: localhost:3307<br>If you are not using default UNIX socket, you can specify it here instead of host, ex.: /var/run/mysqld/mysqld.sock</small>
+            <small>(You can specify server port, ex.: localhost:3307)</small>
         </p>
     </div>
-    <div class="input-box">
+    <div class="input-box demo_params" style="position:absolute">
+       Using a SQLite demo database with some example screens. 
+    </div>
+
+</td>
+<td>
+    <div class="input-box mysql_params">
         <label for="dbname">Database Name <span class="required">*</span></label><br>
-        <input type="text" class="required-entry input-text" title="Database Name" value="magento" id="dbname" name="connection[mysql4][db_name]">
+        <input type="text" class="required-entry input-text" title="Database Name" value="<?php echo $database?>" id="database" name="database">
     </div>
-<br>
-   <div class="input-box">
+</td>
+</tr>
+<tr><td>
+   <div class="input-box mysql_params">
         <label for="user">User Name <span class="required">*</span></label><br>
-        <input type="text" class="required-entry input-text" title="Database user name" value="" id="user" name="connection[mysql4][db_user]">
+        <input type="text" class="required-entry input-text" title="Database user name" value="<?php echo $username?>" id="username" name="username">
     </div>
-    <div class="input-box">
+</td>
+<td>
+<div class="input-box mysql_params">
         <label for="password">User Password</label><br>
-        <input type="password" class="input-text" title="Database user password" value="" id="password" name="connection[mysql4][db_pass]">
+        <input type="password" class="input-text" title="Database user password" value="<?php echo $password?>" id="password" name="password">
     </div>
-<br>
-    <div class="input-box">
-        <label for="prefix">Tables Prefix</label><br>
-        <input type="text" class="validate-data input-text" title="Tables Prefix" value="" id="prefix" name="connection[mysql4][db_prefix]">
-        <p style="margin-top:4px; line-height:1.3em; color:#666;">
-            <small>(Optional. Leave blank for no prefix)</small>
-        </p>
-    </div>
+</td>
 
-
+</tr>
+</table>
+       <input type="hidden" value="<?php echo $driver; ?>" name="driver" id="driver">
+       <input type="hidden" value="test" name="command">
+</form>
 <?php
 if($error){
-	echo "<div class='error'>Please set all required settings before clicking Continue</div>";
+	echo "<div class='error'>".$errorMessage."</div>";
 }
 ?>
 </div>
@@ -92,8 +175,22 @@ if($error){
 
 $(document).ready(function() {
 	
+    $(".demo_params").hide();
 	$("#buttonContinue").button().click(function(){
-	   window.location.href ="<?php echo $nextPage?>";
+	   $("#connection_data").submit();// ="<?php echo $nextPage?>";
+	});
+
+	$("#database_selection").change(function(){
+	  var driver = $("#database_selection").val();
+	  if(driver==="mysql"){
+	      $(".demo_params").fadeOut(300);
+	      $(".mysql_params").fadeIn(300);
+	  }
+	  else{
+	      $(".demo_params").fadeIn(300);
+	      $(".mysql_params").fadeOut(300);
+	  }
+      $("#driver").val(driver);
 	});
 });
 </script>
@@ -101,3 +198,6 @@ $(document).ready(function() {
 
 </html>
 
+<?php 
+} 
+?>

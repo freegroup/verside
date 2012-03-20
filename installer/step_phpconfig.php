@@ -1,8 +1,9 @@
 <?php
 $nextPage    = "step_database.php";
 $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
-
 $error = false;
+
+
 $phpVersion = "6.3.0";
 $sqliteVersion ="2.8.0";
 

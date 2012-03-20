@@ -52,8 +52,15 @@ $db['default']['hostname'] = '';
 $db['default']['username'] = '';
 $db['default']['password'] = '';
 $db['default']['database'] = $path.'/db/verside.sqlite';
-$db['default']['dbdriver'] = 'sqlite';
+$db['default']['dbdriver'] = 'sqlite';  
 
+/*
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'verside';
+$db['default']['dbdriver'] = 'mysql';
+*/
 
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

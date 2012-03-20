@@ -48,11 +48,11 @@ $active_group = 'default';
 $active_record = TRUE;
 $path = dirname(__FILE__);
 
-$db['default']['hostname'] = '';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = $path.'/db/verside.sqlite';
-$db['default']['dbdriver'] = 'sqlite';
+$db['default']['hostname'] = '%HOSTNAME%';
+$db['default']['username'] = '%USERNAME%';
+$db['default']['password'] = '%PASSWORD%';
+$db['default']['database'] = %DATABASE%;
+$db['default']['dbdriver'] = '%DRIVER%';
 
 
 $db['default']['dbprefix'] = '';
