@@ -1,8 +1,39 @@
+
+* {
+ margin: 0;
+ color:#EBEBEB;
+}
+   
+   
 html, body {
  height: 100%;
  width:100%;
  overflow:hidden;
  font-family:Helvetica, Arial, Verdana, sans-serif;
+}
+
+input{
+  color:#303030;
+  height:25px;
+  line-height:25px;
+  font-size:14px;
+}
+option{
+  color:#303030;
+  height:25px;
+  line-height:25px;
+  font-size:14px;
+}
+select{
+  color:#303030;
+  height:25px;
+  line-height:25px;
+  font-size:14px;
+}
+
+td{
+vertical-align:top;
+padding-bottom:20px;
 }
 
 #container_license{
@@ -42,7 +73,7 @@ html, body {
  min-height: 100%;
  height: auto !important;
  height: 100%;
- margin: 0 auto -4em;
+ margin: 0 auto -5.5em;
  padding-left:80px;
  padding-right:80px;
 }
@@ -130,13 +161,9 @@ margin-bottom:20px;
  background-color: rgba(200, 200, 200, 0.1);
  border: 1px solid #A0A0A0;
  padding:10px;
+ margin-bottom:10px;
 }
-
-* {
- margin: 0;
- color:#EBEBEB;
-}
-    
+ 
 
     #footer, .push {
     height: 4em;

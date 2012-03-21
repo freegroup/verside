@@ -1,16 +1,18 @@
 <?php
 
 class Controller_core_formelement extends CI_Controller {
- 
+
+    public $emInternal;
+  
     public function __construct() {
 		parent::__construct();
-		$this->em = $this->doctrine->em;
+		$this->emInternal = $this->doctrine->emInternal;
 		$this->load->model("Model_core_formelement");
 		$this->load->helper(array('form', 'url'));
     }
 
 	public function count() {
-        $query= $this->em->createQuery("SELECT COUNT(u.id) FROM Model_core_formelement u");
+        $query= $this->emInternal->createQuery("SELECT COUNT(u.id) FROM Model_core_formelement u");
         echo $query->getSingleScalarResult();
     }
 
@@ -19,16 +21,16 @@ class Controller_core_formelement extends CI_Controller {
 			echo 'ERROR: Id not provided.';
 			return;
 		}
-        $obj= $this->em->find("Model_core_formelement",$id);
-        $this->em->remove($obj);
-        $this->em->flush();
+        $obj= $this->emInternal->find("Model_core_formelement",$id);
+        $this->emInternal->remove($obj);
+        $this->emInternal->flush();
         
 		echo 'Records deleted successfully';
 	}	
 
 	public function update($id) {
 		if( !empty( $_POST ) ) {
-            $obj= $this->em->find("Model_core_formelement",$id);
+            $obj= $this->emInternal->find("Model_core_formelement",$id);
             foreach($_POST as $field => $val){
                 $obj->$field = $val;
             }
@@ -92,7 +94,7 @@ class Controller_core_formelement extends CI_Controller {
 
             $obj = $this->_createHr($model, 0,$x,$y,200);
             $obj->type = "line";
-            $this->em->flush();
+            $this->emInternal->flush();
   
             echo $this->_toJSON($controller, $table, $model, array($obj), $recordId );
         }
@@ -111,7 +113,7 @@ class Controller_core_formelement extends CI_Controller {
 
             $label = $this->_createHeader($model, "Caption", 0, $x, $y);
             $label->type = "title";
-            $this->em->flush();
+            $this->emInternal->flush();
             echo $this->_toJSON($controller, $table, $model, array($label), $recordId );
         }
     }
@@ -130,7 +132,7 @@ class Controller_core_formelement extends CI_Controller {
   		    $this->load->model("generated/".$model);
             $obj= null;
             if(!is_null($recordId))
-               $obj = $this->em->find($model, $recordId);
+               $obj = $this->emExternal->find($model, $recordId);
 
             $readonly = strcmp($readonly,"true")==0;
             $input = $this->_createArea($model,$readonly, $column,0,$x,$y,120);
@@ -138,7 +140,7 @@ class Controller_core_formelement extends CI_Controller {
 
             $label = $this->_createLabel($model, $column,0,$x,$y-20, $input->id);
             $label->type = "label";
-            $this->em->flush();
+            $this->emInternal->flush();
 
             // don't change the order of the rendering. The Client expect this order.
             //
@@ -160,7 +162,7 @@ class Controller_core_formelement extends CI_Controller {
   		    $this->load->model("generated/".$model);
             $obj= null;
             if(!is_null($recordId))
-               $obj = $this->em->find($model, $recordId);
+               $obj = $this->emExternal->find($model, $recordId);
 
             $readonly = strcmp($readonly,"true")==0;
             $input = $this->_createInput($model,$readonly, $column,0,$x,$y,120);
@@ -168,7 +170,7 @@ class Controller_core_formelement extends CI_Controller {
 
             $label = $this->_createLabel($model, $column,0,$x,$y-20, $input->id);
             $label->type = "label";
-            $this->em->flush();
+            $this->emInternal->flush();
 
             // don't change the order of the rendering. The Client expect this order.
             //
@@ -187,8 +189,8 @@ class Controller_core_formelement extends CI_Controller {
 		$obj->model_class = $modelClass;
 		$obj->innerHTML = "";
 		$obj->parent_id = $parentId;
-        $this->em->persist($obj);
-        $this->em->flush();
+        $this->emInternal->persist($obj);
+        $this->emInternal->flush();
         
         return $obj;
 	}
@@ -204,8 +206,8 @@ class Controller_core_formelement extends CI_Controller {
 		$obj->model_class = $modelClass;
 		$obj->innerHTML = $text;
 		$obj->parent_id = $parentId;
-        $this->em->persist($obj);
-        $this->em->flush();
+        $this->emInternal->persist($obj);
+        $this->emInternal->flush();
         
         return $obj;
 	}
@@ -223,8 +225,8 @@ class Controller_core_formelement extends CI_Controller {
 		$obj->model_class = $modelClass;
 		$obj->innerHTML = ucfirst(strtolower($title));
 		$obj->parent_id = $parentId;
-        $this->em->persist($obj);
-        $this->em->flush();
+        $this->emInternal->persist($obj);
+        $this->emInternal->flush();
         
         return $obj;
 	}
@@ -238,8 +240,8 @@ class Controller_core_formelement extends CI_Controller {
 	   $obj->column = $column;
 	   $obj->model_class = $modelClass;
 	   $obj->parent_id = $parentId;
-       $this->em->persist($obj);
-       $this->em->flush();
+       $this->emInternal->persist($obj);
+       $this->emInternal->flush();
        
        return $obj;
 	}
@@ -254,8 +256,8 @@ class Controller_core_formelement extends CI_Controller {
 	   $obj->column = $column;
 	   $obj->model_class = $modelClass;
 	   $obj->parent_id = $parentId;
-       $this->em->persist($obj);
-       $this->em->flush();
+       $this->emInternal->persist($obj);
+       $this->emInternal->flush();
        
        return $obj;
 	}
@@ -268,8 +270,8 @@ class Controller_core_formelement extends CI_Controller {
 	   $obj->model_class = $modelClass;
 	   $obj->parent_id = $parentId;
 	   $obj->innerHTML = "<hr></hr>";
-       $this->em->persist($obj);
-       $this->em->flush();
+       $this->emInternal->persist($obj);
+       $this->emInternal->flush();
        	
        return $obj;
 	}

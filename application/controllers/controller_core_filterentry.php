@@ -1,10 +1,11 @@
 <?php
 
 class Controller_core_filterentry extends CI_Controller {
+    public $emInternal;
  
     public function __construct() {
 		parent::__construct();
-		$this->em = $this->doctrine->em;
+		$this->emInternal = $this->doctrine->emInternal;
 		$this->load->model("Model_core_filterentry");
         $this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', time()).' GMT');
         $this->output->set_header('Expires: '.gmdate('D, d M Y H:i:s', time()).' GMT');
@@ -18,7 +19,7 @@ class Controller_core_filterentry extends CI_Controller {
 			echo 'ERROR: Id not provided.';
 			return;
 		}
-        $obj= $this->em->find("Model_core_filterentry",$id);
+        $obj= $this->emInternal->find("Model_core_filterentry",$id);
         $this->em->remove($obj);
         $this->em->flush();
         
@@ -27,11 +28,11 @@ class Controller_core_filterentry extends CI_Controller {
 
 	public function update($id) {
 		if( !empty( $_POST ) ) {
-            $obj= $this->em->find("Model_core_filterentry",$id);
+            $obj= $this->emInternal->find("Model_core_filterentry",$id);
             foreach($_POST as $field => $val){
                 $obj->$field = $val;
             }
-            $this->em->flush();
+            $this->emInternal->flush();
         
             // return the updated object. 
 		    echo json_encode($obj);
@@ -45,8 +46,8 @@ class Controller_core_filterentry extends CI_Controller {
                 foreach($_POST as $field => $val){
                     $obj->$field = $val;
                 }
-                $this->em->persist($obj);
-                $this->em->flush();
+                $this->emInternal->persist($obj);
+                $this->emInternal->flush();
 		  
  		        echo json_encode($obj);
 			}
@@ -57,7 +58,7 @@ class Controller_core_filterentry extends CI_Controller {
     }
     
 	public function get( $modelClass ) {
-	    $qb = $this->em->createQueryBuilder();
+	    $qb = $this->emInternal->createQueryBuilder();
         $qb->select('f')
             ->from("Model_core_filterentry", 'f')
             ->where('f.model_class = :name')

@@ -1,5 +1,5 @@
 <?php
-class Controller_kunden_4f61d780c530b extends Controller_generated {
+class Controller_kkk_4f6a566e7b5d6 extends Controller_generated {
  
     public function __construct() {
 		parent::__construct();
@@ -10,7 +10,7 @@ class Controller_kunden_4f61d780c530b extends Controller_generated {
     }
     
     public function getModelName(){
-	    return "Model_kunden_4f61d780c530b";
+	    return "Model_kkk_4f6a566e7b5d6";
 	}
 	
     public function getTableName(){

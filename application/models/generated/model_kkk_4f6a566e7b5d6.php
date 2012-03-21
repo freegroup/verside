@@ -3,7 +3,7 @@
 * @Entity @HasLifecycleCallbacks
 * @Table(name="company")
 */
-class Model_llll_4f63a9590f79e  {
+class Model_kkk_4f6a566e7b5d6  {
  
    /**
     * @Id

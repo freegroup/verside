@@ -47,12 +47,13 @@
 $active_group = 'default';
 $active_record = TRUE;
 $path = dirname(__FILE__);
+$sqlLitePath = $path.'/db/verside.sqlite';
 
 $db['default']['hostname'] = '';
 $db['default']['username'] = '';
 $db['default']['password'] = '';
-$db['default']['database'] = $path.'/db/verside.sqlite';
-$db['default']['dbdriver'] = 'sqlite';
+$db['default']['database'] = $path.'/db/demo.sqlite';
+$db['default']['dbdriver'] = 'sqlite';  
 
 
 $db['default']['dbprefix'] = '';

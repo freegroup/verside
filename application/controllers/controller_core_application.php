@@ -3,11 +3,13 @@
 class Controller_core_application extends CI_Controller {
  
     //Doctrine EntityManager
-    public $em;
+    public $emExternal;
+    public $emInternal;
     
     public function __construct() {
 		parent::__construct();
-		$this->em = $this->doctrine->em;
+		$this->emExternal = $this->doctrine->emExternal;
+		$this->emInternal = $this->doctrine->emInternal;
 		
 		$this->load->model("Model_core_formelement");
 		$this->load->model("Model_core_navigation");
@@ -30,7 +32,7 @@ class Controller_core_application extends CI_Controller {
 		$modelFile = strtolower($modelClass);
 	    $modelUrl = "generated/".strtolower($modelClass);
 	    
-        $sm = $this->em->getConnection()->getSchemaManager();
+        $sm = $this->emExternal->getConnection()->getSchemaManager();
 		$columns = $sm->listTableColumns($tablename);
         $indexes = $sm->listTableIndexes($tablename);
         $primaryId ="";
@@ -67,7 +69,7 @@ class Controller_core_application extends CI_Controller {
 		// Generate the menu entrie with the handsover parent_id
 		//
 		//cleanup duplicate entry
-        $qb = $this->em->createQueryBuilder();
+        $qb = $this->emInternal->createQueryBuilder();
         $qb->delete()
             ->from("Model_core_navigation", 'f')    
 			->where('f.parent_id = :parent')
@@ -83,7 +85,7 @@ class Controller_core_application extends CI_Controller {
 		$menu->type = "table";
 		$menu->controller = $controllerUrl;
 		$menu->model = $modelUrl;
-        $this->em->persist($menu);
+        $this->emInternal->persist($menu);
         
         
 		//////////////////////////////////////////////////////////////////////
@@ -91,7 +93,7 @@ class Controller_core_application extends CI_Controller {
 		//////////////////////////////////////////////////////////////////////
 
 		// cleanup/remove the old form
-        $qb = $this->em->createQueryBuilder();
+        $qb = $this->emInternal->createQueryBuilder();
         $qb->delete()
             ->from("Model_core_formelement", 'f')    
 			->where('f.model_class = :name')
@@ -135,8 +137,8 @@ class Controller_core_application extends CI_Controller {
 		$obj->column = $column;
 		$obj->model_class = $modelClass;
 		$obj->parent_id = $parentId;
-		$this->em->persist($obj);
-        $this->em->flush();
+		$this->emInternal->persist($obj);
+        $this->emInternal->flush();
         
         return $obj;
 	}
@@ -153,8 +155,8 @@ class Controller_core_application extends CI_Controller {
 		$obj->model_class = $modelClass;
 		$obj->innerHTML = $text;
 		$obj->parent_id = $parentId;
-        $this->em->persist($obj);
-        $this->em->flush();
+        $this->emInternal->persist($obj);
+        $this->emInternal->flush();
         
         return $obj;
 	}
@@ -172,8 +174,8 @@ class Controller_core_application extends CI_Controller {
 		  
 	   $obj->model_class = $modelClass;
 	   $obj->parent_id = $parentId;
-       $this->em->persist($obj);
-       $this->em->flush();
+       $this->emInternal->persist($obj);
+       $this->emInternal->flush();
        
        return $obj;
 	}
@@ -190,8 +192,8 @@ class Controller_core_application extends CI_Controller {
 		$obj->model_class = $modelClass;
 		$obj->innerHTML = $text;
 		$obj->parent_id = $parentId;
-        $this->em->persist($obj);
-        $this->em->flush();
+        $this->emInternal->persist($obj);
+        $this->emInternal->flush();
         
         return $obj;
 	}
@@ -208,8 +210,8 @@ class Controller_core_application extends CI_Controller {
 		$obj->model_class = $modelClass;
 		$obj->innerHTML = $text;
 		$obj->parent_id = $parentId;
-        $this->em->persist($obj);
-        $this->em->flush();
+        $this->emInternal->persist($obj);
+        $this->emInternal->flush();
         
         return $obj;
 	}

@@ -3,7 +3,8 @@
 class Controller_core_model extends CI_Controller {
  
     //Doctrine EntityManager
-    public $em;
+    public $emExternal;
+    public $emInternal;
     
     protected static $datatypes = array("integer"=>"number",
                                         "string"=>"text",
@@ -12,7 +13,9 @@ class Controller_core_model extends CI_Controller {
     
     public function __construct() {
 		parent::__construct();
-		$this->em = $this->doctrine->em;
+		$this->emInternal = $this->doctrine->emInternal;
+		$this->emExternal = $this->doctrine->emExternal;
+		
 		$this->load->model("Model_core_formelement");
 		$this->load->model("Model_core_navigation");
 		$this->load->library('parser');
@@ -24,7 +27,7 @@ class Controller_core_model extends CI_Controller {
     }
  
 	public function getTables(){
-        $sm = $this->em->getConnection()->getSchemaManager();
+        $sm = $this->emExternal->getConnection()->getSchemaManager();
         $tables = $sm->listTables();
         $first=true;
         echo "[\n";
@@ -40,7 +43,7 @@ class Controller_core_model extends CI_Controller {
     }
     
 	public function getTableColumns($tableName, $modelName){
-        $sm = $this->em->getConnection()->getSchemaManager();
+        $sm = $this->emExternal->getConnection()->getSchemaManager();
         $columns = $sm->listTableColumns($tableName);
         $indexes = $sm->listTableIndexes($tableName);
         $primaryId ="";

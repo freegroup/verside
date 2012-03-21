@@ -45,8 +45,9 @@ class Doctrine {
 
     $config->setAutoGenerateProxyClasses( TRUE );
 
-    // Database connection information
-    $connectionOptions = array(
+    // Database connection information for the external application
+    //
+    $connectionOptionsExternal = array(
         'driver' => 'pdo_'.$db['default']['dbdriver'],
         'user' =>     $db['default']['username'],
         'password' => $db['default']['password'],
@@ -54,11 +55,23 @@ class Doctrine {
         'dbname' =>   $db['default']['database'],
         'path'  =>   $db['default']['database']    // just for SQLite Driver....WHY didn't they use the dbname?!
     );
+    
+    // Database connection information for the core_* tables
+    //
+    $connectionOptionsInternal = array(
+        'driver' =>   'pdo_sqlite',
+        'user' =>     "",
+        'password' => "",
+        'host' =>     "",
+        'dbname' =>   "",
+        'path'  =>   $sqlLitePath
+    );
 
     // Create EntityManager
-    $this->em = EntityManager::create($connectionOptions, $config);
+    $this->emExternal = EntityManager::create($connectionOptionsExternal, $config);
+    $this->emInternal = EntityManager::create($connectionOptionsInternal, $config);
     
     if($db['default']['dbdriver']=="mysql")
-       $this->em->getConnection()->exec('SET NAMES "UTF8"');
+       $this->emExternal->getConnection()->exec('SET NAMES "UTF8"');
   }
 }

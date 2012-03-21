@@ -2,7 +2,8 @@
 
 abstract class Controller_generated extends CI_Controller {
  
-    public $em;
+    public $emExternal;
+    public $emInternal;
     
     abstract public function getModelName();
     abstract public function getTableName();
@@ -11,7 +12,9 @@ abstract class Controller_generated extends CI_Controller {
     
     public function __construct() {
 		parent::__construct();
-		$this->em = $this->doctrine->em;
+		$this->emExternal = $this->doctrine->emExternal;
+		$this->emInternal = $this->doctrine->emInternal;
+
 		$this->load->model("Model_core_formelement");
 		$this->load->model("Model_core_filterentry");
 		$this->load->model("generated/".$this->getModelName());
@@ -32,17 +35,17 @@ abstract class Controller_generated extends CI_Controller {
 		       if(is_null($id)){
                   $clazz = $this->getModelName();
                   $obj = new $clazz;
-                  $this->em->persist($obj);
+                  $this->emExternal->persist($obj);
                   $crud_operation = "create";
 		       }
 		       else{
-                 $obj= $this->em->find($this->getModelName(),$id);
+                 $obj= $this->emExternal->find($this->getModelName(),$id);
 		       }
 		   
                foreach($_POST as $field => $val){
                   $obj->$field = $val;
                }
-               $this->em->flush();
+               $this->emExternal->flush();
         
                $id = $obj->getIdFieldName();
                $id = $obj->$id;
@@ -64,9 +67,9 @@ abstract class Controller_generated extends CI_Controller {
 			echo 'ERROR: Id not provided.';
 			return;
 		}
-        $obj= $this->em->find($this->getModelName(),$id);
-        $this->em->remove($obj);
-        $this->em->flush();
+        $obj= $this->emExternal->find($this->getModelName(),$id);
+        $this->emExternal->remove($obj);
+        $this->emExternal->flush();
         
 		echo json_encode('Records deleted successfully');
 	}	
@@ -85,7 +88,7 @@ abstract class Controller_generated extends CI_Controller {
 
 	public function count() {
 	    $field = $this->getRepresentativeFieldName();
-	    $qb = $this->em->createQueryBuilder();
+	    $qb = $this->emExternal->createQueryBuilder();
         $qb->select("COUNT(f.".$field.")")
            ->from($this->getModelName(), 'f');
         $this->addFilter($qb);
@@ -95,7 +98,7 @@ abstract class Controller_generated extends CI_Controller {
 	public function navigate( $parentId ) {
 	    $field = $this->getRepresentativeFieldName();
 
-	    $qb = $this->em->createQueryBuilder();
+	    $qb = $this->emExternal->createQueryBuilder();
         $qb->select('f')
             ->from($this->getModelName(), 'f');
         $this->addFilter($qb);
@@ -150,7 +153,7 @@ abstract class Controller_generated extends CI_Controller {
 		   $data['record'] =  "";
 		}
 		else{
-		   $object = $this->em->find($this->getModelName(),$id);
+		   $object = $this->emExternal->find($this->getModelName(),$id);
 		   $data['record'] =  $object;
 		   $field = $object->getIdFieldName();
 		   $data['recordPkey'] =  $object->$field;
@@ -158,7 +161,7 @@ abstract class Controller_generated extends CI_Controller {
 		   
 		// add each form element as JSON structure
 		//
-	    $qb = $this->em->createQueryBuilder();
+	    $qb = $this->emInternal->createQueryBuilder();
         $qb->select('f')
             ->from("Model_core_formelement", 'f')
             ->where('f.model_class = :name')
@@ -191,7 +194,7 @@ abstract class Controller_generated extends CI_Controller {
 		   $data['record'] =  "";
 		}
 		else{
-		   $object = $this->em->find($this->getModelName(),$id);
+		   $object = $this->emExternal->find($this->getModelName(),$id);
 		   $data['record'] =  $object;
 		   $field = $object->getIdFieldName();
 		   $data['recordPkey'] =  $object->$field;
@@ -199,7 +202,7 @@ abstract class Controller_generated extends CI_Controller {
 		   
 		// add each form element as JSON structure
 		//
-	    $qb = $this->em->createQueryBuilder();
+	    $qb = $this->emInternal->createQueryBuilder();
         $qb->select('f')
             ->from("Model_core_formelement", 'f')
             ->where('f.id = :id')
@@ -221,7 +224,7 @@ abstract class Controller_generated extends CI_Controller {
      *     
      **/
     protected function addFilter( &$qb ){
-	    $qbFilter = $this->em->createQueryBuilder();
+	    $qbFilter = $this->emInternal->createQueryBuilder();
         $qbFilter->select('f')
             ->from("Model_core_filterentry", 'f')
             ->where('f.model_class = :name')

@@ -1,9 +1,16 @@
 <?php
 
-class Controller_core_navigation extends Controller_generic {
+class Controller_core_navigation extends CI_Controller {
  
-    public function __construct() {
+    public $emExternal;
+    public $emInternal;
+  
+   public function __construct() {
 		parent::__construct();
+		$this->emExternal = $this->doctrine->emExternal;
+		$this->emInternal = $this->doctrine->emInternal;
+
+		$this->load->model($this->getModelName());
 		$this->load->library('curl'); 
 	}
  
@@ -38,7 +45,7 @@ class Controller_core_navigation extends Controller_generic {
 			return;
 		}
 		
-        $u = $this->em->find($this->getModelName(),$id);
+        $u = $this->emInternal->find($this->getModelName(),$id);
 	    // delete the model  and controller class as well
 	    //
 	    if($u->type=="table"){
@@ -48,7 +55,7 @@ class Controller_core_navigation extends Controller_generic {
 
         // find all children of this record and delete this before
         // foreignKey violation
-        $qb = $this->em->createQueryBuilder();
+        $qb = $this->emInternal->createQueryBuilder();
         $qb->select('u')
              ->from($this->getModelName(), 'u')
              ->where('u.parent_id = :pid')
@@ -59,8 +66,8 @@ class Controller_core_navigation extends Controller_generic {
         }
         
         // now we can delete the parent node
-  	    $this->em->remove($u);
-  	    $this->em->flush();
+  	    $this->emInternal->remove($u);
+  	    $this->emInternal->flush();
   	    
   	    // delete the controller and model as well
   	    //
@@ -74,17 +81,17 @@ class Controller_core_navigation extends Controller_generic {
             for ($i = 0; $i < $ids; $i++)
             {
               $entryId= $_POST["navigation"][$i];
-          	  $entry= $this->em->find($this->getModelName(),$entryId);
+          	  $entry= $this->emInternal->find($this->getModelName(),$entryId);
 			  $entry->order=$i;
             }
-            $this->em->flush();
+            $this->emInternal->flush();
 			echo 'Records sorted successfully!';
 		}
 	}
 
 	public function navigate( $id ) {
 		if( isset( $id ) ){
-            $qb = $this->em->createQueryBuilder();
+            $qb = $this->emInternal->createQueryBuilder();
             $qb->select('u')
                 ->from($this->getModelName(), 'u')
                 ->where('u.parent_id = :pid')
@@ -98,7 +105,7 @@ class Controller_core_navigation extends Controller_generic {
 			//
 			foreach ( $data['objects'] as $object){
 			   if($object->controller=="controller_core_navigation"){
-                  $qb = $this->em->createQueryBuilder();
+                  $qb = $this->emInternal->createQueryBuilder();
                   $qb->select('count(u.id)')
                    ->from($this->getModelName(), 'u')
                    ->where('u.parent_id = :pid')
@@ -106,7 +113,7 @@ class Controller_core_navigation extends Controller_generic {
 				  $object->childCount = $qb->getQuery()->getSingleScalarResult();
 				}
 				else{
-                  $object->childCount = intval($this->curl->simple_get($object->controller."/count"));
+                  $object->childCount = 1;//intval($this->curl->simple_get($object->controller."/count"));
                 }
                 $object->model = "Model_core_formelement";
                 $object->table = $this->getModelName();
@@ -116,6 +123,49 @@ class Controller_core_navigation extends Controller_generic {
 			echo json_encode($data);
 		}
 	}
+
+	public function count() {
+	    $id = $this->getRepresentativeFieldName();
+        $query= $this->emInternal->createQuery("SELECT COUNT(u.".$id.") FROM ".$this->getModelName()." u");
+        echo $query->getSingleScalarResult();
+    }
+
+
+	 
+	public function update($id) {
+		if( !empty( $_POST ) ) {
+            $obj= $this->emInternal->find($this->getModelName(),$id);
+            foreach($_POST as $field => $val){
+                $obj->$field = $val;
+            }
+            $this->emInternal->flush();
+        
+            // return the updated object. This is required because in the db can exists some trigger
+            // which has modified the object
+		    echo json_encode($obj);
+		}
+	}
+
+	public function create() {
+	    try {
+            if( !empty( $_POST ) ) {
+                $clazz = $this->getModelName();
+		   
+                $obj = new $clazz;
+                foreach($_POST as $field => $val){
+                    $obj->$field = $val;
+                }
+                $this->emInternal->persist($obj);
+                $this->emInternal->flush();
+		  
+                echo 'Record created successfully!';
+			}
+		}
+		catch(Exception $ex){
+		    echo 'Exception abgefangen: ',  $ex->getMessage(), "\n";
+        }
+    }
+
 
 } //end class
 

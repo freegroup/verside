@@ -4,6 +4,7 @@ $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
 $error = false;
 
 
+$filesToCheck[] = "application".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR."demo.sqlite";
 $filesToCheck[] = "application".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR."verside.sqlite";
 $filesToCheck[] = "application".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."database.php";
 $filesToCheck[] = "application".DIRECTORY_SEPARATOR."controllers".DIRECTORY_SEPARATOR."generated";
@@ -35,11 +36,6 @@ $_REAL_BASE_DIR = realpath(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR; // f
 <div id="container_content">
 <div class="title">
   Checking Filesystem permissions
-</div>
-<div class="subtitle">
-  You can modify existing screens and as a matter of course, you can create new screens.
-  <br>
-  For this feature verside needs write permissions in some folders.  
 </div>
 
 <div class="wizard_step">

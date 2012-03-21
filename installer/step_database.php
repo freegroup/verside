@@ -99,7 +99,7 @@ else{
    Database Connection
 </div>
 <div class="subtitle">
-  Enter your connection data or select an embedded database for test purpose.
+  Enter your connection data or select an embedded database for demo.
 </div>
 
 <div class="wizard_step">
