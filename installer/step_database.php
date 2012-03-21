@@ -30,9 +30,6 @@ $error = false;
 <div class="title">
    Database Connection
 </div>
-<div class="subtitle">
-   Database Connection
-</div>
 
 <div class="wizard_step">
             <div class="input-box">
@@ -46,7 +43,7 @@ $error = false;
         <label for="host">Host <span class="required">*</span></label><br>
         <input type="text" class="required-entry input-text" title="Database host" value="localhost" id="host" name="connection[mysql4][db_host]">
         <p style="margin-top:4px; line-height:1.3em; color:#666;">
-            <small>You can specify server port, ex.: localhost:3307<br>If you are not using default UNIX socket, you can specify it here instead of host, ex.: /var/run/mysqld/mysqld.sock</small>
+            <small>You can specify server port, ex.: localhost:3307</small>
         </p>
     </div>
     <div class="input-box">
