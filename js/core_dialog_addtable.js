@@ -29,8 +29,8 @@ var CoreDialogAddTable = Class.extend({
                          '      </div>'+
                          '     <div class="dialog_content_header dialog_header">Select database table to use</div>   '+       
                          '     <div class="dialog_content">'+
-                         '         <label class="dialog_label">Screen Data</label><br>'+
-                         '         <select class="dialog_input" size="7" name="tablename" id="addTable_tablename" >'+
+                         '         <label class="dialog_label">Table</label><br>'+
+                         '         <select class="dialog_input" size="7" name="tablename" id="addTable_tablename" style="width:100%;height:130">'+
   						 '            {{each tables}}                    '+
                          '            <option value="${name}">${name}</option>'+
   						 '            {{/each}}                                          '+
@@ -48,7 +48,7 @@ var CoreDialogAddTable = Class.extend({
                          '       <div class="dialog_content_header dialog_header">Select the major field to show</div>      '+
                          '       <div class="dialog_content">'+
                          '           <label class="dialog_label">Display Column</label><br>'+
-                         '           <select  class="dialog_input" size="7" name="representative_field" id="addTable_representative_field" style="width:100%">'+
+                         '           <select  class="dialog_input" size="7" name="representative_field" id="addTable_representative_field" style="width:100%;height:130">'+
                          '             <option selected="true" value="any">any</option>'+
                          '           </select>'+
                          '           <div id="addTable_representative_field_error" class="dialog_validateError"></div>'+

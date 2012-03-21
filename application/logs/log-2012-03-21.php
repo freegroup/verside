@@ -2181,3 +2181,2414 @@ DEBUG - 2012-03-21 22:32:49 --> Model Class Initialized
 DEBUG - 2012-03-21 22:32:49 --> Curl class already loaded. Second attempt ignored.
 DEBUG - 2012-03-21 22:32:49 --> Final output sent to browser
 DEBUG - 2012-03-21 22:32:49 --> Total execution time: 0.0917
+DEBUG - 2012-03-21 22:36:30 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:30 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:30 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:30 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:30 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:30 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:30 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:36:30 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 22:36:30 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:30 --> Total execution time: 0.0395
+DEBUG - 2012-03-21 22:36:31 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:31 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:31 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:31 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:31 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:31 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:31 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:36:31 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:31 --> Total execution time: 0.0864
+DEBUG - 2012-03-21 22:36:33 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:33 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:33 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:33 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:33 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:33 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:33 --> Total execution time: 0.0727
+DEBUG - 2012-03-21 22:36:33 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:33 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:33 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:33 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:33 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:33 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:33 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:33 --> Total execution time: 0.0860
+DEBUG - 2012-03-21 22:36:34 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:34 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:34 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:34 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:34 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:34 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:34 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:34 --> Total execution time: 0.0766
+DEBUG - 2012-03-21 22:36:35 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:35 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:35 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:35 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:35 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:35 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:35 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:35 --> Total execution time: 0.0808
+DEBUG - 2012-03-21 22:36:36 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:36 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:36 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:36 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:36 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:36 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:36 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:36 --> Total execution time: 0.0802
+DEBUG - 2012-03-21 22:36:37 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:37 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:37 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:37 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:37 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:37 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:37 --> Total execution time: 0.0750
+DEBUG - 2012-03-21 22:36:37 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:37 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:37 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:37 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:37 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:37 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:37 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:37 --> Total execution time: 0.0780
+DEBUG - 2012-03-21 22:36:38 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:38 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:38 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:38 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:38 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:38 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:38 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:38 --> Total execution time: 0.0768
+DEBUG - 2012-03-21 22:36:39 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:39 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:39 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:39 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:39 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:39 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:39 --> Total execution time: 0.0782
+DEBUG - 2012-03-21 22:36:39 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:39 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:39 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:39 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:39 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:39 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:39 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:39 --> Total execution time: 0.0777
+DEBUG - 2012-03-21 22:36:40 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:40 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:40 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:40 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:40 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:40 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:40 --> Total execution time: 0.0886
+DEBUG - 2012-03-21 22:36:40 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:40 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:40 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:40 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:40 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:40 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:40 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:40 --> Total execution time: 0.0831
+DEBUG - 2012-03-21 22:36:41 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:41 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:41 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:41 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:41 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:41 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:41 --> Total execution time: 0.0818
+DEBUG - 2012-03-21 22:36:41 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:41 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:41 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:41 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:41 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:41 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:42 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:42 --> Total execution time: 0.0770
+DEBUG - 2012-03-21 22:36:42 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:42 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:42 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:42 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:42 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:42 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:42 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:42 --> Total execution time: 0.0777
+DEBUG - 2012-03-21 22:36:43 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:43 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:43 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:43 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:43 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:43 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:43 --> Total execution time: 0.0765
+DEBUG - 2012-03-21 22:36:43 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:43 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:43 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:43 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:43 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:43 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:43 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:43 --> Total execution time: 0.0808
+DEBUG - 2012-03-21 22:36:44 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:44 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:44 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:44 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:44 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:44 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:44 --> Total execution time: 0.0770
+DEBUG - 2012-03-21 22:36:44 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:44 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:44 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:44 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:44 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:44 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:44 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:44 --> Total execution time: 0.0761
+DEBUG - 2012-03-21 22:36:45 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:45 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:45 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:45 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:45 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:45 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:45 --> Total execution time: 0.0779
+DEBUG - 2012-03-21 22:36:45 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:45 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:45 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:45 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:45 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:45 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:45 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:45 --> Total execution time: 0.0789
+DEBUG - 2012-03-21 22:36:46 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:46 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:46 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:46 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:46 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:46 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:46 --> Total execution time: 0.0765
+DEBUG - 2012-03-21 22:36:46 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:46 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:46 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:46 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:46 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:46 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:46 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:46 --> Total execution time: 0.0819
+DEBUG - 2012-03-21 22:36:47 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:47 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:47 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:47 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:47 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:47 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:47 --> Total execution time: 0.0790
+DEBUG - 2012-03-21 22:36:47 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:47 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:47 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:47 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:47 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:47 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:47 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:47 --> Total execution time: 0.0798
+DEBUG - 2012-03-21 22:36:48 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:48 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:48 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:48 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:48 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:48 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:48 --> Total execution time: 0.0788
+DEBUG - 2012-03-21 22:36:48 --> Config Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:36:48 --> URI Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Router Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Output Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Security Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Input Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:36:48 --> Language Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:36:48 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:36:48 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:36:48 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Model Class Initialized
+DEBUG - 2012-03-21 22:36:48 --> Final output sent to browser
+DEBUG - 2012-03-21 22:36:48 --> Total execution time: 0.0817
+DEBUG - 2012-03-21 22:37:03 --> Config Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:37:03 --> URI Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Router Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 22:37:03 --> Output Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Security Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Input Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:37:03 --> Language Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:37:03 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:37:03 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:37:03 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Model Class Initialized
+DEBUG - 2012-03-21 22:37:03 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:37:03 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 22:37:03 --> Final output sent to browser
+DEBUG - 2012-03-21 22:37:03 --> Total execution time: 0.0387
+DEBUG - 2012-03-21 22:37:04 --> Config Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:37:04 --> URI Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Router Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Output Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Security Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Input Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:37:04 --> Language Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:37:04 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:37:04 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:37:04 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Model Class Initialized
+DEBUG - 2012-03-21 22:37:04 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:37:04 --> Final output sent to browser
+DEBUG - 2012-03-21 22:37:04 --> Total execution time: 0.0808
+DEBUG - 2012-03-21 22:53:43 --> Config Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:53:43 --> URI Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Router Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 22:53:43 --> Output Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Security Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Input Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:53:43 --> Language Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:53:43 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:53:43 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:53:43 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Model Class Initialized
+DEBUG - 2012-03-21 22:53:43 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:53:43 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 22:53:43 --> Final output sent to browser
+DEBUG - 2012-03-21 22:53:43 --> Total execution time: 0.0382
+DEBUG - 2012-03-21 22:53:44 --> Config Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:53:44 --> URI Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Router Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Output Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Security Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Input Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:53:44 --> Language Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:53:44 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:53:44 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:53:44 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Model Class Initialized
+DEBUG - 2012-03-21 22:53:44 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:53:44 --> Final output sent to browser
+DEBUG - 2012-03-21 22:53:44 --> Total execution time: 0.0778
+DEBUG - 2012-03-21 22:53:45 --> Config Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:53:45 --> URI Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Router Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Output Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Security Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Input Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:53:45 --> Language Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:53:45 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:53:45 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:53:45 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Model Class Initialized
+DEBUG - 2012-03-21 22:53:45 --> Final output sent to browser
+DEBUG - 2012-03-21 22:53:45 --> Total execution time: 0.0440
+DEBUG - 2012-03-21 22:54:05 --> Config Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:54:05 --> URI Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Router Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 22:54:05 --> Output Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Security Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Input Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:54:05 --> Language Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:54:05 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:54:05 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:54:05 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Model Class Initialized
+DEBUG - 2012-03-21 22:54:05 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:54:05 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 22:54:05 --> Final output sent to browser
+DEBUG - 2012-03-21 22:54:05 --> Total execution time: 0.0534
+DEBUG - 2012-03-21 22:54:07 --> Config Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:54:07 --> URI Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Router Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Output Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Security Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Input Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:54:07 --> Language Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:54:07 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:54:07 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:54:07 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Model Class Initialized
+DEBUG - 2012-03-21 22:54:07 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:54:07 --> Final output sent to browser
+DEBUG - 2012-03-21 22:54:07 --> Total execution time: 0.0910
+DEBUG - 2012-03-21 22:54:09 --> Config Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:54:09 --> URI Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Router Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Output Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Security Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Input Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:54:09 --> Language Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:54:09 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:54:09 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:54:09 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Model Class Initialized
+DEBUG - 2012-03-21 22:54:09 --> Final output sent to browser
+DEBUG - 2012-03-21 22:54:09 --> Total execution time: 0.0478
+DEBUG - 2012-03-21 22:55:06 --> Config Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:55:06 --> URI Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Router Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Output Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Security Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Input Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:55:06 --> Language Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:55:06 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:55:06 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:55:06 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Model Class Initialized
+DEBUG - 2012-03-21 22:55:06 --> Final output sent to browser
+DEBUG - 2012-03-21 22:55:06 --> Total execution time: 0.0418
+DEBUG - 2012-03-21 22:55:46 --> Config Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:55:46 --> URI Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Router Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 22:55:46 --> Output Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Security Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Input Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:55:46 --> Language Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:55:46 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:55:46 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:55:46 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Model Class Initialized
+DEBUG - 2012-03-21 22:55:46 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:55:46 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 22:55:46 --> Final output sent to browser
+DEBUG - 2012-03-21 22:55:46 --> Total execution time: 0.0388
+DEBUG - 2012-03-21 22:55:48 --> Config Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:55:48 --> URI Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Router Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Output Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Security Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Input Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:55:48 --> Language Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:55:48 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:55:48 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:55:48 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Model Class Initialized
+DEBUG - 2012-03-21 22:55:48 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:55:48 --> Final output sent to browser
+DEBUG - 2012-03-21 22:55:48 --> Total execution time: 0.1215
+DEBUG - 2012-03-21 22:55:50 --> Config Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:55:50 --> URI Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Router Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Output Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Security Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Input Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:55:50 --> Language Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:55:50 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:55:50 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:55:50 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Model Class Initialized
+DEBUG - 2012-03-21 22:55:50 --> Final output sent to browser
+DEBUG - 2012-03-21 22:55:50 --> Total execution time: 0.0789
+DEBUG - 2012-03-21 22:55:51 --> Config Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:55:51 --> URI Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Router Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Output Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Security Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Input Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:55:51 --> Language Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:55:51 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:55:51 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:55:51 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Model Class Initialized
+DEBUG - 2012-03-21 22:55:51 --> Final output sent to browser
+DEBUG - 2012-03-21 22:55:51 --> Total execution time: 0.1031
+DEBUG - 2012-03-21 22:55:55 --> Config Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:55:55 --> URI Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Router Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Output Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Security Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Input Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:55:55 --> Language Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:55:55 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:55:55 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:55:55 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Model Class Initialized
+DEBUG - 2012-03-21 22:55:55 --> Final output sent to browser
+DEBUG - 2012-03-21 22:55:55 --> Total execution time: 0.0442
+DEBUG - 2012-03-21 22:56:02 --> Config Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:56:02 --> URI Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Router Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Output Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Security Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Input Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:56:02 --> Language Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:56:02 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:56:02 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:56:02 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Model Class Initialized
+DEBUG - 2012-03-21 22:56:02 --> Final output sent to browser
+DEBUG - 2012-03-21 22:56:02 --> Total execution time: 0.0431
+DEBUG - 2012-03-21 22:57:04 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:04 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 22:57:04 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:04 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:04 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:04 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:04 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:04 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:57:04 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 22:57:04 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:04 --> Total execution time: 0.0444
+DEBUG - 2012-03-21 22:57:06 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:06 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:06 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:06 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:06 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:06 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:06 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:57:06 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:06 --> Total execution time: 0.1110
+DEBUG - 2012-03-21 22:57:07 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:07 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:07 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:07 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:07 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:07 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:08 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:08 --> Total execution time: 0.0731
+DEBUG - 2012-03-21 22:57:08 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:08 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:08 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:08 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:08 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:08 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:08 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:08 --> Total execution time: 0.0878
+DEBUG - 2012-03-21 22:57:09 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:09 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:09 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:09 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:09 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:09 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:09 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:09 --> Total execution time: 0.0831
+DEBUG - 2012-03-21 22:57:12 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:12 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:12 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:12 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:12 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:12 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:12 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:12 --> Total execution time: 0.0439
+DEBUG - 2012-03-21 22:57:23 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:23 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:23 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:23 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:23 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:23 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:23 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:23 --> Total execution time: 0.0429
+DEBUG - 2012-03-21 22:57:28 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:28 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:28 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:28 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:28 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:28 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> File loaded: application/views/codetemplates/template_controller.php
+DEBUG - 2012-03-21 22:57:28 --> File loaded: application/views/codetemplates/template_model.php
+DEBUG - 2012-03-21 22:57:28 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:28 --> Total execution time: 0.1226
+DEBUG - 2012-03-21 22:57:28 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:28 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:28 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:28 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:28 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:28 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:28 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:57:28 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:28 --> Total execution time: 0.0781
+DEBUG - 2012-03-21 22:57:30 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:30 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:30 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:30 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:30 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:30 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:30 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:30 --> Total execution time: 0.0717
+DEBUG - 2012-03-21 22:57:31 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:31 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:31 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:31 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:31 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:31 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:31 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:31 --> Total execution time: 0.0844
+DEBUG - 2012-03-21 22:57:33 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:33 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:33 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:33 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:33 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:33 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:33 --> Total execution time: 0.0817
+DEBUG - 2012-03-21 22:57:33 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:33 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:33 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:33 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:33 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:33 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:33 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:34 --> Total execution time: 0.0791
+DEBUG - 2012-03-21 22:57:34 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:34 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:34 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:34 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:34 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:34 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:34 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:34 --> Total execution time: 0.0800
+DEBUG - 2012-03-21 22:57:41 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:41 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:41 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:41 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:41 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:41 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:41 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:57:41 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:41 --> Total execution time: 0.0692
+DEBUG - 2012-03-21 22:57:49 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:49 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 22:57:49 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:49 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:49 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:49 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:49 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:49 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:57:49 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 22:57:49 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:49 --> Total execution time: 0.0397
+DEBUG - 2012-03-21 22:57:50 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:50 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:50 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:50 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:50 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:50 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:50 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 22:57:50 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:50 --> Total execution time: 0.0765
+DEBUG - 2012-03-21 22:57:54 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:54 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:54 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:54 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:54 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:54 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:54 --> Total execution time: 0.0713
+DEBUG - 2012-03-21 22:57:54 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:54 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:54 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:54 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:54 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:54 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:54 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:54 --> Total execution time: 0.1245
+DEBUG - 2012-03-21 22:57:55 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:55 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:55 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:55 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:55 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:55 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:55 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:55 --> Total execution time: 0.0792
+DEBUG - 2012-03-21 22:57:56 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:56 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:56 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:56 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:56 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:56 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:56 --> Total execution time: 0.0824
+DEBUG - 2012-03-21 22:57:56 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:56 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:56 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:56 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:56 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:56 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:56 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:56 --> Total execution time: 0.0814
+DEBUG - 2012-03-21 22:57:57 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:57 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:57 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:57 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:57 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:57 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:57 --> Total execution time: 0.0757
+DEBUG - 2012-03-21 22:57:57 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:57 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:57 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:57 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:57 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:57 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:57 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:57 --> Total execution time: 0.0821
+DEBUG - 2012-03-21 22:57:58 --> Config Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Hooks Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 22:57:58 --> URI Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Router Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Output Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Security Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Input Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 22:57:58 --> Language Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Loader Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 22:57:58 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 22:57:58 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 22:57:58 --> cURL Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Controller Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Model Class Initialized
+DEBUG - 2012-03-21 22:57:58 --> Final output sent to browser
+DEBUG - 2012-03-21 22:57:58 --> Total execution time: 0.0771
+DEBUG - 2012-03-21 23:11:33 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:33 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 23:11:33 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:33 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:33 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:33 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:33 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:33 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:11:33 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 23:11:33 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:33 --> Total execution time: 0.0367
+DEBUG - 2012-03-21 23:11:34 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:34 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:34 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:34 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:34 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:34 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:34 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:11:34 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:34 --> Total execution time: 0.1089
+DEBUG - 2012-03-21 23:11:36 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:36 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 23:11:36 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:36 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:36 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:36 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:36 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:36 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:11:36 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 23:11:36 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:36 --> Total execution time: 0.0409
+DEBUG - 2012-03-21 23:11:37 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:37 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:37 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:37 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:37 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:37 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:37 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:11:37 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:37 --> Total execution time: 0.0967
+DEBUG - 2012-03-21 23:11:44 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:44 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 23:11:44 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:44 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:44 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:44 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:44 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:44 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:11:44 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 23:11:44 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:44 --> Total execution time: 0.0382
+DEBUG - 2012-03-21 23:11:45 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:45 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:45 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:45 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:45 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:45 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:45 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:11:45 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:45 --> Total execution time: 0.0762
+DEBUG - 2012-03-21 23:11:47 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:47 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:47 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:47 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:47 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:47 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:47 --> Total execution time: 0.0796
+DEBUG - 2012-03-21 23:11:47 --> Config Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:11:47 --> URI Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Router Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Output Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Security Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Input Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:11:47 --> Language Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:11:47 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:11:47 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:11:47 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Model Class Initialized
+DEBUG - 2012-03-21 23:11:47 --> Final output sent to browser
+DEBUG - 2012-03-21 23:11:47 --> Total execution time: 0.0794
+DEBUG - 2012-03-21 23:13:59 --> Config Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:13:59 --> URI Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Router Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 23:13:59 --> Output Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Security Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Input Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:13:59 --> Language Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:13:59 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:13:59 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:13:59 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Model Class Initialized
+DEBUG - 2012-03-21 23:13:59 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:13:59 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 23:13:59 --> Final output sent to browser
+DEBUG - 2012-03-21 23:13:59 --> Total execution time: 0.0393
+DEBUG - 2012-03-21 23:14:01 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:01 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:01 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:01 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:01 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:01 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:01 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:14:01 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:01 --> Total execution time: 0.0800
+DEBUG - 2012-03-21 23:14:33 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:33 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> No URI present. Default controller set.
+DEBUG - 2012-03-21 23:14:33 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:33 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:33 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:33 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:33 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:33 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:14:33 --> File loaded: application/views/view_application.php
+DEBUG - 2012-03-21 23:14:33 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:33 --> Total execution time: 0.0377
+DEBUG - 2012-03-21 23:14:35 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:35 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:35 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:35 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:35 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:35 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:35 --> Curl class already loaded. Second attempt ignored.
+DEBUG - 2012-03-21 23:14:35 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:35 --> Total execution time: 0.1204
+DEBUG - 2012-03-21 23:14:53 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:53 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:53 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:53 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:53 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:53 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:53 --> Total execution time: 0.0798
+DEBUG - 2012-03-21 23:14:53 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:53 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:53 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:53 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:53 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:53 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:53 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:53 --> Total execution time: 0.0952
+DEBUG - 2012-03-21 23:14:54 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:54 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:54 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:54 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:54 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:54 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:54 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:54 --> Total execution time: 0.0863
+DEBUG - 2012-03-21 23:14:55 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:55 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:55 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:55 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:55 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:55 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:55 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:55 --> Total execution time: 0.0817
+DEBUG - 2012-03-21 23:14:59 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:59 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:59 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:59 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:59 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:59 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:59 --> Total execution time: 0.0776
+DEBUG - 2012-03-21 23:14:59 --> Config Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:14:59 --> URI Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Router Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Output Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Security Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Input Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:14:59 --> Language Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:14:59 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:14:59 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:14:59 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Model Class Initialized
+DEBUG - 2012-03-21 23:14:59 --> Final output sent to browser
+DEBUG - 2012-03-21 23:14:59 --> Total execution time: 0.1136
+DEBUG - 2012-03-21 23:15:01 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:01 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:01 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:01 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:01 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:01 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:01 --> Total execution time: 0.1084
+DEBUG - 2012-03-21 23:15:01 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:01 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:01 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:01 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:01 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:01 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:01 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:01 --> Total execution time: 0.0970
+DEBUG - 2012-03-21 23:15:03 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:03 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:03 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:03 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:03 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:03 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:03 --> Total execution time: 0.0812
+DEBUG - 2012-03-21 23:15:03 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:03 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:03 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:03 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:03 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:03 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:03 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:03 --> Total execution time: 0.0923
+DEBUG - 2012-03-21 23:15:06 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:06 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:06 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:06 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:06 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:06 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:06 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:06 --> Total execution time: 0.0610
+DEBUG - 2012-03-21 23:15:32 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:32 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:32 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:32 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:32 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:32 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:32 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:32 --> Total execution time: 0.0766
+DEBUG - 2012-03-21 23:15:33 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:33 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:33 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:33 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:33 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:33 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:33 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:33 --> Total execution time: 0.0838
+DEBUG - 2012-03-21 23:15:34 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:34 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:34 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:34 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:34 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:34 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:34 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:34 --> Total execution time: 0.0797
+DEBUG - 2012-03-21 23:15:37 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:37 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:37 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:37 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:37 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:37 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:37 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:37 --> Total execution time: 0.0791
+DEBUG - 2012-03-21 23:15:38 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:38 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:38 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:38 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:38 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:38 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:38 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:38 --> Total execution time: 0.0783
+DEBUG - 2012-03-21 23:15:39 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:39 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:39 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:39 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:39 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:39 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:39 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:39 --> Total execution time: 0.0780
+DEBUG - 2012-03-21 23:15:40 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:40 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:40 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:40 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:40 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:40 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:40 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:40 --> Total execution time: 0.0812
+DEBUG - 2012-03-21 23:15:42 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:42 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:42 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:42 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:42 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:42 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:42 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:42 --> Total execution time: 0.0790
+DEBUG - 2012-03-21 23:15:43 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:43 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:43 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:43 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:43 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:43 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:43 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:43 --> Total execution time: 0.0801
+DEBUG - 2012-03-21 23:15:49 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:49 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:49 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:49 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:49 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:49 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:49 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:49 --> Total execution time: 0.0875
+DEBUG - 2012-03-21 23:15:50 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:50 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:50 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:50 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:50 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:50 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:50 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:50 --> Total execution time: 0.0765
+DEBUG - 2012-03-21 23:15:52 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:52 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:52 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:52 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:52 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:52 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:52 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:52 --> Total execution time: 0.0850
+DEBUG - 2012-03-21 23:15:53 --> Config Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:15:53 --> URI Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Router Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Output Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Security Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Input Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:15:53 --> Language Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:15:53 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:15:53 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:15:53 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Model Class Initialized
+DEBUG - 2012-03-21 23:15:53 --> Final output sent to browser
+DEBUG - 2012-03-21 23:15:53 --> Total execution time: 0.0774
+DEBUG - 2012-03-21 23:18:48 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:48 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:48 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:48 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:48 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:48 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:48 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:48 --> Total execution time: 0.0800
+DEBUG - 2012-03-21 23:18:49 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:49 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:49 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:49 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:49 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:49 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:49 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:49 --> Total execution time: 0.0776
+DEBUG - 2012-03-21 23:18:52 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:52 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:52 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:52 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:52 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:52 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:52 --> Total execution time: 0.0712
+DEBUG - 2012-03-21 23:18:52 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:52 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:52 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:52 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:52 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:52 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:53 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:53 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:53 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:53 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:53 --> Total execution time: 0.0838
+DEBUG - 2012-03-21 23:18:54 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:54 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:54 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:54 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:54 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:54 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:54 --> Total execution time: 0.0803
+DEBUG - 2012-03-21 23:18:54 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:54 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:54 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:54 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:54 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:54 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:55 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:55 --> Total execution time: 0.0790
+DEBUG - 2012-03-21 23:18:55 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:55 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:55 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:55 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:55 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:55 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:55 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:55 --> Total execution time: 0.0798
+DEBUG - 2012-03-21 23:18:56 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:56 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:56 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:56 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:56 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:56 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:56 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:56 --> Total execution time: 0.0795
+DEBUG - 2012-03-21 23:18:59 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:59 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:59 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:59 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:59 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:59 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:59 --> Total execution time: 0.0716
+DEBUG - 2012-03-21 23:18:59 --> Config Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:18:59 --> URI Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Router Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Output Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Security Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Input Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:18:59 --> Language Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:18:59 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:18:59 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:18:59 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Model Class Initialized
+DEBUG - 2012-03-21 23:18:59 --> Final output sent to browser
+DEBUG - 2012-03-21 23:18:59 --> Total execution time: 0.1072
+DEBUG - 2012-03-21 23:19:00 --> Config Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:19:00 --> URI Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Router Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Output Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Security Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Input Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:19:00 --> Language Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:19:00 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:19:00 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:19:00 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Model Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Final output sent to browser
+DEBUG - 2012-03-21 23:19:00 --> Total execution time: 0.0903
+DEBUG - 2012-03-21 23:19:00 --> Config Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:19:00 --> URI Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Router Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Output Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Security Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Input Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:19:00 --> Language Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:19:00 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:19:00 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:19:00 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Model Class Initialized
+DEBUG - 2012-03-21 23:19:00 --> Final output sent to browser
+DEBUG - 2012-03-21 23:19:00 --> Total execution time: 0.0782
+DEBUG - 2012-03-21 23:19:01 --> Config Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Hooks Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Utf8 Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> UTF-8 Support Enabled
+DEBUG - 2012-03-21 23:19:01 --> URI Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Router Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Output Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Security Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Input Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-03-21 23:19:01 --> Language Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Loader Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Helper loaded: url_helper
+DEBUG - 2012-03-21 23:19:01 --> Helper loaded: form_helper
+DEBUG - 2012-03-21 23:19:01 --> Helper loaded: file_helper
+DEBUG - 2012-03-21 23:19:01 --> cURL Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Controller Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Model Class Initialized
+DEBUG - 2012-03-21 23:19:01 --> Final output sent to browser
+DEBUG - 2012-03-21 23:19:01 --> Total execution time: 0.0819

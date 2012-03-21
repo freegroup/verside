@@ -90,7 +90,7 @@ $(document).ready(function() {
 </head>
 <body >
 
-    <div id="teaser" class="ui-widget-header ui-layout-north">
+    <div id="teaser" class="ui-layout-north">
        My Application
     </div>
 
@@ -103,7 +103,7 @@ $(document).ready(function() {
    
        <div id="xxx" style="height:20px;padding:0px;margin:0px;"  class="ui-layout-center">
 
-          <div id="container_detail_toolbar" class="toolbar ui-widget-header ui-layout-north">
+          <div id="container_detail_toolbar" class="toolbar ui-layout-north">
              <button class="toolbar_button" id="button_save_record">Save</button>
              <button class="toolbar_button" id="button_new_record">New</button>
              <button class="toolbar_button" id="button_delete_record">Delete</button>

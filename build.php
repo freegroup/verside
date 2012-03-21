@@ -56,6 +56,17 @@ function addFiles2Zip(ZipArchive $zip,$path,$removeFirstFolder=false) {
 __HALT_COMPILER();<?php
 
 try {
+   $file = realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR; 
+   if(!is_writeable($file)){
+      echo "Need write permission for directory: ".$file;
+      return;
+   }
+   
+   if(!is_readable($file)){
+     echo "Need read permission for directory: ".$file;
+      return;
+   }
+
 	$zipfilename = md5(time()).'archive.zip'; //remove with tempname()
 	$fp_tmp = fopen($zipfilename,'w');
 	$fp_cur = fopen(__FILE__, 'r');

@@ -361,7 +361,7 @@ cursor:move;
  * Styles für die Dialoge
  ******************************************************************/
 .dialog_header{
- margin-bottom:20px;
+ margin-bottom:10px;
  font-family: @baseFontFamily;
  font-size: @dialogHeaderFontSize;
  font-weight: normal;

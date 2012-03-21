@@ -9,10 +9,10 @@ var CoreLayoutLandscape = Class.extend({
 	this.globalDebugMode = globalDebugMode;
     this.expandViewMode = expandViewMode;
  
-    this.toolbarNavigation =$('<div id="navigation_toolbar" class="ui-layout-north toolbar ui-widget-header">'+
+    this.toolbarNavigation =$('<div id="navigation_toolbar" class="ui-layout-north toolbar">'+
                               '<button class="toolbar_button" id="button_fastback">Home</button>'+
                               '<button class="toolbar_button" id="button_back">Back</button>'+
-                              '<div id="navigation_header_landscape" class="toolbar ui-widget-header " ></div>'+
+                              '<div id="navigation_header_landscape" class="toolbar" ></div>'+
                               '</div>');
 
     this.toolbarNavigation.appendTo($("#container_navigation"));

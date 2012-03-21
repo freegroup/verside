@@ -11,7 +11,7 @@ var CoreLayoutPortrait = Class.extend({
 	this.globalDesignMode = globalDesignMode;
     this.expandViewMode = expandViewMode;
 
-    this.toolbar =$('<div id="navigation_toolbar" class="breadcrumb ui-widget-header"></div>');
+    this.toolbar =$('<div id="navigation_toolbar" class="breadcrumb"></div>');
     this.toolbar.appendTo($("#container_navigation"));
     this.toolbarHeight=$("#navigation_toolbar").height();
  

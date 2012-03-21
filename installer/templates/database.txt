@@ -47,6 +47,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 $path = dirname(__FILE__);
+$sqlLitePath = $path.'/db/verside.sqlite';
 
 $db['default']['hostname'] = '%HOSTNAME%';
 $db['default']['username'] = '%USERNAME%';
