@@ -57,7 +57,7 @@ if ($action == "test") {
 	    else if($driver=="sqlite"){
 	       $database = '$path.\'/db/verside.sqlite\'';
 	       $config = str_replace("%HOSTNAME%", "", $config);
-	       $config = str_replace("%DATABASE%", '$path.\'/db/verside.sqlite\'', $config);
+	       $config = str_replace("%DATABASE%", '$path.\'/db/demo.sqlite\'', $config);
 	       $config = str_replace("%USERNAME%", "", $config);
 	       $config = str_replace("%PASSWORD%", "", $config);
 	       $config = str_replace("%DRIVER%",   "sqlite", $config);
