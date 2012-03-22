@@ -117,7 +117,7 @@ class Controller_core_navigation extends Controller_core_secure {
 				  $object->childCount = $qb->getQuery()->getSingleScalarResult();
 				}
 				else{
-                  $object->childCount = 1;//intval($this->curl->simple_get($object->controller."/count"));
+                  $object->childCount = intval($this->curl->simple_get($object->controller."/count"));
                 }
                 $object->model = "Model_formelement";
                 $object->table = $this->getModelName();

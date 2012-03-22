@@ -1,5 +1,5 @@
 <?php
-$nextPage    = "step_success.php";
+$nextPage    = "step_account.php";
 $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
 $error = false;
 
