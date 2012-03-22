@@ -15,7 +15,7 @@ class Controller_core_navigation extends CI_Controller {
 	}
  
     public function getModelName(){
-	    return "Model_core_navigation";
+	    return "Model_navigation";
 	}
 
     public function getViewNameList(){
@@ -115,7 +115,7 @@ class Controller_core_navigation extends CI_Controller {
 				else{
                   $object->childCount = 1;//intval($this->curl->simple_get($object->controller."/count"));
                 }
-                $object->model = "Model_core_formelement";
+                $object->model = "Model_formelement";
                 $object->table = $this->getModelName();
                 $object->field = "name";
                 $object->label = $object->name;

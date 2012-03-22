@@ -110,7 +110,7 @@ var CoreNavigation = Class.extend({
       return;
       
     var childrenAreSortable  = element.data("controller")==="controller_core_navigation";
-    var childrenAreMenuitems = element.data("model")==="Model_core_formelement";
+    var childrenAreMenuitems = element.data("model")==="Model_formelement";
     
     element.parent().children().removeClass("ui-state-active");
     element.addClass("ui-state-active");

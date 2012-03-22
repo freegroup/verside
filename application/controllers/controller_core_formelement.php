@@ -7,12 +7,12 @@ class Controller_core_formelement extends CI_Controller {
     public function __construct() {
 		parent::__construct();
 		$this->emInternal = $this->doctrine->emInternal;
-		$this->load->model("Model_core_formelement");
+		$this->load->model("Model_formelement");
 		$this->load->helper(array('form', 'url'));
     }
 
 	public function count() {
-        $query= $this->emInternal->createQuery("SELECT COUNT(u.id) FROM Model_core_formelement u");
+        $query= $this->emInternal->createQuery("SELECT COUNT(u.id) FROM Model_formelement u");
         echo $query->getSingleScalarResult();
     }
 
@@ -21,7 +21,7 @@ class Controller_core_formelement extends CI_Controller {
 			echo 'ERROR: Id not provided.';
 			return;
 		}
-        $obj= $this->emInternal->find("Model_core_formelement",$id);
+        $obj= $this->emInternal->find("Model_formelement",$id);
         $this->emInternal->remove($obj);
         $this->emInternal->flush();
         
@@ -30,7 +30,7 @@ class Controller_core_formelement extends CI_Controller {
 
 	public function update($id) {
 		if( !empty( $_POST ) ) {
-            $obj= $this->emInternal->find("Model_core_formelement",$id);
+            $obj= $this->emInternal->find("Model_formelement",$id);
             foreach($_POST as $field => $val){
                 $obj->$field = $val;
             }
@@ -180,7 +180,7 @@ class Controller_core_formelement extends CI_Controller {
 
     protected function _createImage($modelClass, $filename, $parentId, $x, $y, $width, $height){
 		// Generate the header
-        $obj = new Model_core_formelement();
+        $obj = new Model_formelement();
 		$obj->css = "position:absolute;top:".$y."px;left:".$x."px;height:".$height."px;width:".$width."px";
         $obj->type = "image";
 		$obj->tag = "img";
@@ -198,7 +198,7 @@ class Controller_core_formelement extends CI_Controller {
 	protected function _createHeader($modelClass, $text, $parentId, $x, $y){
 		
 		// Generate the header
-        $obj = new Model_core_formelement();
+        $obj = new Model_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:50px;font-size:40px";
 		$obj->tag = "label";
 		$obj->extra_attributes = "data-editable=\"true\"";
@@ -217,7 +217,7 @@ class Controller_core_formelement extends CI_Controller {
           $title ="caption";
           
 		// Generate the header
-        $obj = new Model_core_formelement();
+        $obj = new Model_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:16px;font-size:14px";
 		$obj->tag = "label";
 		$obj->extra_attributes = "data-editable=\"true\" data-relatedinput=\"".$relatedinput."\"";
@@ -232,7 +232,7 @@ class Controller_core_formelement extends CI_Controller {
 	}
 	
 	protected function _createInput($modelClass, $readonly, $column, $parentId,$x, $y, $width){
-       $obj = new Model_core_formelement();
+       $obj = new Model_formelement();
 	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:25px;font-size:17px";
 	   $obj->tag = "input";
 	   if($readonly)
@@ -248,7 +248,7 @@ class Controller_core_formelement extends CI_Controller {
 	
 	
 	protected function _createArea($modelClass, $readonly, $column, $parentId,$x, $y, $width){
-       $obj = new Model_core_formelement();
+       $obj = new Model_formelement();
 	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:50px;font-size:17px";
 	   $obj->tag = "textarea";
 	   if($readonly)
@@ -264,7 +264,7 @@ class Controller_core_formelement extends CI_Controller {
 
 
 	protected function _createHr($modelClass, $parentId,$x, $y, $width){
-       $obj = new Model_core_formelement();
+       $obj = new Model_formelement();
 	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:20px;";
 	   $obj->tag = "div";
 	   $obj->model_class = $modelClass;

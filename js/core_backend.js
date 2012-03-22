@@ -20,7 +20,7 @@ CoreBackend.Navigation.create = function(/*:String*/ parentNavigationId,/*:Strin
 	  url: "index.php/controller_core_navigation/create",
 	  type: 'POST',
 	  data:{
-               "model": "Model_core_navigation",
+               "model": "Model_navigation",
                "order": 0,
                "parent_id": parentNavigationId,
                "name": name,

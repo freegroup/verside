@@ -1,9 +1,9 @@
 <?php
 /**
 * @Entity @HasLifecycleCallbacks
-* @Table(name="core_workflow")
+* @Table(name="workflow")
 */
-class Model_core_workflow  {
+class Model_workflow  {
  
    /**
     * @Id

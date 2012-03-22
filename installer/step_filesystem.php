@@ -3,7 +3,6 @@ $nextPage    = "step_database.php";
 $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
 $error = false;
 
-
 $filesToCheck[] = "application".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR."demo.sqlite";
 $filesToCheck[] = "application".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."db".DIRECTORY_SEPARATOR."verside.sqlite";
 $filesToCheck[] = "application".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."database.php";

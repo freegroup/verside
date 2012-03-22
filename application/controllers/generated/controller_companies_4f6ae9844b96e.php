@@ -1,5 +1,5 @@
 <?php
-class Controller_bldsinn_4f6a5cd826181 extends Controller_generated {
+class Controller_companies_4f6ae9844b96e extends Controller_generated {
  
     public function __construct() {
 		parent::__construct();
@@ -10,7 +10,7 @@ class Controller_bldsinn_4f6a5cd826181 extends Controller_generated {
     }
     
     public function getModelName(){
-	    return "Model_bldsinn_4f6a5cd826181";
+	    return "Model_companies_4f6ae9844b96e";
 	}
 	
     public function getTableName(){

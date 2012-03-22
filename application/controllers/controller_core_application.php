@@ -11,8 +11,8 @@ class Controller_core_application extends CI_Controller {
 		$this->emExternal = $this->doctrine->emExternal;
 		$this->emInternal = $this->doctrine->emInternal;
 		
-		$this->load->model("Model_core_formelement");
-		$this->load->model("Model_core_navigation");
+		$this->load->model("Model_formelement");
+		$this->load->model("Model_navigation");
 		$this->load->library('parser');
 	}
 
@@ -71,14 +71,14 @@ class Controller_core_application extends CI_Controller {
 		//cleanup duplicate entry
         $qb = $this->emInternal->createQueryBuilder();
         $qb->delete()
-            ->from("Model_core_navigation", 'f')    
+            ->from("Model_navigation", 'f')    
 			->where('f.parent_id = :parent')
 			->andWhere("f.name = :name")
 			->setParameter("parent",$parentId)
 			->setParameter("name",$alias);
 		$qb->getQuery()->execute();
 
-		$menu = new Model_core_navigation();
+		$menu = new Model_navigation();
 		$menu->parent_id = $parentId;
 		$menu->order =0;
 		$menu->name = $alias;
@@ -95,7 +95,7 @@ class Controller_core_application extends CI_Controller {
 		// cleanup/remove the old form
         $qb = $this->emInternal->createQueryBuilder();
         $qb->delete()
-            ->from("Model_core_formelement", 'f')    
+            ->from("Model_formelement", 'f')    
 			->where('f.model_class = :name')
 			->setParameter("name",$modelClass);  
 		$qb->getQuery()->execute();
@@ -128,7 +128,7 @@ class Controller_core_application extends CI_Controller {
 	}
 	
 	protected function createInput($modelClass, $readonly, $column, $parentId,$x, $y, $width, $height){
-		$obj = new Model_core_formelement();
+		$obj = new Model_formelement();
 		$obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:".$width."px;height:".$height."px;";
 		$obj->type = "input";
 		$obj->tag = "input";
@@ -146,7 +146,7 @@ class Controller_core_application extends CI_Controller {
 	protected function createLabel($modelClass, $parentId, $x, $y, $text, $for){
 		
 		// Generate the header
-        $obj = new Model_core_formelement();
+        $obj = new Model_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:16px;font-size:14px";
 		$obj->type = "label";
 		$obj->tag = "label";
@@ -163,7 +163,7 @@ class Controller_core_application extends CI_Controller {
 	
 	
 	protected function createMajorInput($modelClass, $readonly,  $column, $parentId,$x, $y){
-       $obj = new Model_core_formelement();
+       $obj = new Model_formelement();
 	   $obj->css = "position:absolute;top:".$y."px;left:".$x."px;width:300px;height:33px;font-size:20px";
 	   $obj->type = "input";
 	   $obj->tag = "input";
@@ -183,7 +183,7 @@ class Controller_core_application extends CI_Controller {
 	protected function createMajorLabel($modelClass, $parentId, $x, $y, $text, $for){
 		
 		// Generate the header
-        $obj = new Model_core_formelement();
+        $obj = new Model_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:16px;font-size:14px";
 		$obj->type = "label";
 		$obj->tag = "label";
@@ -201,7 +201,7 @@ class Controller_core_application extends CI_Controller {
 	protected function createTitle($modelClass, $parentId, $x, $y, $text){
 		
 		// Generate the header
-        $obj = new Model_core_formelement();
+        $obj = new Model_formelement();
 		$obj->css = "white-space:nowrap;position:absolute;top:".$y."px;left:".$x."px;height:50px;font-size:40px";
 		$obj->type = "title";
 		$obj->tag = "label";

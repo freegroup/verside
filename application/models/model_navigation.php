@@ -2,8 +2,8 @@
 
 /**
 * @Entity @HasLifecycleCallbacks
-* @Table(name="core_navigation")
-*/class Model_core_navigation {
+* @Table(name="navigation")
+*/class Model_navigation {
  
    /**
     * @Id

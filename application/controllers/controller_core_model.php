@@ -16,8 +16,8 @@ class Controller_core_model extends CI_Controller {
 		$this->emInternal = $this->doctrine->emInternal;
 		$this->emExternal = $this->doctrine->emExternal;
 		
-		$this->load->model("Model_core_formelement");
-		$this->load->model("Model_core_navigation");
+		$this->load->model("Model_formelement");
+		$this->load->model("Model_navigation");
 		$this->load->library('parser');
 
         $this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', time()).' GMT');

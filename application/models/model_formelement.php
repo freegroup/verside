@@ -1,9 +1,9 @@
 <?php
 /**
 * @Entity @HasLifecycleCallbacks
-* @Table(name="core_formelement")
+* @Table(name="formelement")
 */
-class Model_core_formelement  {
+class Model_formelement  {
  
    /**
     * @Id

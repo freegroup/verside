@@ -1,9 +1,9 @@
 <?php
 /**
 * @Entity @HasLifecycleCallbacks
-* @Table(name="core_filterentry")
+* @Table(name="filterentry")
 */
-class Model_core_filterentry  {
+class Model_filterentry  {
  
    /**
     * @Id

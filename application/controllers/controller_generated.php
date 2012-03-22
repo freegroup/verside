@@ -15,8 +15,8 @@ abstract class Controller_generated extends CI_Controller {
 		$this->emExternal = $this->doctrine->emExternal;
 		$this->emInternal = $this->doctrine->emInternal;
 
-		$this->load->model("Model_core_formelement");
-		$this->load->model("Model_core_filterentry");
+		$this->load->model("Model_formelement");
+		$this->load->model("Model_filterentry");
 		$this->load->model("generated/".$this->getModelName());
 
         $this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', time()).' GMT');
@@ -163,7 +163,7 @@ abstract class Controller_generated extends CI_Controller {
 		//
 	    $qb = $this->emInternal->createQueryBuilder();
         $qb->select('f')
-            ->from("Model_core_formelement", 'f')
+            ->from("Model_formelement", 'f')
             ->where('f.model_class = :name')
 			->setParameter("name",$this->getModelName())
 			->orderBy('f.id');
@@ -204,7 +204,7 @@ abstract class Controller_generated extends CI_Controller {
 		//
 	    $qb = $this->emInternal->createQueryBuilder();
         $qb->select('f')
-            ->from("Model_core_formelement", 'f')
+            ->from("Model_formelement", 'f')
             ->where('f.id = :id')
 			->setParameter("id",$elementId)
 			->orderBy('f.id');
@@ -226,7 +226,7 @@ abstract class Controller_generated extends CI_Controller {
     protected function addFilter( &$qb ){
 	    $qbFilter = $this->emInternal->createQueryBuilder();
         $qbFilter->select('f')
-            ->from("Model_core_filterentry", 'f')
+            ->from("Model_filterentry", 'f')
             ->where('f.model_class = :name')
 			->setParameter("name",$this->getModelName());  
 

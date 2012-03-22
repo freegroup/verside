@@ -5,7 +5,7 @@ class Controller_core_workflow extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->em = $this->doctrine->em;
-		$this->load->model("Model_core_workflow");
+		$this->load->model("Model_workflow");
         $this->load->library('phpblocks');
         $this->load->helper('file');
     }
@@ -17,7 +17,7 @@ class Controller_core_workflow extends CI_Controller {
            echo 'ERROR: Id not provided.';
            return;
         }
-        $obj= $this->em->find("Model_core_workflow",$id);
+        $obj= $this->em->find("Model_workflow",$id);
         $this->em->remove($obj);
         $this->em->flush();
  
@@ -41,7 +41,7 @@ class Controller_core_workflow extends CI_Controller {
 	 
 			$qb = $this->em->createQueryBuilder();
 			$qb->select('f')
-				->from("Model_core_workflow", 'f')
+				->from("Model_workflow", 'f')
 				->where('f.emitter_id = :id')
 				->setParameter("id",$emitter_id);
 	   //         ->andWhere('f.event = :event')

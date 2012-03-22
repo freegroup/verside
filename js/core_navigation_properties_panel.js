@@ -89,7 +89,7 @@ var CoreNavigationPropertiesPanel = Class.extend({
   update: function(navEntryToShow){
   /************************************************************************************************/
     this.selectedNavEntry = navEntryToShow;
-    if(navEntryToShow!==null && navEntryToShow.data("model")==="Model_core_formelement"){
+    if(navEntryToShow!==null && navEntryToShow.data("model")==="Model_formelement"){
        var name = navEntryToShow.data("name");
        navEntryToShow.find(".columnnav_listentry_label");
        $("#property_navigation_name").val(name);
