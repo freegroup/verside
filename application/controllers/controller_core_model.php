@@ -1,11 +1,8 @@
 <?php
 
-class Controller_core_model extends CI_Controller {
+class Controller_core_model extends Controller_core_secure {
  
-    //Doctrine EntityManager
-    public $emExternal;
-    public $emInternal;
-    
+  
     protected static $datatypes = array("integer"=>"number",
                                         "string"=>"text",
                                         "smallint"=>"number"
@@ -13,8 +10,6 @@ class Controller_core_model extends CI_Controller {
     
     public function __construct() {
 		parent::__construct();
-		$this->emInternal = $this->doctrine->emInternal;
-		$this->emExternal = $this->doctrine->emExternal;
 		
 		$this->load->model("Model_formelement");
 		$this->load->model("Model_navigation");

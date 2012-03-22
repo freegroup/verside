@@ -14,7 +14,6 @@
 <link type="text/css" rel="stylesheet" href="css/jquery.selectbox.css" />
 <link type="text/css" rel="stylesheet" href="css/jquery-reveal.css" />
 
-<link type="text/css" rel="stylesheet" href="css/core_styles.css" />
 <link type="text/css" rel="stylesheet/less" href="css/core_styles.less.php" />
 <script type="text/javascript" src="js/lib/less-1.2.2.js"></script>
 
@@ -91,7 +90,7 @@ $(document).ready(function() {
 <body >
 
     <div id="teaser" class="ui-layout-north">
-       My Application
+       My Application <span id="logout">Logout</span>
     </div>
 
     <div id="container_application" class="pane ui-layout-center">

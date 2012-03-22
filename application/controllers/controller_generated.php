@@ -1,10 +1,8 @@
 <?php
 
-abstract class Controller_generated extends CI_Controller {
+abstract class Controller_generated extends Controller_core_secure {
  
-    public $emExternal;
-    public $emInternal;
-    
+
     abstract public function getModelName();
     abstract public function getTableName();
     abstract public function getRepresentativeFieldName();
@@ -12,8 +10,6 @@ abstract class Controller_generated extends CI_Controller {
     
     public function __construct() {
 		parent::__construct();
-		$this->emExternal = $this->doctrine->emExternal;
-		$this->emInternal = $this->doctrine->emInternal;
 
 		$this->load->model("Model_formelement");
 		$this->load->model("Model_filterentry");

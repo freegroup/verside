@@ -70,6 +70,12 @@ var CoreApplication = Class.extend({
 //	less.watch();
 
 //   coreTrigger(COMMAND_LAYOUT_PORTRAIT);
+
+	$("#logout").click(function(){
+		CoreBackend.Usermanagement.logout(function(){
+			window.location.href="./";
+		});
+	});
   }
 
 });

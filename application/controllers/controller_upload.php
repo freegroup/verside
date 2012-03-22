@@ -2,7 +2,7 @@
 /**
  * http://codeigniter.com/user_guide/libraries/file_uploading.html
  */
-class Controller_upload extends CI_Controller {
+class Controller_upload extends Controller_core_secure {
 
 	function __construct()
 	{

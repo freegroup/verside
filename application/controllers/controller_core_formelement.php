@@ -1,12 +1,10 @@
 <?php
 
-class Controller_core_formelement extends CI_Controller {
+class Controller_core_formelement extends Controller_core_secure {
 
-    public $emInternal;
-  
+ 
     public function __construct() {
 		parent::__construct();
-		$this->emInternal = $this->doctrine->emInternal;
 		$this->load->model("Model_formelement");
 		$this->load->helper(array('form', 'url'));
     }

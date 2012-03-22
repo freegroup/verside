@@ -1,15 +1,10 @@
 <?php
 
-class Controller_core_application extends CI_Controller {
+class Controller_core_application extends Controller_core_secure {
  
-    //Doctrine EntityManager
-    public $emExternal;
-    public $emInternal;
     
     public function __construct() {
 		parent::__construct();
-		$this->emExternal = $this->doctrine->emExternal;
-		$this->emInternal = $this->doctrine->emInternal;
 		
 		$this->load->model("Model_formelement");
 		$this->load->model("Model_navigation");

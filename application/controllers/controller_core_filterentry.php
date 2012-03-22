@@ -1,11 +1,10 @@
 <?php
 
-class Controller_core_filterentry extends CI_Controller {
-    public $emInternal;
+class Controller_core_filterentry extends Controller_core_secure {
  
     public function __construct() {
 		parent::__construct();
-		$this->emInternal = $this->doctrine->emInternal;
+
 		$this->load->model("Model_filterentry");
         $this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', time()).' GMT');
         $this->output->set_header('Expires: '.gmdate('D, d M Y H:i:s', time()).' GMT');

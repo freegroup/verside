@@ -1,17 +1,12 @@
 <?php
 
-class Controller_core_navigation extends CI_Controller {
+class Controller_core_navigation extends Controller_core_secure {
  
-    public $emExternal;
-    public $emInternal;
-  
+
    public function __construct() {
 		parent::__construct();
-		$this->emExternal = $this->doctrine->emExternal;
-		$this->emInternal = $this->doctrine->emInternal;
 
 		$this->load->model($this->getModelName());
-		$this->load->library('curl'); 
 	}
  
     public function getModelName(){
@@ -36,9 +31,18 @@ class Controller_core_navigation extends CI_Controller {
     }
 
 	public function index(){
+	    if($this->isLoggedIn()==false){
+			header('Location: index.php/controller_core_navigation/login');
+			return;
+		}
+	
 		$this->load->view( $this->getViewNameDetail() );
 	}
- 
+	
+ 	public function login(){
+	    $this->load->view( "view_login" );
+	}
+	
  	public function delete( $id = null ) {
 		if( is_null( $id ) ) {
 			echo 'ERROR: Id not provided.';

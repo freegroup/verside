@@ -1,5 +1,5 @@
 <?php
-$nextPage = "step_filesystem.php";
+$nextPage = "step_phpconfig.php";
 
 ?>
 

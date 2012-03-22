@@ -1,5 +1,5 @@
 <?php
-$nextPage    = "step_database.php";
+$nextPage    = "step_filesystem.php";
 $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
 $error = false;
 

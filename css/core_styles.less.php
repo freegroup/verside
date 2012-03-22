@@ -151,6 +151,7 @@ body{
  border: 1px solid darken(@toolbarButtonColorAdd,2%) !important;
  box-shadow:none !important;
 }
+
 .button_add .ui-button-text{
  font-family:@baseFontFamily !important;
  text-shadow:none !important;
@@ -196,7 +197,6 @@ body{
 .button_right_align{
  float:right;
 }
-
 
 
 /********************************************************************************************************
@@ -807,6 +807,16 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
  padding-left: @applicationLeftPadding !important;
 }
 
+#logout{
+ float:right;
+ font-size: @baseFontSize;
+ margin-right: 20px;
+ border-bottom:1px solid @teaserFontColor;
+ margin-top: 5px;
+ height: @teaserHeight / 2;
+ line-height: @teaserHeight / 2;
+ cursor:pointer;
+}
 
 /********************************************************************************************************
  * Settings for the toolbar in the Column navigation
