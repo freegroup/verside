@@ -4,7 +4,7 @@ $currentPage = basename($_SERVER['SCRIPT_FILENAME']);
 $error = false;
 
 
-$phpVersion = "6.3.0";
+$phpVersion = "5.3.0";
 $sqliteVersion ="2.8.0";
 
 ?>
@@ -44,7 +44,7 @@ $sqliteVersion ="2.8.0";
    echo "<td>PHP Version</td>";
    
    if (version_compare(PHP_VERSION, $phpVersion) >= 0) {
-     echo "<td>".$phpVersion."</td><td>".PHP_VERSION."</td><td>&#10004;</td>";
+     echo "<td>".$phpVersion."</td><td>".PHP_VERSION."</td><td class='success_flag'>&#10004;</td>";
    }
    else{	 
      echo "<td>".$phpVersion."</td><td>".PHP_VERSION."</td><td class='error_flag'>X</td>";
@@ -58,7 +58,7 @@ $sqliteVersion ="2.8.0";
    echo "<tr>";
    echo "<td>SQLite Version</td>";
    if (version_compare(sqlite_libversion(), $sqliteVersion) >= 0) {
-     echo "<td>".$sqliteVersion."</td><td>".sqlite_libversion()."</td><td>&#10004;</td>";
+     echo "<td>".$sqliteVersion."</td><td>".sqlite_libversion()."</td><td class='success_flag'>&#10004;</td>";
    }
    else{	 
      echo "<td>".$sqliteVersion."</td><td>".sqlite_libversion()."</td><td class='error_flag'>X</td>";
@@ -71,7 +71,7 @@ $sqliteVersion ="2.8.0";
    echo "<tr>";
    echo "<td>PDO </td>";
    if (extension_loaded ('PDO' )) {
-     echo "<td>installed</td><td>installed</td><td>&#10004;</td>";
+     echo "<td>installed</td><td>installed</td><td class='success_flag'>&#10004;</td>";
    }
    else{	 
      echo "<td>installed</td><td>missed</td><td class='error_flag'>X</td>";
@@ -83,7 +83,7 @@ $sqliteVersion ="2.8.0";
 
    echo "<td>PDO mySql </td>";
    if (extension_loaded ('pdo_mysql' )) {
-     echo "<td>installed</td><td>installed</td><td>&#10004;</td>";
+     echo "<td>installed</td><td>installed</td><td class='success_flag'>&#10004;</td>";
    }
    else{	 
      echo "<td>installed</td><td>missed</td><td class='error_flag'>X</td>";

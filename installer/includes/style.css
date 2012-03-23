@@ -89,6 +89,7 @@ padding-bottom:20px;
  letter-spacing:2px;
  -webkit-tap-highlight-color: rgba(0,0,0,0); 
  padding-left:80px;
+ white-space:nowrap;
 }
 
 .title{
