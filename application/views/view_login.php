@@ -23,6 +23,9 @@ $(document).ready(function() {
 	    });
 		e.preventDefault();
 	});
+	$("#fork_banner").click(function(e){
+		window.open("https://github.com/freegroup/verside");
+	});
 });
 </script>
 
@@ -30,7 +33,7 @@ $(document).ready(function() {
 
 <body>
    <div id="registration">
-      <h2>Login</h2>
+      <h2><img src="images/logo.png" height="50">Login</h2>
       <form id="registerUserForm">
       	  <fieldset>
       		<p><input title="username" autocomplete="off" class="textfield" id="username"  type="text" required="required" />  </p>
@@ -39,6 +42,11 @@ $(document).ready(function() {
           </fieldset>
       </form>
 	</div>
-      
+
+<div id="footer">
+Help Us to Keep Verside Healthy - <a href="https://github.com/freegroup/verside/issues" target="_new">Report All Bugs</a>
+</div>
+
+<img id="fork_banner" src="images/fork_me_banner.png">
 </body>
 </html>
