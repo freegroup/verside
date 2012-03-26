@@ -6,12 +6,13 @@ $(document).ready(function(){
 	$('#promoIMG').splashScreen({
 		textLayers : [
 "For <b>iPad</b>, Chrome, FireFox, Safari",
-"Build your custom WebApps",
+"PHP, mySQL, SQLite, jQuery,<br> CodeIgniter and Doctrine<br>",
+"Ready to customize Admin Interface<br>for databases",
 "Just drag-and-drop",
-"A place for everything",
-"New and more elegant",
+//"New and more elegant",
 "Verside"
 		]		
 	});
-	
+
+
 });
