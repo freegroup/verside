@@ -1,4 +1,0 @@
-[
-{"name":"dummy"},
-{"name":"vorname"}
-]
