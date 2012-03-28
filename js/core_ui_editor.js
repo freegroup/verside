@@ -257,25 +257,30 @@ var CoreUiEditor = Class.extend({
   /************************************************************************************************/
   _deleteNavigationEntry: function(item){
   /************************************************************************************************/
-    item = $(item);
-  
-    var next = item.next("li");
+    $item = $(item);
+
+    var next = $item.next("li");
     if(next.length===0)
-        next =item.prev("li");
+        next =$item.prev("li");
     $(".columnnav_listentry").ants("remove");
 	
     $.ajax({
-      url: this.BASE_URL+"/controller_core_navigation/delete/"+item.data("id"),
+      url: this.BASE_URL+"/controller_core_navigation/delete/"+$item.data("id"),
       type: 'POST',
       success: $.proxy(function( response ) {
-        var parentContainer = item.parent().parent();
+        var parentContainer = $item.parent().parent();
         var all= parentContainer.nextAll();
         var form =$("#content_formular");
         form.fadeOut(500,form.remove);
         all.fadeOut(500,all.remove);
-        item.animate({'color':'#fb6c6c'},100)
+   	
+    	var counter = $("#"+$item.data("parent_id")+" .columnnav_listentry_counter");
+    	var newCounterValue =parseInt(counter.text())-1;
+    	counter.text(newCounterValue);
+   
+        $item.animate({'color':'#fb6c6c'},100)
             .hide(700,function(){
-			    item.remove();
+			    $item.remove();
                 next.click();
 		});
       },this)

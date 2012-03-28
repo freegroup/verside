@@ -20,8 +20,10 @@ var CoreNavigation = Class.extend({
 							   '    data-table="${table}" '+ 
 							   '    class="columnnav_listentry">'+ 
 							   '    <span class="columnnav_listentry_label" data-display_field="${table}_${field}_${id}">${label}</span>'+ 
-							   ' {{if childCount > 0}}'+
-							   '    <span class="columnnav_listentry_counter">&#x25BA;</span>'+ 
+							   ' {{if childCount > 0 || controller == "controller_core_navigation"}}'+
+							   '    <span class="columnnav_listentry_counter">${childCount}</span>'+ 
+							   ' {{else}}'+
+							   '    <span style="display:none" class="columnnav_listentry_counter">${childCount}</span>'+ 
 							   ' {{/if}}'+
 							   '   </li>'+  
 							   ' {{/each}}'+

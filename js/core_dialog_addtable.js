@@ -171,7 +171,12 @@ var CoreDialogAddTable = Class.extend({
                    coreTrigger(COMMAND_NAVIGATION_LOAD);
                 }
                 else{
-                   coreTrigger(COMMAND_NAVIGATION_NAVIGATE,[".columnnav_listentry[data-id="+this.parentId+"]"]);
+                	// increase the "child counter" of the parent navigation entry.
+                	var counter = $("#"+this.parentId+" .columnnav_listentry_counter");
+                	counter.text(parseInt(counter.text())+1);
+                	counter.show();
+                	
+                	coreTrigger(COMMAND_NAVIGATION_NAVIGATE,[".columnnav_listentry[data-id="+this.parentId+"]"]);
                 }
             },this) //end success
         }); //end ajax()

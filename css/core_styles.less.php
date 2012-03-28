@@ -734,12 +734,14 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
  white-space:nowrap;
  padding: 5px @applicationLeftPadding;
  height:@navigationListEntryHeight;
- cursor:default;
+ line-height:@navigationListEntryHeight;
+ cursor:pointer;
  border-top: 1px solid rgb(75,75,75) !important;
  border-bottom: 1px solid  rgba(37,37,40, 0.5) !important;
  border-width: 1px 1px 1px 0;
  border-right:0px;
  color: @navigationListFontColor;
+ .disableSelection();
 }
 
 .columnnav_listentry:first-child{
@@ -747,8 +749,8 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
 }
 
 .columnnav_listentry.ui-state-active{
- background: url("../images/background_bright.png") repeat scroll 0 0 transparent;
- color: @navigationListActiveFontColor;
+  color:white;
+ .gradient(#45C7EB,#45C7EB, #2698DB);
 }
 
 .columnnav_listentry_label{
@@ -763,17 +765,24 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
 
 .columnnav_listentry_counter{
  float:right;
- background-color: rgba(255, 255, 255, 0.1);
  border: 1px solid #9F9F9F;
- border-radius: 5px 5px 5px 5px;
- color: #9F9F9F;
- font-weight: bold;
- height: 18px;
- line-height: 18px;
+ font-weight: normal;
+ height: @navigationListEntryHeight / 3 * 2 - 3;
+ line-height:  @navigationListEntryHeight / 3 * 2 - 3;
  position: relative;
  text-align: center;
  top: 0;
- width: 16px;
+ min-width: 16px;
+
+ background: none repeat scroll 0 0 #48515C;
+ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26) inset, 0 1px 0 0 rgba(255, 255, 255, 0.15);
+ color: #FFFFFF;
+ padding: 0.4em 0.6em;
+ text-indent: 0;
+ text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+ 
+.border-radius(@navigationListEntryHeight / 2, @navigationListEntryHeight / 2, @navigationListEntryHeight / 2, @navigationListEntryHeight / 2);
+
 }
 
 .columnnav_panel{
@@ -805,6 +814,7 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
  letter-spacing:2px;
  -webkit-tap-highlight-color: rgba(0,0,0,0); 
  padding-left: @applicationLeftPadding !important;
+ .disableSelection();
 }
 
 #logout{
@@ -845,6 +855,8 @@ box-shadow: 0px 0px 40px rgb(71,134,237);
  font-weight:normal;
  letter-spacing:2px;
  font-size:@navigationListHeaderFontSize;
+ cursor:default;
+ .disableSelection();
 }
 
 #navigation_header_landscape div{
