@@ -111,6 +111,10 @@ var CoreNavigation = Class.extend({
     if(element.length===0)
       return;
       
+    // show the load indicator
+    // (will be remove in the application.js with a global evnet handler
+	$(element).find(".columnnav_listentry_label").activity({segments: 9,padding:0, align: 'right', valign: 'top', steps: 3, width:2, space: 1, length: 3, color: '#030303', speed: 1.5});
+
     var childrenAreSortable  = element.data("controller")==="controller_core_navigation";
     var childrenAreMenuitems = element.data("model")==="Model_formelement";
     

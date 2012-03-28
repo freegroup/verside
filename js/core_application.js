@@ -59,6 +59,12 @@ var CoreApplication = Class.extend({
   /************************************************************************************************/
   init: function(containerId){
   /************************************************************************************************/
+	// global ajax listener to remove all load inicators from the page
+	//
+	$("body").bind("ajaxComplete", function(){
+		$(".busyIndicator").remove();
+	});
+	
 	this.layout = new CoreLayout();
 	this.navigation = new CoreNavigation();
 	this.contentpane = new CoreContentpane();

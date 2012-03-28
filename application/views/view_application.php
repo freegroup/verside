@@ -42,7 +42,10 @@
 <script type="text/javascript" src="js/lib/jquery-iphone-checkboxes.js"></script>
 <script type="text/javascript" src="js/lib/jquery-longclick.js"></script>
 <script type="text/javascript" src="js/lib/jquery-reveal.js"></script>
+<script type="text/javascript" src="js/lib/jquery-reveal.js"></script>
+<script type="text/javascript" src="js/lib/jquery-activity-indicator-1.0.0.js"></script>
 <script type="text/javascript" src="js/lib/Class.js"></script>
+
 
 <script type="text/javascript" src="js/core_backend.js"></script>
 <script type="text/javascript" src="js/core_renderer.js"></script>
