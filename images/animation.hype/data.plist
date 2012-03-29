@@ -18,13 +18,13 @@
 	<key>guidesAreLocked</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2012-03-29T20:51:10Z</date>
+	<date>2012-03-29T21:08:08Z</date>
 	<key>layout</key>
 	<dict>
 		<key>keyframeTimelineHeight</key>
 		<real>151</real>
 		<key>mainWindowFrame</key>
-		<string>308 175 1422 873 0 0 1920 1058 </string>
+		<string>307 166 1422 873 0 0 1920 1058 </string>
 		<key>openTabs</key>
 		<array/>
 		<key>selectedTabIndex</key>
@@ -32,7 +32,7 @@
 		<key>showSceneTabView</key>
 		<true/>
 		<key>splitHeight</key>
-		<real>335</real>
+		<real>370</real>
 		<key>splitViewIsVertical</key>
 		<false/>
 		<key>splitWidth</key>
@@ -538,13 +538,13 @@
 				<key>timeCursors</key>
 				<dict>
 					<key>kTimelineDefaultIdentifier</key>
-					<real>31.266666412353516</real>
+					<real>10.600000381469727</real>
 				</dict>
 				<key>timescale</key>
 				<integer>20</integer>
 			</dict>
 			<key>canvasSize</key>
-			<string>{1422, 1040}</string>
+			<string>{2844, 1111}</string>
 			<key>context</key>
 			<dict>
 				<key>currentTimelineIdentifier</key>
@@ -588,6 +588,10 @@
 							<string>Top</string>
 							<key>objectValue</key>
 							<string>95px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>RotationAxis</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -1413,6 +1417,10 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>RotationAxis</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BackgroundImage</string>
 							<key>objectValue</key>
 							<string>desktop.png</string>
@@ -1695,6 +1703,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>RotationAxis</string>
+							<key>objectValue</key>
+							<string>0</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BackgroundImage</string>
 							<key>objectValue</key>
 							<string>GoogleChrome.png</string>
@@ -1824,6 +1838,10 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>RotationAxis</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BackgroundImage</string>
 							<key>objectValue</key>
 							<string>firefox.png</string>
@@ -1950,6 +1968,12 @@
 							<string>Top</string>
 							<key>objectValue</key>
 							<string>114px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>RotationAxis</string>
+							<key>objectValue</key>
+							<string>0</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -2848,7 +2872,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>Rotate</string>
@@ -3009,7 +3033,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>timingFunction</key>
 								<string>easeinout</string>
@@ -3140,7 +3164,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-35deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>Rotate</string>
@@ -3294,7 +3318,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-35deg</string>
 								</dict>
 								<key>timingFunction</key>
 								<string>easeinout</string>
@@ -3368,7 +3392,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>Rotate</string>
@@ -3536,7 +3560,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>timingFunction</key>
 								<string>easeinout</string>
@@ -3724,7 +3748,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>Rotate</string>
@@ -3885,7 +3909,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>timingFunction</key>
 								<string>easeinout</string>
@@ -4404,7 +4428,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-35deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>Rotate</string>
@@ -4551,7 +4575,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-35deg</string>
 								</dict>
 								<key>timingFunction</key>
 								<string>easeinout</string>
@@ -4696,7 +4720,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-35deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>Rotate</string>
@@ -4843,7 +4867,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-35deg</string>
 								</dict>
 								<key>timingFunction</key>
 								<string>easeinout</string>
@@ -4924,7 +4948,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>Rotate</string>
@@ -5085,7 +5109,7 @@
 									<key>identifier</key>
 									<string>Rotate</string>
 									<key>objectValue</key>
-									<string>-90deg</string>
+									<string>-45deg</string>
 								</dict>
 								<key>timingFunction</key>
 								<string>easeinout</string>
@@ -5448,11 +5472,13 @@
 			<key>oid</key>
 			<string>1</string>
 			<key>scrollViewOffset</key>
-			<string>{0, 463}</string>
+			<string>{0, 161}</string>
 			<key>selectedObjects</key>
-			<array/>
+			<array>
+				<string>9</string>
+			</array>
 			<key>splitHeight</key>
-			<real>335</real>
+			<real>370</real>
 		</dict>
 	</array>
 	<key>scripts</key>
@@ -5464,6 +5490,6 @@
 	<key>unsupportedBrowserIdentifiers</key>
 	<array/>
 	<key>zoomFactor</key>
-	<real>1</real>
+	<real>0.5</real>
 </dict>
 </plist>

@@ -119,6 +119,26 @@ nav.header {
 .introtext{
   margin-top:140px !important;
   float:right;
+  text-align:center;
+}
+
+.download{
+  -moz-transition: background 0.2s ease-in-out 0s, -moz-box-shadow 0.2s ease-in-out 0s;
+    background: none repeat-x scroll 0 0 #FF7900;
+    border: 1px solid #DA7C0C;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #FEF4E9;
+    cursor: pointer;
+    display: inline-block;
+    font: 20px/100% Helvetica,sans-serif;
+    margin-top: 45px;
+    outline: medium none;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+    width: 257px;
 }
 
 #scene .introbracket {
@@ -152,16 +172,23 @@ nav.header {
 }
 
 #blueband{
- margin-top: 10px;
- position: fixed;
- bottom: 0px;
- width: 100%;
- margin: 0;
- padding: 45px 0 10px;
- text-align: center;
  .gradient(#00AEEF, #00AEEF, #00bEFF);
- z-index:300;
+  bottom: 0;
+  color: white;
+  font-weight: 200;
+  margin: 0;
+  padding: 2em 0 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  font-size:12px;
+  z-index: 300;
 }
+
+#blueband a{
+	color:#303030;
+}
+
 
 nav.header ul.navigation li {
     text-align: center;
