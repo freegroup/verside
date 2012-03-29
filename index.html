@@ -1,60 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <link type="text/css" rel="stylesheet/less" href="css/elements.less" />
+  <link type="text/css" rel="stylesheet/less" href="css/main.less" />
+  
+  <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+  <script type="text/javascript" src="js/less-1.2.2.js"></script>
+
   <meta charset='utf-8'>
   <title>Verside @ GitHub</title>
 
-  <link rel="stylesheet" type="text/css" href="resources/css/core_intro.css" />
   <link href='http://fonts.googleapis.com/css?family=Lato:500,400,300,200' rel='stylesheet' type='text/css'>
 
-  <script src="resources/js/jquery.js" type="text/javascript"></script>
-  <script src="resources/js/jquery-splashscreen.js"></script>
-  <script src="resources/js/core_intro.js"></script>
-  
 </head>
 
 <body>
 
-<div id="page">
-    
-    <div id="promoIMG">
+		<header id="top">
+			<div class="content-wrapper clearfix">
+				<div class="logo"><img id="logo_image" src="./images/logo.png"></div>
+				
+				<nav class="header">
+					<ul class="navigation" data-dropdown="dropdown">
+                        <li class="active"><a href="/">How it works</a></li>
+                        <li><a href="/add-ons">Add-ons</a></li>
+                        <li><a href="/documentation">Documentation</a></li>
+                    </ul>				
+               </nav>
+			</div>
+		</header>
 
-    </div>
-    
-    <div id="contentArea">
-	<div class="intro_HeaderText">Verside</div>
-
-	<div class="intro_Slogan">
-   	   <div  class="intro_Divider">&nbsp;</div>
-<div id="container">
-
-	   Ready to customize database Admin Interface for the rest of us.<br>
-	   Build with jQuery, LESS, CodeIgniter, Doctrine, SQLite and 10'000 cups of coffee
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-   <div class="download">
-      <a href="https://github.com/freegroup/verside/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/freegroup/verside/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/freegroup/verside">freegroup/verside</a>
-    </div>
-
-  </div>
-
+<section id="scene" class="intro clearfix">		
+		
+	<div id="animation_hype_container" style="top:120px;position:absolute;overflow:hidden;width:450px;height:600px;">
+		<script type="text/javascript" charset="utf-8" src="animation/animation_Resources/animation_hype_generated_script.js?51815"></script>
 	</div>
-	</div>
-	
-</div>
+
+<div class="wrapper">
+<div class="introtext">
+			<span class="introbracket">(</span>
+			<span class="introtop">Database Backoffice</span>
+			<span class="introbracket">)</span>
+			<br>
+			<span class="introbottom">supercharging customizable</span>
+			<br>
+			<a href="/sign-up" class="signup">Download now (free)</a><br>
+			<ol class="benefits">
+				<li><span class="blue">+</span> for <strong>iPad</strong>, Chrome, FireFox, Safari</li>
+				<li><span class="blue">+</span> build with PHP, jQuery, CodeIgniter, Doctrine</li>
+				<li><span class="blue">+</span> just <strong>drag-and-drop</strong> customizable</li>
+				<li><span class="blue">+</span> new and more elegant</li>
+				<li><span class="blue">+</span> <strong>Sourcecode</strong> on Github</li>
+				<li><span class="blue">+</span> PHP App Installer on Github</li>
+			</ol>
+</div>		
+	</div>	
+</section>	
+
+		<footer>
+			<nav class="footer">
+				<ul class="clearfix">
+					<li><h3><a href="/">How it works</a></h3></li>
+					<li>
+						<h3><a href="/add-ons">Add-ons</a></h3>
+						<a href="/add-ons/mysql">MySQL</a>
+						<a href="/add-ons/memcached">Memcached</a>
+						<a href="/add-ons/mongodb">MongoDB</a>
+					</li>
+					<li>
+						<h3><a href="/documentation">Documentation</a></h3>
+						<a href="/documentation/getting-started">Overview</a>
+						<a href="/documentation/platform-components">Platform components</a>
+						<a href="/documentation/app-management">App management</a>
+						<a href="/documentation/user-management">User management</a>
+						<a href="/documentation/add-ons">Add-ons</a>
+						<a href="/documentation/support/support-plans">Support</a>
+					</li>
+					<li>
+						<h3><a href="/pricing">Pricing and Signup</a></h3>
+						<a href="/sign-up">Signup</a>
+					</li>
+					<li>
+						<h3>Company</h3>
+						<a href="/blog">Blog</a>
+						<a href="/jobs">Jobs</a>
+						<a href="/tos">Terms + SLA</a>
+						<a href="/privacy-policy">Privacy Policy</a>
+						<a href="/imprint">Imprint</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/cloudControl" target="_blank"><span class="facebook">FOLLOW US</span></a>
+						<a href="http://twitter.com/cloudcontrolled" target="_blank"><span class="twitter">FOLLOW US</span></a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		
+		<section id="blueband">
+		</section>
 
 </body>
 </html>
