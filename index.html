@@ -36,8 +36,8 @@ $(document).ready(function() {
 				<nav class="header">
 					<ul class="navigation" data-dropdown="dropdown">
                         <li><a class="softlink" href="#what"><strong>What</strong> it is</a></li>
-                        <li><a class="softlink" href="/add-ons">Add-ons</a></li>
-                        <li><a class="softlink" href="/documentation">Documentation</a></li>
+                        <li><a class="softlink" href="#docu">Documentation</a></li>
+                        <li><a class="softlink" href="#demo">Demo</a></li>
                     </ul>				
                </nav>
 			</div>
@@ -73,34 +73,98 @@ $(document).ready(function() {
 	</div>	
 </section>	
 
-<section id="what" name="what" class="intro">		
+<section id="what">		
 <div class="wrapper">
 <h1>( What is Verside )</h1>
+<p>
 <strong>Verside</strong> is a very popular and mature Open Source HTML5 and PHP application 
 which allows you to easily create a highly customizable database front-end/application without 
 coding. 
-<br>
+</p>
+<p>
 You can use it to create in a few minutes a very basic CRUD (create, read, update, delete) 
 database front-end or to develop a more sophisticated database application.
 
 No programming skills are needed to use it; if however you are a PHP programmer with <strong>Verside</strong> 
-you can save tens of hours of work.<br>
-<br>
+you can save tens of hours of work.
+</p>
+<p>
 With <strong>Verside</strong> (differently from many competitors) you don't produce a PHP script, 
 which would become outdated when you modify the schema of your database, but instead you directly use its 
 abstraction layer that can be easily updated every time you modify your database's schema.
-<br>
-<strong>Verside</strong> uses the ADOdb and the PDO database abstraction libraries in order to support as many 
+</p>
+<p>
+<strong>Verside</strong> uses thes <a class="blue" href="http://www.doctrine-project.org/" target="_new">Doctrine</a> database abstraction libraries in order to support as many 
 DBMSs as possible, at the moment it has been tested on MySQL and SQLite.
-<br>
-<br>
-<br>
-<br>
-<br>
+</p>
 </div>
 </section>	
 
-		<footer>
+<section id="docu">		
+<div class="wrapper">
+<h1>( Documentation )</h1>
+<h2>Requirements</h2>
+<p>
+<ul>
+    <li><span class="blue">+</span> PHP
+        <ul>
+        	<li><span class="blue">-</span> version &gt;= 5.3 (with SQLite support)</li>
+        	<li><span class="blue">-</span> PDO</li>
+        </ul>
+    </li>
+    <li><span class="blue">+</span> Database
+        <ul>
+        	<li><span class="blue">-</span> MySQL version &gt;= 3.23.x </li>
+        	<li><span class="blue">-</span> SQLiteversion &gt;= 3 (it could work with version 2 too, not tested)</li>
+      	</ul>
+    </li>
+    
+</ul>
+  A pre-existent database with <strong>AT LEAST ONE</strong> table to manage, with Verside you can't create databases and tables,
+</p>
+
+<h2>Installation</h2>
+<p>
+<ul>
+    <li><span class="blue">+</span> Copy the <code><a class="blue" href="https://github.com/downloads/freegroup/verside/installer.php">installer.php</a></code> in a directory under your Web server</li>
+    <li><span class="blue">+</span> Run the file <code>http://your_host/your_dir/installer.php</code> to install Verside</li>
+</ul>
+You can now create your first form to insert, search, update, delete the records of the tables 
+contained in the database. You should have set the primary key for each table if you want to 
+delete and update records, otherwise Verside won't show you the corresponding buttons.
+
+
+<h2>Security</h2>
+After the program is installed it is a good practice to remove the file <code>installer.php</code> and all 
+the <code>./installer/*</code> files since they could be used by malicious users in order to change or even 
+re-install your Verside installation.
+
+
+<h2>Authentication</h2>
+An authorization model is available to prevent unauthorized accesses to the application. You have 
+enterd the <code>usename</code> and <code>password</code> during the installation process.
+
+
+</div>
+</section>
+
+
+<section id="demo">		
+<div class="wrapper">
+<h1>( Demo )</h1>
+
+Sorry - there is no online demo available at the moment.
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
 		</footer>
 		
 		<section id="blueband">
