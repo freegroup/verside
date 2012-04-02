@@ -4,10 +4,16 @@
 
   <link type="text/css" rel="stylesheet/less" href="css/elements.less" />
   <link type="text/css" rel="stylesheet/less" href="css/main.less" />
+  <link type="text/css" rel="stylesheet"      href="css/ui-lightness/jquery-ui-1.8.16.custom.css" />
+  <link type="text/css" rel="stylesheet"      href="css/lightbox.css" />
   
   <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
   <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.core.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script>
   <script type="text/javascript" src="js/less-1.2.2.js"></script>
+
 
   <meta charset='utf-8'>
   <title>Verside @ GitHub</title>
@@ -22,6 +28,8 @@ $(document).ready(function() {
         
 	});
 
+
+	$( ".lb_youtube" ).rlightbox();
 });
 
 </script>
@@ -35,9 +43,10 @@ $(document).ready(function() {
 				
 				<nav class="header">
 					<ul class="navigation" data-dropdown="dropdown">
-                        <li><a class="softlink" href="#what"><strong>What</strong> it is</a></li>
+                        <li><a class="softlink" href="#what">About</a></li>
                         <li><a class="softlink" href="#docu">Documentation</a></li>
                         <li><a class="softlink" href="#demo">Demo</a></li>
+                        <li><a class="softlink" href="#video">Video</a></li>
                     </ul>				
                </nav>
 			</div>
@@ -152,10 +161,38 @@ enterd the <code>usename</code> and <code>password</code> during the installatio
 <section id="demo">		
 <div class="wrapper">
 <h1>( Demo )</h1>
+This application demo has been created using  Verside without any PHP coding.<br>
 
-Sorry - there is no online demo available at the moment.
+Start Demo: <a target="_new" class="blue" href="http://dbtube.org/verside/index.php">http://dbtube.org/verside/index.php</a>
+
+<table>
+<tr>
+<td>user:</td><td><strong>user</strong></td></tr>
+<td>passsword:</td><td><strong>user</strong></td></tr>
+</table>
+
 </div>
 </section>
+
+
+<section id="video">		
+<div class="wrapper">
+<h1>( Video )</h1>
+
+
+	<div class="example-container section">
+
+	    <a href="http://www.youtube.com/watch?v=ZF35_mOnWNY" class="blue lb lb_youtube" title="How to Install Verside">
+	    <img src="http://img.youtube.com/vi/ZF35_mOnWNY/0.jpg" alt="Hwo to install Verside" /><br>
+	    How to install Verside on your WebServer</a>
+	</div>
+	
+    
+</div>
+</section>
+
+
+
 <br>
 <br>
 <br>
