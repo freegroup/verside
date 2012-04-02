@@ -94,6 +94,8 @@ class Controller_core_navigation extends Controller_core_secure {
 	}
 
 	public function navigate( $id ) {
+	    global 	$base_url;
+
 		if( isset( $id ) ){
             $qb = $this->emInternal->createQueryBuilder();
             $qb->select('u')
@@ -114,10 +116,24 @@ class Controller_core_navigation extends Controller_core_secure {
                    ->from($this->getModelName(), 'u')
                    ->where('u.parent_id = :pid')
                    ->setParameter('pid', $object->id);
-				  $object->childCount = $qb->getQuery()->getSingleScalarResult();
+				  $object->childCount = intval($qb->getQuery()->getSingleScalarResult());
 				}
 				else{
-                  $object->childCount = intval($this->curl->simple_get($object->controller."/count"));
+				 //$url = $base_url."index.php/".$object->controller."/count";
+				 $url = $object->controller."/count";
+				 
+				 // IMPORTANT!
+				 // close the session. It is not possible to connect to the same server with the
+				 // same session twice. Session data is locked to prevent concurrent writes only 
+				 // one script may operate on a session at any time.
+				 session_write_close();
+				 $countString= $this->curl
+				                    ->set_cookies(array(session_name() =>  session_id()))
+				                    ->simple_get($url);
+				  // reopen my current session
+				  session_start();
+				  
+	              $object->childCount = intval($countString);
                 }
                 $object->model = "Model_formelement";
                 $object->table = $this->getModelName();

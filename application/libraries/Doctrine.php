@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 use Doctrine\Common\ClassLoader,
     Doctrine\ORM\Configuration,
     Doctrine\ORM\EntityManager,
@@ -66,6 +68,37 @@ class Doctrine {
         'dbname' =>   "",
         'path'  =>   $sqlLitePath
     );
+
+	// Create a session base database if we use the DEMO database.
+	// Data will be lost if we logout or cleanup the the Browser Cache.
+	//
+	if(endsWith($connectionOptionsExternal['path'], "demo.sqlite")){
+	   if(isset($_SESSION['verside_db_id'])){
+		  $unique= $_SESSION['verside_db_id'];
+		}
+		else{
+		  $unique = md5( uniqid() );
+		  $_SESSION['verside_db_id']=$unique;
+		}
+		
+		$internalDB_session = $connectionOptionsInternal['path']."_session_".$unique;
+		$externalDB_session = $connectionOptionsExternal['path']."_session_".$unique;
+		
+		// The screen, menu and application definition
+		//
+		if (!file_exists($internalDB_session)) {
+		  copy($connectionOptionsInternal['path'],$internalDB_session);
+		}
+		
+		// The application data 
+		//
+		if (!file_exists($externalDB_session)) {
+			copy($connectionOptionsExternal['path'],$externalDB_session);
+		}
+		
+		$connectionOptionsInternal['path']=$internalDB_session;
+		$connectionOptionsExternal['path']=$externalDB_session;
+	}
 
     // Create EntityManager
     $this->emExternal = EntityManager::create($connectionOptionsExternal, $config);

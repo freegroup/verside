@@ -32,7 +32,7 @@ class Controller_core_formelement extends Controller_core_secure {
             foreach($_POST as $field => $val){
                 $obj->$field = $val;
             }
-            $this->em->flush();
+            $this->emInternal->flush();
         
             // return the updated object. This is required because in the db can exists some trigger
             // which has modified the object
@@ -290,7 +290,7 @@ class Controller_core_formelement extends Controller_core_secure {
 		}
 		else{
   		   $this->load->model($model);
-		   $object = $this->em->find($model,$recordId);
+		   $object = $this->emExternal->find($model,$recordId);
 		   $data['record'] =  $object;
 		   $field = $object->getIdFieldName();
 		   $data['recordPkey'] =  $object->$field;

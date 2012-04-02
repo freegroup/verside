@@ -6,6 +6,10 @@ try {
 	$targetname = 'installer.php';
 	$zipfilename = md5(time()).'archive.zip'; 		// replace with tempname()
 
+    // remove old installer I down want pack an installer into an installer into an.....
+    unlink($targetname);
+    
+    
 	// create a archive from the submitted folder
 	$zipfile = new ZipArchive();
 	$zipfile->open($zipfilename,ZipArchive::CREATE);
